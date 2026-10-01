@@ -1,0 +1,14 @@
+name: "Cinematic Documentary"
+description: "Real-photo aesthetic, warm golden-hour tones, shallow depth of field, travel-doc grading"
+image_prompt_skeleton: "Cinematic Documentary style, {{ visual_language }}, {{ subject }}, {{ composition }}, {{ palette }}, {{ lighting }}, leave negative space for text overlay top/bottom, {{ aspect_ratio }} for Facebook feed/story, high detail, brand-safe, no watermarks, no text baked into image --no {{ negative_prompt }}"
+negative_prompt: "oversaturated CGI, fantasy landmarks, fake geography, surreal alien terrain, cartoon, 3D render, low-res, blur, watermark, logos, text baked into image, clutter"
+video_style_notes: "Slow cinematic drone drift over mountain peaks, gradual forward push-in, natural lens flares, authentic ambient wind and acoustic strings, documentary grading"
+color_palette:
+  - "#C89666"  # Warm Terracotta
+  - "#2D6A4F"  # Karakoram Pine Green
+  - "#3D5A80"  # Mountain Slate Blue
+  - "#E0FBFC"  # Glacier Mist
+fonts:
+  - "Montserrat"
+  - "Playfair Display"
+  - "Noto Sans"

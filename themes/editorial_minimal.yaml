@@ -1,0 +1,14 @@
+name: "Editorial Minimal"
+description: "Clean grid layout, sans-serif headline, white/off-white background, single accent color, data-chart friendly"
+image_prompt_skeleton: "Editorial Minimal style, {{ visual_language }}, {{ subject }}, {{ composition }}, {{ palette }}, {{ lighting }}, leave negative space for text overlay top/bottom, {{ aspect_ratio }} for Facebook feed/story, high detail, brand-safe, no watermarks, no text baked into image --no {{ negative_prompt }}"
+negative_prompt: "clutter, noisy textures, skeuomorphism, chaotic gradients, realistic photo mess, unreadable charts, low-res, watermarks, text baked into image"
+video_style_notes: "Smooth kinetic typography, clean slide-in line charts, precise camera easing, subtle corporate marimba or electronic tick audio"
+color_palette:
+  - "#F8FAFC"  # Editorial Off-White
+  - "#2563EB"  # Tech Cobalt Blue
+  - "#0F172A"  # Slate Navy
+  - "#F59E0B"  # Mustard Accent
+fonts:
+  - "Inter"
+  - "Cabinet Grotesk"
+  - "Helvetica Neue"

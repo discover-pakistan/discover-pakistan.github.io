@@ -1,0 +1,14 @@
+name: "Bold Sports Dynamic"
+description: "High-contrast action shots, motion-blur streaks, team-color gradients, stat overlays"
+image_prompt_skeleton: "Bold Sports Dynamic style, {{ visual_language }}, {{ subject }}, {{ composition }}, {{ palette }}, {{ lighting }}, leave negative space for text overlay top/bottom, {{ aspect_ratio }} for Facebook feed/story, high detail, brand-safe, no watermarks, no text baked into image --no {{ negative_prompt }}"
+negative_prompt: "deformed anatomy, distorted faces, unrealistic player bodies, third-party unauthorized sponsor logos, fake jerseys, cartoon, low-res, watermarks, text baked into image, clutter"
+video_style_notes: "Rapid rhythm, speed ramps, dramatic ball-impact sound effects, stadium crowd crescendo, diagonal neon green slash transitions"
+color_palette:
+  - "#10B981"  # PCB Emerald Green
+  - "#F59E0B"  # Trophy Gold
+  - "#0F172A"  # Stadium Charcoal
+  - "#FFFFFF"  # Crisp White
+fonts:
+  - "Teko"
+  - "Oswald"
+  - "Barlow Condensed"

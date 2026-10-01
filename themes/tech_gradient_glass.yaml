@@ -1,0 +1,14 @@
+name: "Tech Gradient / Glass"
+description: "Dark background, neon-gradient glassmorphism cards, glowing icons, futuristic grid lines"
+image_prompt_skeleton: "Tech Gradient Glass style, {{ visual_language }}, {{ subject }}, {{ composition }}, {{ palette }}, {{ lighting }}, leave negative space for text overlay top/bottom, {{ aspect_ratio }} for Facebook feed/story, high detail, brand-safe, no watermarks, no text baked into image --no {{ negative_prompt }}"
+negative_prompt: "opaque flat plastic, dull grey, messy wires, unreadable glass refraction, low contrast, low-res, watermarks, third-party logos, text baked into image"
+video_style_notes: "Glowing volumetric neon dispersion, rotating 3D frosted glass cards, subtle ambient cyber synth drone, high-tech particle shimmer"
+color_palette:
+  - "#090A0F"  # Deep Obsidian
+  - "#8B5CF6"  # AI Violet Glow
+  - "#06B6D4"  # Cyan Laser
+  - "#3B82F6"  # Electric Blue
+fonts:
+  - "Plus Jakarta Sans"
+  - "Space Grotesk"
+  - "JetBrains Mono"
