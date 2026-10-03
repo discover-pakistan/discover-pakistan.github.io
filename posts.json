@@ -1,5 +1,30 @@
 [
   {
+    "id": "discover-pakistan-tourism-heritage--413",
+    "category": "Alpine Expeditions",
+    "badge": "DISCOVER PAKISTAN 🇵🇰",
+    "title": "Discover Pakistan — Tourism & Heritage Insight",
+    "subdeck": "Latest alpine journey and cultural discovery from Pakistan.",
+    "image": "assets/posts/discover-pakistan-tourism-heritage--413.png",
+    "stat_number": "",
+    "stat_label": "METRIC",
+    "author": "Autonomous Travel Agent",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
+    "date": "03 Oct 2026",
+    "read_time": "4 min read",
+    "featured": true,
+    "body": [
+      "Consistency and quality drive authentic community engagement.",
+      "Timely execution separates high performers from spectators.",
+      "Focus on value-first insights that solve real everyday problems."
+    ],
+    "takeaways": [
+      "Consistency and quality drive authentic community engagement.",
+      "Timely execution separates high performers from spectators.",
+      "Focus on value-first insights that solve real everyday problems."
+    ]
+  },
+  {
     "id": "discover-pakistan-tourism-heritage--201",
     "category": "Alpine Expeditions",
     "badge": "DISCOVER PAKISTAN 🇵🇰",
@@ -12,7 +37,7 @@
     "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
     "date": "03 Oct 2026",
     "read_time": "4 min read",
-    "featured": true,
+    "featured": false,
     "body": [
       "Consistency and quality drive authentic community engagement.",
       "Timely execution separates high performers from spectators.",
@@ -47,7 +72,7 @@
     "takeaways": [
       "Peak autumn foliage extends from October 12 through November 08 across central and upper Hunza.",
       "Baltit and Altit Forts offer panoramic 360-degree viewpoints over the terraced Hunza river basin.",
-      "Average daytime temperatures range between 14\u00b0C and 18\u00b0C, with crisp sub-zero mountain nights."
+      "Average daytime temperatures range between 14°C and 18°C, with crisp sub-zero mountain nights."
     ]
   },
   {
@@ -55,7 +80,7 @@
     "category": "Wilderness Expeditions",
     "badge": "HIGH PLATEAU",
     "title": "Deosai Plains: The Land of Giants Where Himalayan Brown Bears Roam Above the Clouds",
-    "subdeck": "At an average elevation of 4,114 meters, the world\u2019s second-highest alpine plateau remains accessible for only a brief 12-week summer window.",
+    "subdeck": "At an average elevation of 4,114 meters, the world’s second-highest alpine plateau remains accessible for only a brief 12-week summer window.",
     "image": "assets/images/deosai.jpg",
     "stat_number": "4,114m",
     "stat_label": "AVERAGE ALTITUDE",
@@ -92,13 +117,13 @@
     "featured": false,
     "body": [
       "Nestled along the sprawling, braided sands of the Indus River basin, Skardu is the spiritual epicenter of global high-altitude mountaineering.",
-      "From here, historic expeditions embark on the grueling trek up the Baltoro Glacier toward Concordia \u2014 the legendary 'Throne Room of the Mountain Gods' where four 8,000m giants (K2, Broad Peak, Gasherbrum I and II) converge.",
+      "From here, historic expeditions embark on the grueling trek up the Baltoro Glacier toward Concordia — the legendary 'Throne Room of the Mountain Gods' where four 8,000m giants (K2, Broad Peak, Gasherbrum I and II) converge.",
       "Down in the valley, the legendary Shangrila Resort at Lower Kachura Lake features authentic wooden chalets reflected in jade-green spring waters, surrounded by wild apple orchards.",
       "Modern international flight connections to Skardu Airport have revolutionized accessibility, allowing travelers to reach this mountain sanctuary within 45 minutes from Islamabad."
     ],
     "takeaways": [
       "Direct Airbus A320 commercial flights now operate daily between Islamabad, Karachi, and Skardu.",
-      "The Sarfaranga Cold Desert in Shigar hosts Pakistan\u2019s premier annual high-altitude motorsports rally.",
+      "The Sarfaranga Cold Desert in Shigar hosts Pakistan’s premier annual high-altitude motorsports rally.",
       "Gateway point for both the Baltoro-Concordia trek and cultural heritage tours of Khaplu Palace."
     ]
   },
@@ -107,7 +132,7 @@
     "category": "Alpine Expeditions",
     "badge": "GEOLOGY",
     "title": "Passu Cones & Attabad Lake: The Turquoise Waters Born from Mountain Collapse",
-    "subdeck": "The dramatic story of how a catastrophic landslide created Pakistan\u2019s most mesmerizing emerald body of water, flanked by the jagged Passu needles.",
+    "subdeck": "The dramatic story of how a catastrophic landslide created Pakistan’s most mesmerizing emerald body of water, flanked by the jagged Passu needles.",
     "image": "assets/images/passu.jpg",
     "stat_number": "100m",
     "stat_label": "LAKE DEPTH",
@@ -118,7 +143,7 @@
     "featured": false,
     "body": [
       "Few natural events in modern history produced a geographical wonder as stunning as Attabad Lake. Formed in 2010 when an entire mountainside collapsed into the Hunza River, the lake now stretches for 21 kilometers of pure sapphire and turquoise water.",
-      "Further north along the ribbon of asphalt that is the Karakoram Highway rise the iconic Passu Cones \u2014 jagged serrated granite needles piercing the sky at 6,106 meters.",
+      "Further north along the ribbon of asphalt that is the Karakoram Highway rise the iconic Passu Cones — jagged serrated granite needles piercing the sky at 6,106 meters.",
       "Cross the historic Passu suspension bridges swaying above the roaring glacier meltwater, and savor fresh yak steak burgers and walnut cakes at local community cafes.",
       "The contrast between sheer gray rock and impossible blue water makes this section of the Karakoram Highway one of the most photographed scenic drives on the planet."
     ],
@@ -175,9 +200,9 @@
       "At Kund Malir, golden desert sand dunes plunge directly into untouched azure waters, creating a dramatic coastal desert contrast that draws road-trippers from across the country."
     ],
     "takeaways": [
-      "Hingol National Park is Pakistan\u2019s largest national park, spanning over 6,100 square kilometers.",
+      "Hingol National Park is Pakistan’s largest national park, spanning over 6,100 square kilometers.",
       "The route features active mud volcanoes including Chandragup, sacred to ancient pilgrimage traditions.",
-      "Best traversed between November and February when coastal temperatures remain in a pleasant 22\u201326\u00b0C range."
+      "Best traversed between November and February when coastal temperatures remain in a pleasant 22–26°C range."
     ]
   }
 ]
