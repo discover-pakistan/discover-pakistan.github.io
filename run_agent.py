@@ -69,6 +69,9 @@ def run_pipeline(format_type: str = "card", topic: str = None, city: str = None,
         lf.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
     logger.info(f"[+] Appended to captions_log.jsonl")
 
+    # Update static GitHub Pages blog catalog
+    update_blog_catalog(NICHE_ID, content, created_paths)
+
     if not no_publish:
         target_page_id = (os.getenv("FB_PAGE_ID") or DEFAULT_PAGE_ID).strip()
         logger.info(f"[*] Publishing media to target Facebook Page ID: {target_page_id}")
@@ -86,6 +89,63 @@ def run_pipeline(format_type: str = "card", topic: str = None, city: str = None,
         logger.info("ℹ️ --no-publish flag set. Media preserved locally.")
 
     return created_paths
+
+def update_blog_catalog(niche_id: str, content: dict, created_paths: list):
+    """
+    Appends newly generated post to posts.json and copies generated card
+    into assets/posts/ so GitHub Pages blog updates autonomously.
+    """
+    import re
+    import shutil
+    from datetime import datetime
+
+    posts_file = BASE_DIR / "posts.json"
+    assets_posts_dir = BASE_DIR / "assets" / "posts"
+    assets_posts_dir.mkdir(parents=True, exist_ok=True)
+
+    slug = re.sub(r'[^a-z0-9]+', '-', content.get("headline", "story").lower()).strip('-')[:35]
+    post_id = f"{slug}-{random.randint(100, 999)}"
+
+    rel_img_path = "assets/images/hunza.jpg"
+    for p in created_paths:
+        if p.endswith(".png") or p.endswith(".jpg"):
+            dst_name = f"{post_id}.png"
+            shutil.copy2(p, assets_posts_dir / dst_name)
+            rel_img_path = f"assets/posts/{dst_name}"
+            break
+
+    new_article = {
+        "id": post_id,
+        "category": content.get("category_tag", "Alpine Expeditions"),
+        "badge": content.get("badge", "DAILY EXPEDITION"),
+        "title": content.get("headline", "Scenic Travel Dossier"),
+        "subdeck": content.get("subdeck", "Latest alpine journey and cultural discovery from Pakistan."),
+        "image": rel_img_path,
+        "stat_number": content.get("stat_number", ""),
+        "stat_label": content.get("stat_label", "METRIC"),
+        "author": "Autonomous Travel Agent",
+        "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
+        "date": datetime.now().strftime("%d %b %Y"),
+        "read_time": "4 min read",
+        "featured": True,
+        "body": content.get("bullet_points", [content.get("subdeck", "")]),
+        "takeaways": content.get("bullet_points", [])
+    }
+
+    try:
+        posts = []
+        if posts_file.exists():
+            with open(posts_file, "r", encoding="utf-8") as f:
+                posts = json.load(f)
+        for p in posts:
+            p["featured"] = False
+        posts.insert(0, new_article)
+        posts = posts[:50]
+        with open(posts_file, "w", encoding="utf-8") as f:
+            json.dump(posts, f, indent=2, ensure_ascii=False)
+        logger.info(f"📰 Autonomous Blog Catalog Updated: {posts_file} (+1 article: '{new_article['title']}')")
+    except Exception as e:
+        logger.warning(f"Could not update blog catalog: {e}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Discover Pakistan Publishing Agent")

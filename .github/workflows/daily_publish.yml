@@ -1,8 +1,11 @@
 name: 🚀 Discover Pakistan Daily Publisher
 
 on:
+  push:
+    branches:
+      - main
   schedule:
-    # Autonomous daily execution
+    # Autonomous daily execution (10:00 AM PKT / 05:00 UTC)
     - cron: '0 5 * * *'
   workflow_dispatch:
     inputs:
@@ -73,11 +76,11 @@ jobs:
           echo "[*] Executing: $CMD"
           eval $CMD
 
-      - name: Commit State & Log
+      - name: Commit State & Blog
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "chore: update travel_pakistan post log [skip ci]"
-          file_pattern: 'captions_log.jsonl'
+          commit_message: "chore: update autonomous blog & captions log [skip ci]"
+          file_pattern: 'posts.json captions_log.jsonl assets/posts/*'
 
       - name: Cleanup Temporary Storage
         if: always()
