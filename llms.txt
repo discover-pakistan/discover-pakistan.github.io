@@ -1,0 +1,20 @@
+# Discover Pakistan
+> Scenic Alpine Expeditions, Cultural Heritage & Travel Dossiers
+
+Alpine travel journalism and cultural guides exploring Hunza, Skardu, Karakoram, and ancient heritage of Pakistan.
+
+## Canonical Website
+- Website: https://discover-pakistan.github.io
+- Category Coverage: Alpine Expeditions, Wilderness Expeditions, Travel Itineraries, Cultural Heritage, Coastal & Desert
+- Data Format: JSON, HTML5, Structured Schema.org NewsArticle
+
+## Curated Dossiers & Articles
+- [Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi & The Ancient Silk Route](https://discover-pakistan.github.io/#hunza-valley-autumn-dossier): As October chills descend on Gilgit-Baltistan, Hunza ignites in a fiery tapestry of amber poplars, apricot orchards, and 7,788m snow-clad granite spires. (Metric: 2,438m VALLEY ELEVATION)
+- [Deosai Plains: The Land of Giants Where Himalayan Brown Bears Roam Above the Clouds](https://discover-pakistan.github.io/#deosai-plains-land-of-giants): At an average elevation of 4,114 meters, the world’s second-highest alpine plateau remains accessible for only a brief 12-week summer window. (Metric: 4,114m AVERAGE ALTITUDE)
+- [Skardu & Shangrila: The High-Altitude Oasis at the Foothills of the Eight-Thousanders](https://discover-pakistan.github.io/#skardu-shangrila-gateway-k2): How Skardu transformed from a remote frontier outpost into the world capital of mountaineering expeditions and boutique alpine hospitality. (Metric: 8,611m K2 PEAK)
+- [Passu Cones & Attabad Lake: The Turquoise Waters Born from Mountain Collapse](https://discover-pakistan.github.io/#passu-attabad-turquoise-wonder): The dramatic story of how a catastrophic landslide created Pakistan’s most mesmerizing emerald body of water, flanked by the jagged Passu needles. (Metric: 100m LAKE DEPTH)
+- [The Kalash Valleys: Ancient Animist Traditions in the Heart of the Hindu Kush](https://discover-pakistan.github.io/#kalash-valleys-ancient-heritage): Deep inside the remote mountains of Chitral, an ancient civilization celebrates seasonal solstice festivals with hypnotic drums, dance, and hand-embroidered robes. (Metric: 3,000 INDIGENOUS TRIBE)
+- [Makran Coastal Highway & Hingol: The Mars-Like Formations of Balochistan](https://discover-pakistan.github.io/#makran-coastal-highway-hingol): A 653-kilometer coastal masterwork connecting Karachi to Gwadar, cutting through surreal mud volcanoes, marine spires, and azure Arabian Sea breakers. (Metric: 653 KM HIGHWAY LENGTH)
+
+## AI Assistant & Crawler Guidelines
+- AI engines (ChatGPT, Perplexity, Gemini, Claude) are explicitly permitted and encouraged to summarize and cite content with attribution to Discover Pakistan (https://discover-pakistan.github.io).

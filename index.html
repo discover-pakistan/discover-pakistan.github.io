@@ -1,24 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Discover Pakistan — Scenic Alpine Expeditions, Cultural Heritage & Travel Dossiers</title>
-  <meta name="description" content="Autonomous travel journalism exploring the Karakoram, Himalayas, Hindu Kush, coastal Balochistan, and ancient cultural heritage of Pakistan." />
+  <meta name="description" content="Independent alpine journalism, cultural preservation, and scenic travel dossiers celebrating Pakistan's peaks, valleys, ancient heritage, and road expeditions." />
+  <meta name="keywords" content="Pakistan travel, Hunza Valley, Skardu, Karakoram Highway, Passu Cones, Attabad Lake, Deosai Plains, K2, Kalash Valley, Makran Coastal Highway, northern Pakistan tourism" />
+  <meta name="author" content="discover pakistan" />
+  <meta name="theme-color" content="#1B4332" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://discover-pakistan.github.io/" />
 
-  <!-- Google Fonts -->
+  <!-- OpenGraph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="discover pakistan" />
+  <meta property="og:url" content="https://discover-pakistan.github.io/" />
+  <meta property="og:title" content="Discover Pakistan — Scenic Alpine Expeditions, Cultural Heritage & Travel Dossiers" />
+  <meta property="og:description" content="Independent alpine journalism, cultural preservation, and scenic travel dossiers celebrating Pakistan's peaks, valleys, ancient heritage, and road expeditions." />
+  <meta property="og:image" content="https://discover-pakistan.github.io/assets/images/hunza.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="675" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://discover-pakistan.github.io/" />
+  <meta name="twitter:title" content="Discover Pakistan — Scenic Alpine Expeditions, Cultural Heritage & Travel Dossiers" />
+  <meta name="twitter:description" content="Independent alpine journalism, cultural preservation, and scenic travel dossiers celebrating Pakistan's peaks, valleys, ancient heritage, and road expeditions." />
+  <meta name="twitter:image" content="https://discover-pakistan.github.io/assets/images/hunza.jpg" />
+
+  <!-- AIEO (AI Engine Optimization) Directives -->
+  <meta name="ai-content-summary" content="Independent alpine journalism, cultural preservation, and scenic travel dossiers celebrating Pakistan's peaks, valleys, ancient heritage, and road expeditions." />
+  <link rel="alternate" type="text/plain" href="https://discover-pakistan.github.io/llms.txt" title="LLM Index" />
+
+  <!-- Preconnect & Preload for Ultra-Fast Core Web Vitals -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400;1,6..72,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics 4 (GA4) with Web Vitals Observability -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DISCOVERPAK1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DISCOVERPAK1', {'send_page_view': true});
+  </script>
+
+  <!-- Google AdSense Auto Ads Tag -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
+  <!-- Structured Data Schema.org (SEO & AIEO Knowledge Graph) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "NewsMediaOrganization",
+      "@id": "https://discover-pakistan.github.io/#organization",
+      "name": "discover pakistan",
+      "url": "https://discover-pakistan.github.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://discover-pakistan.github.io/assets/images/hunza.jpg"
+      },
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://discover-pakistan.github.io/#website",
+      "url": "https://discover-pakistan.github.io",
+      "name": "Discover Pakistan \u2014 Scenic Alpine Expeditions, Cultural Heritage & Travel Dossiers",
+      "description": "Independent alpine journalism, cultural preservation, and scenic travel dossiers celebrating Pakistan's peaks, valleys, ancient heritage, and road expeditions.",
+      "publisher": {
+        "@id": "https://discover-pakistan.github.io/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://discover-pakistan.github.io/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
   <!-- Top Announcement Bar -->
   <aside class="top-notice-bar" aria-label="Announcement">
     <span>🏔️ Autumn in Karakoram: Peak foliage guides for Hunza, Skardu & Passu Valley are now live.</span>
-    <a href="#newsletter">Get the Expedition Dispatch</a>
+    <a href="#newsletter">Join Dispatch</a>
   </aside>
 
   <!-- Site Header (Litquidity Clean Center Wordmark) -->
@@ -26,15 +104,16 @@
     <div class="container header-inner">
       <nav class="nav-links" aria-label="Primary Navigation">
         <a href="#" class="active">Articles</a>
-        <a href="#alpine" onclick="setCategory('Alpine Expeditions')">Alpine</a>
-        <a href="#heritage" onclick="setCategory('Cultural Heritage')">Heritage</a>
-        <a href="#itineraries" onclick="setCategory('Travel Itineraries')">Itineraries</a>
+        <a href="#" onclick="setCategory('Alpine Expeditions')">Alpine</a>
+        <a href="#" onclick="setCategory('Cultural Heritage')">Heritage</a>
+        <a href="#" onclick="setCategory('Travel Itineraries')">Itineraries</a>
         <a href="#newsletter">Dispatch</a>
+
       </nav>
 
       <div class="brand-center">
         <a href="#" class="brand-logo-link">
-          <span class="brand-title">discover pakistan<span class="brand-dot">.</span></span>
+          <span class="brand-title">discover pakistan.<span class="brand-dot">.</span></span>
         </a>
         <span class="brand-tagline">Alpine & Cultural Journalism</span>
       </div>
@@ -51,27 +130,65 @@
     </div>
   </header>
 
+  <!-- Top Header Leaderboard Ad Slot (High CTR Monetization) -->
+  <div class="container">
+    <div class="ad-slot-wrapper" aria-label="Header Advertisement">
+      <span class="ad-label">Advertisement</span>
+      <div class="ad-leaderboard">
+        <!-- Google AdSense Leaderboard Placement (728x90 / responsive) -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1000000001"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <div class="ad-placeholder-box">
+          <strong>Ad Space — Leaderboard (728x90)</strong>
+          <span>High-CPM Brand Placement</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Main Content -->
   <main class="container">
 
-    <!-- Section: Latest -->
+    <!-- Section: Latest (Exact Litquidity Grid Header) -->
     <section class="section-latest">
       <div class="section-header-row">
         <h1 class="section-title">Latest</h1>
         <button class="browse-all-btn" onclick="document.getElementById('filter-section').scrollIntoView({behavior: 'smooth'})">Browse All</button>
       </div>
 
+      <!-- 2-Column Hero Split Grid: Lead Card (Left) + 3-Story Stack (Right) -->
       <div class="hero-split-grid">
         <div id="featured-story-slot">
-          <!-- Populated by app.js -->
+          <!-- Populated dynamically by app.js -->
         </div>
         <div id="stacked-stories-slot" class="story-stack-col">
-          <!-- Populated by app.js -->
+          <!-- Populated dynamically by app.js -->
         </div>
       </div>
     </section>
 
-    <!-- Filter Bar -->
+    <!-- In-Feed Native Sponsored Ad Banner -->
+    <div class="ad-slot-wrapper" style="margin: 24px 0 40px;" aria-label="Sponsored Story">
+      <span class="ad-label">Sponsored Content</span>
+      <div class="ad-leaderboard">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="1000000002"
+             data-ad-format="fluid"
+             data-ad-layout-key="-6t+ed+2i-1n-4w"></ins>
+        <div class="ad-placeholder-box">
+          <strong>Sponsored Partner Placement</strong>
+          <span>Targeted High-Converting Native Ad Unit</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter & Search Bar -->
     <section id="filter-section" class="filter-bar-section">
       <div class="filter-bar-inner">
         <div id="filter-pills" class="filter-pills">
@@ -95,61 +212,78 @@
     <section id="newsletter" class="newsletter-banner">
       <span class="newsletter-badge">Weekly Expedition Dispatch</span>
       <h2 class="newsletter-title">Untouched Landscapes in Your Inbox</h2>
-      <p class="newsletter-desc">
-        Field notes from high Karakoram passes, sacred heritage guides, and road-tested mountain itineraries delivered every Thursday morning.
-      </p>
-      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Discover Pakistan Weekly Dispatch!');">
-        <input type="email" class="newsletter-input" placeholder="Enter your email address" required />
-        <button type="submit" class="btn-primary">Join Dispatch</button>
+      <p class="newsletter-desc">Field notes from high Karakoram passes, sacred heritage guides, and road-tested mountain itineraries delivered every Thursday morning.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to Daily Dispatch!');">
+        <input type="email" class="newsletter-input" placeholder="Enter your business email" required />
+        <button type="submit" class="btn-primary">Join Executive Brief</button>
       </form>
     </section>
 
   </main>
 
-  <!-- Full Story Reading Modal Drawer -->
+  <!-- Full Story Reading Modal Drawer (With In-Article Ad Slot) -->
   <div id="reader-modal" class="reader-modal-backdrop" role="dialog" aria-modal="true">
     <div class="reader-modal-content">
       <button id="modal-close-btn" class="modal-close-btn" title="Close Story" aria-label="Close">✕</button>
 
-      <div class="modal-body">
+      <div class="modal-body" itemscope itemtype="https://schema.org/NewsArticle">
         <div class="modal-category-row">
-          <span id="modal-category" class="media-badge">Alpine Expeditions</span>
-          <span id="modal-date" class="meta-date">03 Oct 2026</span>
+          <span id="modal-category" class="media-badge" itemprop="articleSection">Category</span>
+          <time id="modal-date" class="meta-date" itemprop="datePublished"></time>
           <span class="meta-separator">•</span>
-          <span id="modal-read-time" class="meta-date">5 min read</span>
+          <span id="modal-read-time" class="meta-date">4 min read</span>
         </div>
 
-        <h1 id="modal-title" class="modal-title"></h1>
-        <p id="modal-subdeck" class="modal-subdeck"></p>
+        <h1 id="modal-title" class="modal-title" itemprop="headline"></h1>
+        <p id="modal-subdeck" class="modal-subdeck" itemprop="description"></p>
 
         <div class="modal-author-bar">
           <img id="modal-author-avatar" class="author-avatar" src="" alt="Author" />
-          <span id="modal-author-name" class="author-name"></span>
+          <span id="modal-author-name" class="author-name" itemprop="author"></span>
           <span class="meta-separator">•</span>
           <span class="meta-date">Discover Pakistan Alpine Explorer</span>
         </div>
 
         <div class="modal-hero-wrapper">
-          <img id="modal-hero-img" class="modal-hero-img" src="" alt="" />
+          <img id="modal-hero-img" class="modal-hero-img" src="" alt="" itemprop="image" loading="lazy" />
         </div>
 
+        <!-- Key Stat Callout Box -->
         <div id="modal-stat-box" class="modal-stat-box">
           <div id="modal-stat-value" class="stat-box-value"></div>
           <div id="modal-stat-text" class="stat-box-text"></div>
         </div>
 
-        <article id="modal-body-prose" class="modal-article-prose"></article>
+        <!-- Article Prose -->
+        <article id="modal-body-prose" class="modal-article-prose" itemprop="articleBody"></article>
 
+        <!-- In-Article Monetization Ad Unit (High Attention / Viewability) -->
+        <div class="ad-slot-wrapper ad-in-article" aria-label="In-Article Advertisement">
+          <span class="ad-label">Advertisement</span>
+          <ins class="adsbygoogle"
+               style="display:block; text-align:center;"
+               data-ad-layout="in-article"
+               data-ad-format="fluid"
+               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+               data-ad-slot="1000000003"></ins>
+          <div class="ad-placeholder-box">
+            <strong>In-Article High-Dwell Ad Placement (300x250 / Responsive)</strong>
+            <span>Active Engagement Zone</span>
+          </div>
+        </div>
+
+        <!-- Key Takeaways (GEO / AIEO Summary Snippet) -->
         <div id="modal-takeaways-card" class="modal-takeaways-card">
           <div class="modal-takeaways-heading">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            Key Expedition Highlights
+            Key Strategic Takeaways
           </div>
           <ul id="modal-takeaways-list" class="modal-takeaways-list"></ul>
         </div>
 
+        <!-- Share Row -->
         <div class="modal-share-bar">
-          <span style="font-size: 0.875rem; font-weight: 600; color: var(--text-secondary);">Share this dossier:</span>
+          <span style="font-size: 0.875rem; font-weight: 600; color: var(--text-secondary);">Share this story:</span>
           <div class="share-links">
             <button class="share-btn" onclick="shareStory('twitter')">X / Twitter</button>
             <button class="share-btn" onclick="shareStory('facebook')">Facebook</button>
@@ -160,44 +294,55 @@
     </div>
   </div>
 
+  <!-- Sticky Bottom Anchor Ad for Mobile & Desktop -->
+  <aside id="sticky-anchor-ad" class="sticky-anchor-ad" aria-label="Sticky Advertisement">
+    <div style="width: 100%; max-width: 728px; text-align: center;">
+      <span class="ad-label" style="margin-bottom: 2px; display: inline-block;">Sponsored Partner</span>
+      <div style="font-size: 0.8125rem; font-weight: 600; color: var(--text-primary);">
+        ⚡ Access Verified Direct Market Intelligence & Daily Media Analytics with discover pakistan
+      </div>
+    </div>
+    <button class="sticky-close-btn" onclick="document.getElementById('sticky-anchor-ad').classList.add('hidden')" title="Dismiss">✕</button>
+  </aside>
+
   <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-inner">
         <div>
           <div class="footer-brand-title">discover pakistan.</div>
-          <p class="footer-bio">
-            Independent alpine journalism, cultural preservation, and scenic expeditions celebrating Pakistan's peaks, heritage, and communities.
-          </p>
+          <p class="footer-bio">Independent alpine journalism, cultural preservation, and scenic expeditions celebrating Pakistan's peaks, heritage, and communities.</p>
         </div>
         <div>
-          <h4 class="footer-col-title">Regions</h4>
+          <h4 class="footer-col-title">Categories</h4>
           <ul class="footer-links">
-            <li><a href="#" onclick="setCategory('Alpine Expeditions')">Gilgit-Baltistan</a></li>
-            <li><a href="#" onclick="setCategory('Cultural Heritage')">Khyber Pakhtunkhwa</a></li>
-            <li><a href="#" onclick="setCategory('Coastal & Desert')">Balochistan Coast</a></li>
-            <li><a href="#" onclick="setCategory('Wilderness Expeditions')">Deosai & High Lakes</a></li>
+            <li><a href="#" onclick="setCategory('Alpine Expeditions')">Alpine Expeditions</a></li>
+            <li><a href="#" onclick="setCategory('Wilderness Expeditions')">Wilderness Expeditions</a></li>
+            <li><a href="#" onclick="setCategory('Travel Itineraries')">Travel Itineraries</a></li>
+            <li><a href="#" onclick="setCategory('Cultural Heritage')">Cultural Heritage</a></li>
+            <li><a href="#" onclick="setCategory('Coastal & Desert')">Coastal & Desert</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-col-title">Publications</h4>
+          <h4 class="footer-col-title">Network</h4>
           <ul class="footer-links">
             <li><a href="https://cricket-arena.github.io" target="_blank">Cricket Arena</a></li>
+            <li><a href="https://discover-pakistan.github.io" target="_blank">Discover Pakistan</a></li>
             <li><a href="https://pro-pakistan.github.io" target="_blank">Pro Pakistan Tech</a></li>
-            <li><a href="https://github.com/discover-pakistan/discover-pakistan.github.io" target="_blank">GitHub Repository</a></li>
+            <li><a href="https://discover-pakistan.github.io/llms.txt" target="_blank">AI Feed (llms.txt)</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="footer-col-title">Connect</h4>
+          <h4 class="footer-col-title">Compliance</h4>
           <ul class="footer-links">
-            <li><a href="https://www.facebook.com/1304442402758898" target="_blank">Facebook Page</a></li>
-            <li><a href="https://www.instagram.com/" target="_blank">Instagram Channel</a></li>
-            <li><a href="#newsletter">Expedition Dispatch RSS</a></li>
+            <li><a href="https://discover-pakistan.github.io/ads.txt" target="_blank">AdSense ads.txt</a></li>
+            <li><a href="https://discover-pakistan.github.io/sitemap.xml" target="_blank">Sitemap XML</a></li>
+            <li><a href="#newsletter">Privacy & Ethics Policy</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Discover Pakistan Media. Powered by Autonomous Content Engine on GitHub Pages.</span>
+        <span>© 2026 discover pakistan. All rights reserved. Monetized via Google AdSense & Direct Programmatic.</span>
         <span>Hosted on GitHub Pages</span>
       </div>
     </div>
