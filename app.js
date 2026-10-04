@@ -327,9 +327,7 @@ window.openArticleModal = async function(id) {
             secParas = sec.content;
           } else if (typeof sec.content === "string") {
             // Split long paragraphs cleanly by newlines or sentence pauses if very long
-            const rawParts = sec.content.split(/
-
-+/).filter(Boolean);
+            const rawParts = typeof sec.content === "string" ? sec.content.split("\n\n").filter(Boolean) : [sec.content];
             secParas = rawParts.length > 0 ? rawParts : [sec.content];
           }
         }
@@ -379,6 +377,11 @@ window.openArticleModal = async function(id) {
   if (modalEl) {
     modalEl.classList.add("open");
     document.body.style.overflow = "hidden";
+    setTimeout(function() {
+      if (typeof window.initAdSlotsSafe === "function") {
+        window.initAdSlotsSafe();
+      }
+    }, 350);
   }
   window.location.hash = post.id;
 
