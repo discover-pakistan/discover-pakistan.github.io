@@ -1272,28 +1272,346 @@ img {
   color: var(--text-primary);
 }
 
-/* Urdu Editorial Typography & RTL Styling */
+
+/* ==========================================================================
+   Editorial Typography & Isolated Section Containers (Anti-Collision System)
+   ========================================================================== */
+
+/* Clean close button positioning (no negative margins or overlap) */
+.reader-modal-content {
+  position: relative !important;
+}
+
+.modal-close-btn {
+  position: absolute !important;
+  top: 18px !important;
+  right: 18px !important;
+  float: none !important;
+  margin: 0 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: var(--radius-pill) !important;
+  background-color: var(--bg-pill) !important;
+  color: var(--text-secondary) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 100 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important;
+  transition: all var(--transition-fast) !important;
+}
+
+.modal-close-btn:hover {
+  background-color: var(--accent-primary) !important;
+  color: #FFFFFF !important;
+  transform: scale(1.06) !important;
+}
+
+.modal-body {
+  padding: 44px 48px !important;
+  padding-top: 52px !important;
+}
+
+@media (max-width: 768px) {
+  .modal-body {
+    padding: 24px 20px !important;
+    padding-top: 48px !important;
+  }
+}
+
+/* Isolated Article Section Containers */
+.article-intro-block {
+  margin-bottom: 28px;
+  clear: both;
+}
+
+.article-section-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  margin: 36px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+  clear: both;
+  overflow: visible;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.article-section-block:hover {
+  border-color: var(--border-medium);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.section-block-heading {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0 0 16px 0;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.article-section-block p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.article-section-block p:last-child {
+  margin-bottom: 0;
+}
+
+/* Modal Article Headings & Sections */
+.modal-article-prose {
+  margin-top: 24px;
+}
+
+.modal-article-prose p {
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+
+/* Urdu Nastaliq Editorial Typography (UrduPoint / Jameel Noori Standard) */
 .urdu-title {
-  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif !important;
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', 'Urdu Typesetting', serif !important;
   direction: rtl !important;
   text-align: right !important;
-  line-height: 1.8 !important;
-  font-size: 1.25rem !important;
+  line-height: 2.2 !important;
+  font-size: 1.35rem !important;
+  padding: 6px 0 !important;
+  margin-bottom: 12px !important;
+  overflow: visible !important;
 }
 
 .urdu-subdeck {
-  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif !important;
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', 'Urdu Typesetting', serif !important;
   direction: rtl !important;
   text-align: right !important;
-  line-height: 2.0 !important;
-  font-size: 0.95rem !important;
+  line-height: 2.3 !important;
+  font-size: 1.08rem !important;
+  padding: 6px 0 !important;
+  margin-bottom: 16px !important;
+  word-spacing: 2px !important;
+  color: var(--text-secondary);
+}
+
+.modal-title.urdu-title {
+  font-size: 2.15rem !important;
+  font-weight: 700 !important;
+  line-height: 2.2 !important;
+  margin: 18px 0 16px 0 !important;
+  padding: 8px 0 !important;
+}
+
+.modal-subdeck.urdu-subdeck {
+  font-size: 1.22rem !important;
+  line-height: 2.4 !important;
+  margin-bottom: 28px !important;
+  padding: 6px 0 !important;
+  word-spacing: 2.5px !important;
 }
 
 .urdu-prose {
-  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif !important;
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', 'Urdu Typesetting', serif !important;
   direction: rtl !important;
   text-align: right !important;
-  line-height: 2.4 !important;
-  font-size: 1.15rem !important;
 }
 
+.urdu-prose .article-intro-block p {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', 'Urdu Typesetting', serif !important;
+  font-size: 1.25rem !important;
+  line-height: 2.65 !important;
+  word-spacing: 3px !important;
+  text-align: justify !important;
+  text-justify: inter-word;
+  color: var(--text-primary);
+  margin-bottom: 22px !important;
+  padding: 4px 0 !important;
+}
+
+.urdu-prose .article-section-block {
+  direction: rtl !important;
+  text-align: right !important;
+  padding: 34px 38px !important;
+  margin: 38px 0 !important;
+  border-right: 5px solid var(--accent-primary) !important;
+  border-left: 1px solid var(--border-light) !important;
+  border-top: 1px solid var(--border-light) !important;
+  border-bottom: 1px solid var(--border-light) !important;
+  background: var(--bg-card) !important;
+}
+
+.urdu-prose .section-block-heading {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  font-size: 1.55rem !important;
+  font-weight: 700 !important;
+  line-height: 2.3 !important;
+  color: var(--text-primary) !important;
+  margin: 0 0 20px 0 !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px dashed var(--border-light) !important;
+  border-right: none !important;
+  border-left: none !important;
+  padding-right: 0 !important;
+}
+
+.urdu-prose .article-section-block p,
+.urdu-prose p {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', 'Urdu Typesetting', serif !important;
+  font-size: 1.25rem !important;
+  line-height: 2.65 !important;
+  word-spacing: 3px !important;
+  letter-spacing: 0 !important;
+  text-align: justify !important;
+  text-justify: inter-word;
+  color: var(--text-primary) !important;
+  margin-bottom: 22px !important;
+  padding: 4px 0 !important;
+}
+
+.urdu-prose p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* FAQs Section */
+.modal-faqs-section {
+  margin: 44px 0 32px 0 !important;
+  padding: 32px 30px !important;
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: var(--radius-lg) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.02) !important;
+  clear: both !important;
+}
+
+.urdu-prose .modal-faqs-section {
+  direction: rtl !important;
+  text-align: right !important;
+  border-right: 5px solid var(--accent-primary) !important;
+}
+
+.modal-faqs-heading {
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 24px !important;
+  color: var(--text-primary) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.urdu-prose .modal-faqs-heading {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  font-size: 1.45rem !important;
+  line-height: 2.2 !important;
+}
+
+.modal-faq-item {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: var(--radius-md) !important;
+  padding: 22px 26px !important;
+  margin-bottom: 18px !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02) !important;
+}
+
+.modal-faq-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+.modal-faq-question {
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 10px !important;
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+}
+
+.urdu-prose .modal-faq-question {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  font-size: 1.25rem !important;
+  line-height: 2.2 !important;
+}
+
+.modal-faq-answer {
+  color: var(--text-secondary) !important;
+  font-size: 0.98rem !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+}
+
+.urdu-prose .modal-faq-answer {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  font-size: 1.15rem !important;
+  line-height: 2.5 !important;
+  word-spacing: 2px !important;
+}
+
+/* Takeaways Card */
+.modal-takeaways-card {
+  background-color: var(--bg-secondary) !important;
+  border: 1px solid var(--border-light) !important;
+  border-radius: var(--radius-lg) !important;
+  padding: 28px 34px !important;
+  margin: 36px 0 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
+  clear: both !important;
+}
+
+.urdu-prose .modal-takeaways-card {
+  border-right: 5px solid var(--accent-primary) !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+.modal-takeaways-heading {
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.06em !important;
+  color: var(--accent-primary) !important;
+  margin-bottom: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.urdu-prose .modal-takeaways-heading {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  font-size: 1.35rem !important;
+  line-height: 2.2 !important;
+}
+
+.modal-takeaways-list {
+  padding-left: 20px;
+}
+
+.urdu-prose .modal-takeaways-list {
+  padding-left: 0 !important;
+  padding-right: 22px !important;
+}
+
+.modal-takeaways-list li {
+  margin-bottom: 12px !important;
+  color: var(--text-secondary) !important;
+  font-size: 0.98rem !important;
+  line-height: 1.6 !important;
+}
+
+.urdu-prose .modal-takeaways-list li {
+  font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', 'Gulzar', serif !important;
+  font-size: 1.15rem !important;
+  line-height: 2.4 !important;
+  margin-bottom: 14px !important;
+}
+
+/* Card titles in grid */
+.editorial-card-title.urdu-title {
+  -webkit-line-clamp: 3 !important;
+  height: auto !important;
+  min-height: 4rem;
+}

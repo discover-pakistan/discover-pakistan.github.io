@@ -29,8 +29,9 @@ from publish_reels import publish_facebook_photo, publish_instagram_reel, publis
 NICHE_ID = "travel_pakistan"
 DEFAULT_PAGE_ID = "1304442402758898"
 DEFAULT_IG_ID = "17841438750095367"
+SITE_URL = "https://discover-pakistan.github.io"
 
-def run_pipeline(format_type: str = "card", topic: str = None, city: str = None, lang: str = None, no_publish: bool = False):
+def run_pipeline(format_type: str = "card", topic: str = None, city: str = None, lang: str = None, no_publish: bool = False, blog_lang: str = None):
     niche = NicheCatalog.resolve_niche(NICHE_ID)
     lang = lang or niche.get("default_lang", "english")
 
@@ -70,7 +71,7 @@ def run_pipeline(format_type: str = "card", topic: str = None, city: str = None,
     logger.info(f"[+] Appended to captions_log.jsonl")
 
     # Update static GitHub Pages blog catalog
-    update_blog_catalog(NICHE_ID, content, created_paths)
+    update_blog_catalog(NICHE_ID, content, created_paths, blog_lang=blog_lang)
 
     if not no_publish:
         target_page_id = (os.getenv("FB_PAGE_ID") or DEFAULT_PAGE_ID).strip()
@@ -90,63 +91,76 @@ def run_pipeline(format_type: str = "card", topic: str = None, city: str = None,
 
     return created_paths
 
-def update_blog_catalog(niche_id: str, content: dict, created_paths: list):
+def update_blog_catalog(niche_id: str, content: dict, created_paths: list, blog_lang: str = None):
     """
-    Appends newly generated post to posts.json and copies generated card
-    into assets/posts/ so GitHub Pages blog updates autonomously.
+    Publishes a long-form article to posts.json for the GitHub Pages blog.
+
+    Rules (do not regress):
+      * NEVER use the social card (.png with text overlays) as the blog image.
+        A dedicated, unique 16:9 editorial cover is generated per post.
+      * NEVER publish placeholder text. If the long-form article can't be
+        generated, the blog is left untouched (social posting still happens).
+      * Human editorial bylines only; Urdu and English alternate daily.
     """
     import re
-    import shutil
     from datetime import datetime
+    from agents.blog_article_agent import generate_blog_article, pick_author, URDU_CATEGORY
+    from video_engine.editorial_image_service import EditorialImageService
+    import blog_sync
 
-    posts_file = BASE_DIR / "posts.json"
-    assets_posts_dir = BASE_DIR / "assets" / "posts"
-    assets_posts_dir.mkdir(parents=True, exist_ok=True)
+    niche = NicheCatalog.resolve_niche(niche_id)
+    if blog_lang not in ("urdu", "english"):
+        blog_lang = "urdu" if datetime.now().timetuple().tm_yday % 2 else "english"
 
-    slug = re.sub(r'[^a-z0-9]+', '-', content.get("headline", "story").lower()).strip('-')[:35]
-    post_id = f"{slug}-{random.randint(100, 999)}"
+    article = generate_blog_article(niche, content, lang=blog_lang)
+    if not article:
+        logger.warning("⛔ Long-form article unavailable — blog NOT updated (no placeholder posts).")
+        return
 
-    rel_img_path = "assets/images/hunza.jpg"
-    for p in created_paths:
-        if p.endswith(".png") or p.endswith(".jpg"):
-            dst_name = f"{post_id}.png"
-            shutil.copy2(p, assets_posts_dir / dst_name)
-            rel_img_path = f"assets/posts/{dst_name}"
-            break
+    slug = re.sub(r'[^a-z0-9]+', '-', (content.get("headline") or "story").lower()).strip('-')[:40] or "story"
+    post_id = f"{slug}-{'ur' if blog_lang == 'urdu' else 'en'}-{random.randint(100, 999)}"
 
+    cover_rel = f"assets/posts/{post_id}_cover.jpg"
+    try:
+        EditorialImageService.generate_editorial_cover(
+            prompt=article.get("image_prompt") or content.get("headline", "mountain landscape in northern Pakistan"),
+            niche_key=niche_id, output_path=BASE_DIR / cover_rel, seed_key=post_id,
+        )
+    except Exception as e:
+        logger.warning(f"⛔ No clean cover image ({e}) — blog NOT updated.")
+        return
+
+    author, role, avatar = pick_author(niche_id, blog_lang)
     new_article = {
         "id": post_id,
-        "category": content.get("category_tag", "Alpine Expeditions"),
-        "badge": content.get("badge", "DAILY EXPEDITION"),
-        "title": content.get("headline", "Scenic Travel Dossier"),
-        "subdeck": content.get("subdeck", "Latest alpine journey and cultural discovery from Pakistan."),
-        "image": rel_img_path,
-        "stat_number": content.get("stat_number", ""),
-        "stat_label": content.get("stat_label", "METRIC"),
-        "author": "Autonomous Travel Agent",
-        "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
+        "category": URDU_CATEGORY.get(niche_id) if blog_lang == "urdu" else content.get("category_tag", "Travel Guide").title(),
+        "badge": article.get("badge") or content.get("badge", ""),
+        "title": article["title"],
+        "subdeck": article.get("subdeck", ""),
+        "image": cover_rel,
+        "stat_number": article.get("stat_number", ""),
+        "stat_label": article.get("stat_label", ""),
+        "author": author,
+        "author_role": role,
+        "author_avatar": avatar,
         "date": datetime.now().strftime("%d %b %Y"),
-        "read_time": "4 min read",
+        "read_time": article.get("read_time", "5 min read"),
+        "lang": "ur" if blog_lang == "urdu" else "en",
         "featured": True,
-        "body": content.get("bullet_points", [content.get("subdeck", "")]),
-        "takeaways": content.get("bullet_points", [])
+        "body": article.get("intro", []),
+        "sections": article.get("sections", []),
+        "faqs": article.get("faqs", []),
+        "takeaways": article.get("takeaways", []),
     }
 
-    try:
-        posts = []
-        if posts_file.exists():
-            with open(posts_file, "r", encoding="utf-8") as f:
-                posts = json.load(f)
-        for p in posts:
-            p["featured"] = False
-        posts.insert(0, new_article)
-        posts = posts[:50]
-        with open(posts_file, "w", encoding="utf-8") as f:
-            json.dump(posts, f, indent=2, ensure_ascii=False)
-        logger.info(f"📰 Autonomous Blog Catalog Updated: {posts_file} (+1 article: '{new_article['title']}')")
-    except Exception as e:
-        logger.warning(f"Could not update blog catalog: {e}")
-
+    posts_file = BASE_DIR / "posts.json"
+    posts = json.loads(posts_file.read_text(encoding="utf-8")) if posts_file.exists() else []
+    for p in posts:
+        p["featured"] = False
+    posts.insert(0, new_article)
+    posts_file.write_text(json.dumps(posts[:50], indent=2, ensure_ascii=False), encoding="utf-8")
+    blog_sync.sync(SITE_URL)
+    logger.info(f"📰 Blog updated (+1 {blog_lang} article by {author}): {new_article['title']}")
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Discover Pakistan Publishing Agent")
     parser.add_argument("--format", choices=["card", "reel", "both"], default="card", help="Format to generate")
@@ -154,7 +168,8 @@ if __name__ == "__main__":
     parser.add_argument("--city", type=str, default=None, help="City / region override (for travel)")
     parser.add_argument("--lang", type=str, default=None, help="Language override (english, urdu)")
     parser.add_argument("--no-publish", action="store_true", help="Generate card without social publish")
+    parser.add_argument("--blog-lang", type=str, choices=["english", "urdu"], default=None, help="Blog article language (default: alternates daily)")
     parser.add_argument("--once", action="store_true", help="Run single generation cycle")
 
     args = parser.parse_args()
-    run_pipeline(format_type=args.format, topic=args.topic, city=args.city, lang=args.lang, no_publish=args.no_publish)
+    run_pipeline(format_type=args.format, topic=args.topic, city=args.city, lang=args.lang, no_publish=args.no_publish, blog_lang=args.blog_lang)

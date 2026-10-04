@@ -1,9 +1,6 @@
 name: 🚀 Discover Pakistan Daily Publisher
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     # Autonomous daily execution (10:00 AM PKT / 05:00 UTC)
     - cron: '0 5 * * *'
@@ -80,7 +77,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update autonomous blog & captions log [skip ci]"
-          file_pattern: 'posts.json captions_log.jsonl assets/posts/*'
+          file_pattern: 'posts.json captions_log.jsonl index.html sitemap.xml assets/posts/*'
 
       - name: Cleanup Temporary Storage
         if: always()
