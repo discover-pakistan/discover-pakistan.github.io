@@ -105,14 +105,14 @@
     "badge": "ALPINE SPOTLIGHT",
     "title": "Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi & The Ancient Silk Route",
     "subdeck": "As October chills descend on Gilgit-Baltistan, Hunza ignites in a fiery tapestry of amber poplars, apricot orchards, and 7,788m snow-clad granite spires.",
-    "image": "assets/images/hunza.jpg",
+    "image": "assets/images/hunza.webp",
     "stat_number": "2,438m",
     "stat_label": "VALLEY ELEVATION",
     "author": "Ayesha Khan",
     "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
     "date": "03 Oct 2026",
     "read_time": "5 min read",
-    "featured": false,
+    "featured": true,
     "body": [
       "Perched high along the Karakoram Highway where the collision of the Indian and Eurasian tectonic plates birthed the world's most dramatic mountain ranges, Hunza Valley in autumn is a sensory phenomenon.",
       "By mid-October, the terraced apricot orchards transform from lush emerald into radiant gold, copper, and vermilion. The contrast against the sheer vertical rock faces of Ultar Sar and the sheer white wall of Rakaposhi (7,788m) creates an ethereal visual theater unmatched anywhere on Earth.",
@@ -131,7 +131,7 @@
     "badge": "HIGH PLATEAU",
     "title": "Deosai Plains: The Land of Giants Where Himalayan Brown Bears Roam Above the Clouds",
     "subdeck": "At an average elevation of 4,114 meters, the world’s second-highest alpine plateau remains accessible for only a brief 12-week summer window.",
-    "image": "assets/images/deosai.jpg",
+    "image": "assets/images/deosai.webp",
     "stat_number": "4,114m",
     "stat_label": "AVERAGE ALTITUDE",
     "author": "Sherbaz Ali",
@@ -157,7 +157,7 @@
     "badge": "EXPEDITION HUB",
     "title": "Skardu & Shangrila: The High-Altitude Oasis at the Foothills of the Eight-Thousanders",
     "subdeck": "How Skardu transformed from a remote frontier outpost into the world capital of mountaineering expeditions and boutique alpine hospitality.",
-    "image": "assets/images/skardu.jpg",
+    "image": "assets/images/skardu.webp",
     "stat_number": "8,611m",
     "stat_label": "K2 PEAK",
     "author": "Ayesha Khan",
@@ -183,7 +183,7 @@
     "badge": "GEOLOGY",
     "title": "Passu Cones & Attabad Lake: The Turquoise Waters Born from Mountain Collapse",
     "subdeck": "The dramatic story of how a catastrophic landslide created Pakistan’s most mesmerizing emerald body of water, flanked by the jagged Passu needles.",
-    "image": "assets/images/passu.jpg",
+    "image": "assets/images/passu.webp",
     "stat_number": "100m",
     "stat_label": "LAKE DEPTH",
     "author": "Sherbaz Ali",
@@ -209,7 +209,7 @@
     "badge": "CULTURAL TREASURE",
     "title": "The Kalash Valleys: Ancient Animist Traditions in the Heart of the Hindu Kush",
     "subdeck": "Deep inside the remote mountains of Chitral, an ancient civilization celebrates seasonal solstice festivals with hypnotic drums, dance, and hand-embroidered robes.",
-    "image": "assets/images/kalash.jpg",
+    "image": "assets/images/kalash.webp",
     "stat_number": "3,000",
     "stat_label": "INDIGENOUS TRIBE",
     "author": "Ayesha Khan",
@@ -235,7 +235,7 @@
     "badge": "COASTAL ODYSSEY",
     "title": "Makran Coastal Highway & Hingol: The Mars-Like Formations of Balochistan",
     "subdeck": "A 653-kilometer coastal masterwork connecting Karachi to Gwadar, cutting through surreal mud volcanoes, marine spires, and azure Arabian Sea breakers.",
-    "image": "assets/images/coastal.jpg",
+    "image": "assets/images/coastal.webp",
     "stat_number": "653 KM",
     "stat_label": "HIGHWAY LENGTH",
     "author": "Sherbaz Ali",
@@ -253,6 +253,60 @@
       "Hingol National Park is Pakistan’s largest national park, spanning over 6,100 square kilometers.",
       "The route features active mud volcanoes including Chandragup, sacred to ancient pilgrimage traditions.",
       "Best traversed between November and February when coastal temperatures remain in a pleasant 22–26°C range."
+    ]
+  },
+  {
+    "id": "kumrat-valley-alpine-secret",
+    "lang": "en",
+    "category": "Wilderness Expeditions",
+    "badge": "KHYBER PAKHTUNKHWA 🌲",
+    "title": "Kumrat Valley & Jahaz Banda: The Secret Alpine Meadows and Glacial Basin of Upper Dir",
+    "subdeck": "Hidden deep within Khyber Pakhtunkhwa, Kumrat features colossal deodar virgin forests, the rushing turquoise Panjkora river, and the secluded alpine bowl of Katora Lake at 3,500 meters.",
+    "image": "assets/images/kumrat.webp",
+    "stat_number": "3,500m",
+    "stat_label": "KATORA LAKE ALTITUDE",
+    "author": "Taimur Malik",
+    "author_avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+    "date": "04 Oct 2026",
+    "read_time": "5 min read",
+    "featured": false,
+    "body": [
+      "Cradled between the towering ridgelines of Upper Dir and the fringes of Swat Kohistan, Kumrat Valley remains one of Pakistan's most pristine virgin wilderness sanctuaries. Unlike commercialized resort corridors, Kumrat's identity is defined by its massive, towering deodar cedar trees that shoot straight into the alpine canopy like ancient temple pillars.",
+      "At the heart of the valley runs the roaring Panjkora River, fed by glacial tributaries originating in the high snowfields. The water cuts through moss-covered granite boulders, creating natural swimming pools and pristine camping plateaus where travelers pitch tents under starlit mountain skies with zero light pollution.",
+      "For adventurous trekkers, the gateway at Jahaz Banda opens into a vast sub-alpine meadow carpeted with wildflowers in summer. Beyond the high pastures lies Katora Lake, an emerald-green glacial tarn situated inside a sheer amphitheater of jagged vertical cliffs at 3,500 meters. Reaching the lake requires a steep, rewarding 3-hour scramble across moraines and glacial meltwater streams.",
+      "With sustainable wooden eco-camps and local community guides spearheading conservation initiatives, Kumrat offers a rare glimpse of raw, untouched Pakistani mountain geography before mass commercialization."
+    ],
+    "takeaways": [
+      "Kumrat is accessible via the Timergara–Upper Dir road, followed by a 4x4 jeep track from Thal.",
+      "Best travel window spans from June through early October; heavy winter snowfall blocks high passes.",
+      "Katora Lake trek takes approximately 3 to 4 hours one-way from Jahaz Banda meadow basecamp."
+    ]
+  },
+  {
+    "id": "fairy-meadows-nanga-parbat-urdu",
+    "lang": "ur",
+    "category": "Alpine Expeditions",
+    "badge": "گلگت بلتستان 🇵🇰",
+    "title": "فیری میڈوز اور نانگا پربت: قاتل پہاڑ کے سائے میں قدرت کا شاہکار اور دنیا کا سنسنی خیز ترین جیپ ٹریک",
+    "subdeck": "سطح سمندر سے 3,300 میٹر کی بلندی پر واقع فیری میڈوز دنیا کے نویں بلند ترین اور خطرناک ترین پہاڑ 'نانگا پربت' کے دامن میں ایک خوابیدہ وادی ہے۔",
+    "image": "assets/images/fairy_meadows.webp",
+    "stat_number": "8,126m",
+    "stat_label": "نانگا پربت کی بلندی",
+    "author": "حمید رضا",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
+    "date": "04 Oct 2026",
+    "read_time": "6 منٹ مطالعہ",
+    "featured": false,
+    "body": [
+      "شاہراہِ ریشم پر واقع رائے کوٹ پل سے جب کچے اور پتھریلے راستے پر جیپ کا سفر شروع ہوتا ہے، تو دل کی دھڑکنیں تیز ہو جاتی ہیں۔ کھڑی چٹانوں کے ساتھ بل کھاتی تنگ ترین سڑک، جس کے نیچے گہری کھائی میں دریا کا شور گونج رہا ہوتا ہے، دنیا کے خطرناک ترین راستوں میں شمار کی جاتی ہے۔ تاتو گاؤں پہنچ کر جب جیپ کا سفر ختم ہوتا ہے، تو اصل پیدل ٹریک کا آغاز ہوتا ہے۔",
+      "تقریباً تین سے چار گھنٹے کے پُرسکون ہائیکنگ کے بعد جب مسافر گھنے صنوبر اور چیڑ کے جنگلات کو عبور کر کے فیری میڈوز کے سرسبز میدان میں قدم رکھتا ہے، تو ساری تھکن ایک لمحے میں غائب ہو جاتی ہے۔ سامنے دنیا کا نواں بلند ترین پہاڑ نانگا پربت (8,126 میٹر) اپنی تمام تر عظمت، برف پوش چوٹیوں اور خوفناک دیواروں کے ساتھ سینہ تانے کھڑا ہوتا ہے۔",
+      "شام کے وقت جب ڈھلتے سورج کی سنہری کرنیں نانگا پربت کی برفانی چوٹی 'رائے کوٹ فیس' پر پڑتی ہیں، تو وہ سونے کی مانند چمکنے لگتی ہے۔ فیری میڈوز کے چھوٹے تالاب میں جب اس عظیم پہاڑ کا عکس جھلکتا ہے، تو قدرت کا ایک سحر انگیز منظر تخلیق پاتا ہے۔ مقامی لکڑی کے بنے روایتی ہٹس میں الاؤ کے گرد بیٹھ کر مقامی شینا ثقافت کی داستانیں سننا زندگی کا یادگار ترین تجربہ بن جاتا ہے۔",
+      "فیری میڈوز سے آگے نانگا پربت بیس کیمپ کا ٹریک کوہ پیماؤں اور مہم جوؤں کے لیے ایک سحر انگیز چیلنج ہے۔ گلیشیئر کے ساتھ ساتھ چلتے ہوئے جب آپ جرمن کوہ پیماؤں کی یادگار پر پہنچتے ہیں، تو اس 'قاتل پہاڑ' کی تاریخ اور چوٹی سر کرنے والوں کا عزم تاریخ کے اوراق سے نکل کر سامنے آ جاتا ہے۔"
+    ],
+    "takeaways": [
+      "رائے کوٹ پل سے تاتو گاؤں تک صرف مقامی تجربہ کار ڈرائیورز کی فور بائی فور (4x4) جیپ ہی جا سکتی ہے۔",
+      "فیری میڈوز کا بہترین سفری سیزن مئی سے اکتوبر تک ہے، جب موسم خوشگوار اور راستے کھلے ہوتے ہیں۔",
+      "نانگا پربت بیس کیمپ اور بیال کیمپ تک ڈے ہائیک کے لیے پیشہ ور مقامی گائیڈ کی خدمات ضرور حاصل کریں۔"
     ]
   }
 ]

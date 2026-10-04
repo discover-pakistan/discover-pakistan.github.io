@@ -198,6 +198,51 @@ window.openArticleModal = function(id) {
   modalHeroImg.src = post.image;
   modalHeroImg.alt = post.title;
 
+  const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title);
+  if (isUrdu) {
+    modalTitle.style.direction = "rtl";
+    modalTitle.style.textAlign = "right";
+    modalTitle.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
+    modalTitle.style.lineHeight = "1.8";
+
+    modalSubdeck.style.direction = "rtl";
+    modalSubdeck.style.textAlign = "right";
+    modalSubdeck.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
+    modalSubdeck.style.lineHeight = "1.9";
+
+    modalBodyProse.style.direction = "rtl";
+    modalBodyProse.style.textAlign = "right";
+    modalBodyProse.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
+    modalBodyProse.style.lineHeight = "2.3";
+    modalBodyProse.style.fontSize = "1.1rem";
+
+    modalTakeawaysList.style.direction = "rtl";
+    modalTakeawaysList.style.textAlign = "right";
+    modalTakeawaysList.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
+    modalTakeawaysList.style.lineHeight = "2.0";
+  } else {
+    modalTitle.style.direction = "ltr";
+    modalTitle.style.textAlign = "left";
+    modalTitle.style.fontFamily = "";
+    modalTitle.style.lineHeight = "";
+
+    modalSubdeck.style.direction = "ltr";
+    modalSubdeck.style.textAlign = "left";
+    modalSubdeck.style.fontFamily = "";
+    modalSubdeck.style.lineHeight = "";
+
+    modalBodyProse.style.direction = "ltr";
+    modalBodyProse.style.textAlign = "left";
+    modalBodyProse.style.fontFamily = "";
+    modalBodyProse.style.lineHeight = "";
+    modalBodyProse.style.fontSize = "";
+
+    modalTakeawaysList.style.direction = "ltr";
+    modalTakeawaysList.style.textAlign = "left";
+    modalTakeawaysList.style.fontFamily = "";
+    modalTakeawaysList.style.lineHeight = "";
+  }
+
   if (post.stat_number) {
     modalStatBox.style.display = "flex";
     modalStatValue.textContent = post.stat_number;

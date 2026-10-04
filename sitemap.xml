@@ -8,32 +8,12 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://discover-pakistan.github.io/#discover-pakistan-tourism-heritage--413</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/posts/discover-pakistan-tourism-heritage--413.png</image:loc>
-      <image:title>Discover Pakistan — Tourism &amp; Heritage Insight</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://discover-pakistan.github.io/#discover-pakistan-tourism-heritage--201</loc>
-    <lastmod>2026-10-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-    <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/posts/discover-pakistan-tourism-heritage--201.png</image:loc>
-      <image:title>Discover Pakistan — Tourism &amp; Heritage Insight</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://discover-pakistan.github.io/#hunza-valley-autumn-dossier</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/images/hunza.jpg</image:loc>
+      <image:loc>https://discover-pakistan.github.io/assets/images/hunza.webp</image:loc>
       <image:title>Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi &amp; The Ancient Silk Route</image:title>
     </image:image>
   </url>
@@ -43,7 +23,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/images/deosai.jpg</image:loc>
+      <image:loc>https://discover-pakistan.github.io/assets/images/deosai.webp</image:loc>
       <image:title>Deosai Plains: The Land of Giants Where Himalayan Brown Bears Roam Above the Clouds</image:title>
     </image:image>
   </url>
@@ -53,7 +33,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/images/skardu.jpg</image:loc>
+      <image:loc>https://discover-pakistan.github.io/assets/images/skardu.webp</image:loc>
       <image:title>Skardu &amp; Shangrila: The High-Altitude Oasis at the Foothills of the Eight-Thousanders</image:title>
     </image:image>
   </url>
@@ -63,7 +43,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/images/passu.jpg</image:loc>
+      <image:loc>https://discover-pakistan.github.io/assets/images/passu.webp</image:loc>
       <image:title>Passu Cones &amp; Attabad Lake: The Turquoise Waters Born from Mountain Collapse</image:title>
     </image:image>
   </url>
@@ -73,7 +53,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/images/kalash.jpg</image:loc>
+      <image:loc>https://discover-pakistan.github.io/assets/images/kalash.webp</image:loc>
       <image:title>The Kalash Valleys: Ancient Animist Traditions in the Heart of the Hindu Kush</image:title>
     </image:image>
   </url>
@@ -83,8 +63,28 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
-      <image:loc>https://discover-pakistan.github.io/assets/images/coastal.jpg</image:loc>
+      <image:loc>https://discover-pakistan.github.io/assets/images/coastal.webp</image:loc>
       <image:title>Makran Coastal Highway &amp; Hingol: The Mars-Like Formations of Balochistan</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#kumrat-valley-alpine-secret</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/kumrat.webp</image:loc>
+      <image:title>Kumrat Valley &amp; Jahaz Banda: The Secret Alpine Meadows and Glacial Basin of Upper Dir</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#fairy-meadows-nanga-parbat-urdu</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/fairy_meadows.webp</image:loc>
+      <image:title>فیری میڈوز اور نانگا پربت: قاتل پہاڑ کے سائے میں قدرت کا شاہکار اور دنیا کا سنسنی خیز ترین جیپ ٹریک</image:title>
     </image:image>
   </url>
 </urlset>

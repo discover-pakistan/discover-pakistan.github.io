@@ -1205,3 +1205,29 @@ img {
   background-color: var(--border-light);
   color: var(--text-primary);
 }
+
+/* Urdu Editorial Typography & RTL Styling */
+.urdu-title {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif !important;
+  direction: rtl !important;
+  text-align: right !important;
+  line-height: 1.8 !important;
+  font-size: 1.25rem !important;
+}
+
+.urdu-subdeck {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif !important;
+  direction: rtl !important;
+  text-align: right !important;
+  line-height: 2.0 !important;
+  font-size: 0.95rem !important;
+}
+
+.urdu-prose {
+  font-family: 'Noto Nastaliq Urdu', 'Amiri', serif !important;
+  direction: rtl !important;
+  text-align: right !important;
+  line-height: 2.4 !important;
+  font-size: 1.15rem !important;
+}
+
