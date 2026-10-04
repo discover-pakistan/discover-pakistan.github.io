@@ -1,7 +1,5 @@
 /**
- * Discover Pakistan — High-Performance Editorial Engine
- * Features: Instant 0ms Hydration, Core Web Vitals Telemetry,
- * Scroll Depth Observability & In-Article Ad Monetization.
+ * discover pakistan — Litquidity-Style Editorial Blog Engine
  */
 
 let allPosts = window.INITIAL_POSTS || [];
@@ -18,29 +16,31 @@ const themeToggleBtn = document.getElementById("theme-toggle-btn");
 const readerModal = document.getElementById("reader-modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   initTheme();
-  initWebVitalsObservability();
-  initAnchorAdControls();
+  initCategoryFilters();
   initSearch();
   initModalListeners();
+  
+  // Reconcile with latest posts.json dynamically so newly added posts are always present
+  await loadPosts();
   checkUrlHash();
-
-  if (!allPosts || allPosts.length === 0) {
-    loadPostsFallback();
-  }
+  initWebVitalsObservability();
 });
 
-async function loadPostsFallback() {
+async function loadPosts() {
   try {
-    const res = await fetch("posts.json");
+    const res = await fetch("posts.json?t=" + Date.now());
     if (res.ok) {
-      allPosts = await res.json();
-      renderAll();
+      const freshPosts = await res.json();
+      if (Array.isArray(freshPosts) && freshPosts.length > 0) {
+        allPosts = freshPosts;
+      }
     }
   } catch (err) {
-    console.warn("Could not fetch posts.json:", err);
+    console.warn("Could not fetch posts.json dynamically. Using inline data:", err);
   }
+  renderAll();
 }
 
 function renderAll() {
@@ -53,12 +53,16 @@ function renderHeroSection() {
 
   const filtered = getFilteredPosts();
   if (filtered.length === 0) {
-    featuredSlot.innerHTML = `<div class="p-8 text-center text-muted" style="padding:48px; text-align:center; color:var(--text-muted);">No reports found matching "${escapeHtml(searchQuery)}".</div>`;
+    featuredSlot.innerHTML = `<div style="padding: 48px; text-align: center; color: var(--text-muted);">No stories found matching "${escapeHtml(searchQuery)}".</div>`;
     stackSlot.innerHTML = "";
     return;
   }
 
   const leadPost = filtered[0];
+  const isLeadUrdu = leadPost.lang === 'ur' || /[؀-ۿ]/.test(leadPost.title || "");
+  const leadTitleCls = isLeadUrdu ? "featured-title urdu-title" : "featured-title";
+  const leadSubdeckCls = isLeadUrdu ? "featured-subdeck urdu-subdeck" : "featured-subdeck";
+
   featuredSlot.innerHTML = `
     <div class="featured-lead-card" onclick="openArticleModal('${leadPost.id}')">
       <div class="featured-media-wrapper">
@@ -71,37 +75,41 @@ function renderHeroSection() {
           </div>
         ` : ''}
       </div>
-      <h2 class="featured-title">${escapeHtml(leadPost.title)}</h2>
-      <p class="featured-subdeck">${escapeHtml(leadPost.subdeck)}</p>
+      <h2 class="${leadTitleCls}" ${isLeadUrdu ? 'dir="rtl"' : ''}>${escapeHtml(leadPost.title)}</h2>
+      <p class="${leadSubdeckCls}" ${isLeadUrdu ? 'dir="rtl"' : ''}>${escapeHtml(leadPost.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${leadPost.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(leadPost.author)}" width="24" height="24" loading="lazy" decoding="async" />
+        <img class="author-avatar" src="${leadPost.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(leadPost.author || 'Travel Desk')}" width="28" height="28" loading="lazy" decoding="async" />
         <span class="author-name">${escapeHtml(leadPost.author || "Travel Desk")}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(leadPost.date)}</span>
         <span class="meta-separator">•</span>
-        <span class="meta-date">${escapeHtml(leadPost.read_time || "5 min read")}</span>
+        <span class="meta-date">${escapeHtml(leadPost.read_time || "4 min read")}</span>
       </div>
     </div>
   `;
 
   const stackPosts = filtered.slice(1, 4);
-  stackSlot.innerHTML = stackPosts.map(post => `
+  stackSlot.innerHTML = stackPosts.map(post => {
+    const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title || "");
+    const titleCls = isUrdu ? "stacked-story-title urdu-title" : "stacked-story-title";
+    const subdeckCls = isUrdu ? "stacked-story-excerpt urdu-subdeck" : "stacked-story-excerpt";
+    return `
     <div class="stacked-story-card" onclick="openArticleModal('${post.id}')">
       <div class="stacked-thumb-wrapper">
         <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
       </div>
       <div class="stacked-story-info">
-        <h3 class="stacked-story-title">${escapeHtml(post.title)}</h3>
-        <p class="stacked-story-excerpt">${escapeHtml(post.subdeck)}</p>
+        <h3 class="${titleCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.title)}</h3>
+        <p class="${subdeckCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.subdeck)}</p>
         <div class="author-meta-row">
-          <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author)}" width="24" height="24" loading="lazy" decoding="async" />
+          <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Travel Desk')}" width="24" height="24" loading="lazy" decoding="async" />
           <span class="author-name">${escapeHtml(post.author || "Travel Desk")}</span>
           <span class="meta-separator">•</span>
           <span class="meta-date">${escapeHtml(post.date)}</span>
         </div>
       </div>
     </div>
-  `).join("");
+  `}).join("");
 }
 
 function renderGridSection() {
@@ -111,44 +119,58 @@ function renderGridSection() {
   if (gridPosts.length === 0) {
     editorialGrid.innerHTML = `
       <div style="grid-column: 1 / -1; padding: 48px; text-align: center; color: var(--text-muted);">
-        <p style="font-size: 1.1rem; margin-bottom: 8px;">No additional dossiers in this category.</p>
-        <button class="pill-btn active" onclick="setCategory('All')">View All Reports</button>
+        <p style="font-size: 1.1rem; margin-bottom: 8px;">No additional stories in this category.</p>
+        <button class="pill-btn active" onclick="setCategory('All')">View All Stories</button>
       </div>
     `;
     return;
   }
 
-  editorialGrid.innerHTML = gridPosts.map(post => `
+  editorialGrid.innerHTML = gridPosts.map(post => {
+    const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title || "");
+    const titleCls = isUrdu ? "editorial-card-title urdu-title" : "editorial-card-title";
+    const subdeckCls = isUrdu ? "editorial-card-excerpt urdu-subdeck" : "editorial-card-excerpt";
+    return `
     <div class="editorial-card" onclick="openArticleModal('${post.id}')">
       <div class="editorial-card-thumb">
         <img class="editorial-card-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" decoding="async" />
         ${post.badge ? `<span class="media-badge">${escapeHtml(post.badge)}</span>` : ''}
       </div>
       <div class="card-category-tag">${escapeHtml(post.category)}</div>
-      <h3 class="editorial-card-title">${escapeHtml(post.title)}</h3>
-      <p class="editorial-card-excerpt">${escapeHtml(post.subdeck)}</p>
+      <h3 class="${titleCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.title)}</h3>
+      <p class="${subdeckCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author)}" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">${escapeHtml(post.author)}</span>
+        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Travel Desk')}" width="24" height="24" loading="lazy" decoding="async" />
+        <span class="author-name">${escapeHtml(post.author || "Travel Desk")}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(post.date)}</span>
       </div>
     </div>
-  `).join("");
+  `}).join("");
 }
 
 function getFilteredPosts() {
   return allPosts.filter(post => {
-    const matchesCat = (currentCategory === "All") || (post.category.toLowerCase() === currentCategory.toLowerCase());
+    const matchesCat = (currentCategory === "All") || (post.category && post.category.toLowerCase() === currentCategory.toLowerCase());
     if (!matchesCat) return false;
 
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
-    const titleMatch = post.title.toLowerCase().includes(q);
+    const titleMatch = post.title && post.title.toLowerCase().includes(q);
     const subdeckMatch = post.subdeck && post.subdeck.toLowerCase().includes(q);
     const categoryMatch = post.category && post.category.toLowerCase().includes(q);
     return titleMatch || subdeckMatch || categoryMatch;
   });
+}
+
+function initCategoryFilters() {
+  if (!filterPillsContainer) return;
+  const categories = ["All", "Alpine Expeditions", "Wilderness Expeditions", "Travel Itineraries", "Cultural Heritage", "Coastal & Desert"];
+  filterPillsContainer.innerHTML = categories.map(cat => `
+    <button class="pill-btn ${cat === currentCategory ? 'active' : ''}" onclick="setCategory('${cat}')">
+      ${cat}
+    </button>
+  `).join("");
 }
 
 window.setCategory = function(cat) {
@@ -167,9 +189,24 @@ function initSearch() {
   });
 }
 
-window.openArticleModal = function(id) {
-  const post = allPosts.find(p => p.id === id);
-  if (!post) return;
+window.openArticleModal = async function(id) {
+  let post = allPosts.find(p => p.id === id);
+  if (!post) {
+    try {
+      const res = await fetch("posts.json?t=" + Date.now());
+      if (res.ok) {
+        allPosts = await res.json();
+        post = allPosts.find(p => p.id === id);
+      }
+    } catch (e) {
+      console.error("Could not fetch posts.json dynamically:", e);
+    }
+  }
+
+  if (!post) {
+    console.warn("Post not found:", id);
+    return;
+  }
 
   articleStartTime = Date.now();
 
@@ -179,6 +216,7 @@ window.openArticleModal = function(id) {
   const modalSubdeck = document.getElementById("modal-subdeck");
   const modalAuthorAvatar = document.getElementById("modal-author-avatar");
   const modalAuthorName = document.getElementById("modal-author-name");
+  const modalAuthorRole = document.getElementById("modal-author-role");
   const modalReadTime = document.getElementById("modal-read-time");
   const modalHeroImg = document.getElementById("modal-hero-img");
   const modalStatBox = document.getElementById("modal-stat-box");
@@ -188,112 +226,74 @@ window.openArticleModal = function(id) {
   const modalTakeawaysCard = document.getElementById("modal-takeaways-card");
   const modalTakeawaysList = document.getElementById("modal-takeaways-list");
 
-  modalCategory.textContent = post.badge || post.category;
-  modalDate.textContent = post.date;
-  modalTitle.textContent = post.title;
-  modalSubdeck.textContent = post.subdeck;
-  modalAuthorAvatar.src = post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop';
-  modalAuthorName.textContent = post.author || "Travel Desk";
-  modalReadTime.textContent = post.read_time || "5 min read";
-  modalHeroImg.src = post.image;
-  modalHeroImg.alt = post.title;
+  if (modalCategory) modalCategory.textContent = post.badge || post.category;
+  if (modalDate) modalDate.textContent = post.date || "";
+  if (modalReadTime) modalReadTime.textContent = post.read_time || "4 min read";
 
-  const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title);
-  if (isUrdu) {
-    modalTitle.style.direction = "rtl";
-    modalTitle.style.textAlign = "right";
-    modalTitle.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
-    modalTitle.style.lineHeight = "1.8";
+  const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title || "");
 
-    modalSubdeck.style.direction = "rtl";
-    modalSubdeck.style.textAlign = "right";
-    modalSubdeck.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
-    modalSubdeck.style.lineHeight = "1.9";
-
-    modalBodyProse.style.direction = "rtl";
-    modalBodyProse.style.textAlign = "right";
-    modalBodyProse.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
-    modalBodyProse.style.lineHeight = "2.3";
-    modalBodyProse.style.fontSize = "1.1rem";
-
-    modalTakeawaysList.style.direction = "rtl";
-    modalTakeawaysList.style.textAlign = "right";
-    modalTakeawaysList.style.fontFamily = "'Noto Nastaliq Urdu', 'Amiri', serif";
-    modalTakeawaysList.style.lineHeight = "2.0";
-  } else {
-    modalTitle.style.direction = "ltr";
-    modalTitle.style.textAlign = "left";
-    modalTitle.style.fontFamily = "";
-    modalTitle.style.lineHeight = "";
-
-    modalSubdeck.style.direction = "ltr";
-    modalSubdeck.style.textAlign = "left";
-    modalSubdeck.style.fontFamily = "";
-    modalSubdeck.style.lineHeight = "";
-
-    modalBodyProse.style.direction = "ltr";
-    modalBodyProse.style.textAlign = "left";
-    modalBodyProse.style.fontFamily = "";
-    modalBodyProse.style.lineHeight = "";
-    modalBodyProse.style.fontSize = "";
-
-    modalTakeawaysList.style.direction = "ltr";
-    modalTakeawaysList.style.textAlign = "left";
-    modalTakeawaysList.style.fontFamily = "";
-    modalTakeawaysList.style.lineHeight = "";
+  if (modalTitle) {
+    modalTitle.textContent = post.title;
+    modalTitle.className = isUrdu ? "modal-title urdu-title" : "modal-title";
+    modalTitle.setAttribute("dir", isUrdu ? "rtl" : "ltr");
   }
 
-  if (post.stat_number) {
-    modalStatBox.style.display = "flex";
-    modalStatValue.textContent = post.stat_number;
-    modalStatText.textContent = (post.stat_label || "KEY METRIC") + ": " + (post.subdeck || "");
-  } else {
-    modalStatBox.style.display = "none";
+  if (modalSubdeck) {
+    modalSubdeck.textContent = post.subdeck || "";
+    modalSubdeck.className = isUrdu ? "modal-subdeck urdu-subdeck" : "modal-subdeck";
+    modalSubdeck.setAttribute("dir", isUrdu ? "rtl" : "ltr");
   }
 
-  // High-dwell in-article AdSense unit inserted after paragraph 2
-  const inArticleAdHtml = `
-    <div class="ad-slot-wrapper ad-in-article" style="margin: 28px 0; border: 1px dashed var(--border-color); border-radius: 8px; padding: 12px; background: rgba(0,0,0,0.02); text-align: center;">
-      <span class="ad-label" style="display:block; font-size: 0.65rem; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 8px; font-weight: 700; text-transform: uppercase;">Sponsored Recommendation</span>
-      <ins class="adsbygoogle"
-           style="display:block; text-align:center; min-height: 250px;"
-           data-ad-layout="in-article"
-           data-ad-format="fluid"
-           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-           data-ad-slot="1122334455"></ins>
-    </div>
-  `;
+  if (modalAuthorAvatar) {
+    modalAuthorAvatar.src = post.author_avatar || "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop";
+    modalAuthorAvatar.alt = post.author || "Travel Desk";
+  }
+  if (modalAuthorName) modalAuthorName.textContent = post.author || "Travel Desk";
+  if (modalAuthorRole) modalAuthorRole.textContent = post.author_role || "Field Correspondent";
 
-  if (Array.isArray(post.body)) {
-    if (post.body.length > 2) {
-      const p1_2 = post.body.slice(0, 2).map(p => `<p>${escapeHtml(p)}</p>`).join("");
-      const pRem = post.body.slice(2).map(p => `<p>${escapeHtml(p)}</p>`).join("");
-      modalBodyProse.innerHTML = p1_2 + inArticleAdHtml + pRem;
+  if (modalHeroImg) {
+    modalHeroImg.src = post.image;
+    modalHeroImg.alt = post.title;
+  }
+
+  if (modalStatBox) {
+    if (post.stat_number) {
+      modalStatBox.style.display = "flex";
+      if (modalStatValue) modalStatValue.textContent = post.stat_number;
+      if (modalStatText) modalStatText.textContent = (post.stat_label || "KEY METRIC") + (post.subdeck ? ": " + post.subdeck : "");
     } else {
-      modalBodyProse.innerHTML = post.body.map(para => `<p>${escapeHtml(para)}</p>`).join("") + inArticleAdHtml;
+      modalStatBox.style.display = "none";
     }
-  } else if (typeof post.body === "string") {
-    modalBodyProse.innerHTML = `<p>${escapeHtml(post.body)}</p>` + inArticleAdHtml;
-  } else {
-    modalBodyProse.innerHTML = `<p>${escapeHtml(post.subdeck)}</p>` + inArticleAdHtml;
   }
 
-  try {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  } catch (e) {}
+  if (modalBodyProse) {
+    modalBodyProse.className = isUrdu ? "modal-article-prose urdu-prose" : "modal-article-prose";
+    modalBodyProse.setAttribute("dir", isUrdu ? "rtl" : "ltr");
 
-  if (post.takeaways && post.takeaways.length > 0) {
-    modalTakeawaysCard.style.display = "block";
-    modalTakeawaysList.innerHTML = post.takeaways.map(t => `<li>${escapeHtml(t)}</li>`).join("");
-  } else {
-    modalTakeawaysCard.style.display = "none";
+    if (Array.isArray(post.body)) {
+      modalBodyProse.innerHTML = post.body.map(para => `<p>${escapeHtml(para)}</p>`).join("");
+    } else if (typeof post.body === "string") {
+      modalBodyProse.innerHTML = `<p>${escapeHtml(post.body)}</p>`;
+    } else {
+      modalBodyProse.innerHTML = `<p>${escapeHtml(post.subdeck || "")}</p>`;
+    }
   }
 
-  readerModal.classList.add("open");
-  document.body.style.overflow = "hidden";
+  if (modalTakeawaysCard && modalTakeawaysList) {
+    if (post.takeaways && post.takeaways.length > 0) {
+      modalTakeawaysCard.style.display = "block";
+      modalTakeawaysList.innerHTML = post.takeaways.map(t => `<li ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(t)}</li>`).join("");
+    } else {
+      modalTakeawaysCard.style.display = "none";
+    }
+  }
+
+  const modalEl = document.getElementById("reader-modal");
+  if (modalEl) {
+    modalEl.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
   window.location.hash = post.id;
-
-  trackArticleScroll(post.id);
 
   if (window.gtag) {
     window.gtag('event', 'select_content', {
@@ -304,27 +304,46 @@ window.openArticleModal = function(id) {
 };
 
 window.closeArticleModal = function() {
-  if (articleStartTime && window.gtag) {
-    const dwellSeconds = Math.round((Date.now() - articleStartTime) / 1000);
-    window.gtag('event', 'user_engagement', {
-      engagement_time_msec: dwellSeconds * 1000
-    });
+  const modalEl = document.getElementById("reader-modal");
+  if (modalEl) {
+    modalEl.classList.remove("open");
   }
-
-  readerModal.classList.remove("open");
   document.body.style.overflow = "";
-  history.replaceState(null, null, ' ');
+  if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname + window.location.search);
+  }
 };
 
 function initModalListeners() {
-  modalCloseBtn.addEventListener("click", closeArticleModal);
-  readerModal.addEventListener("click", (e) => {
-    if (e.target === readerModal) {
+  const closeBtn = document.getElementById("modal-close-btn");
+  const modalEl = document.getElementById("reader-modal");
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeArticleModal();
+    });
+  }
+
+  if (modalEl) {
+    modalEl.addEventListener("click", (e) => {
+      if (e.target === modalEl) {
+        closeArticleModal();
+      }
+    });
+  }
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
       closeArticleModal();
     }
   });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && readerModal.classList.contains("open")) {
+
+  window.addEventListener("hashchange", () => {
+    const hash = window.location.hash.replace("#", "");
+    if (hash) {
+      openArticleModal(hash);
+    } else {
       closeArticleModal();
     }
   });
@@ -333,93 +352,8 @@ function initModalListeners() {
 function checkUrlHash() {
   const hash = window.location.hash.replace("#", "");
   if (hash) {
-    setTimeout(() => openArticleModal(hash), 100);
+    setTimeout(() => openArticleModal(hash), 150);
   }
-}
-
-function initAnchorAdControls() {
-  const anchorClose = document.getElementById("anchor-close-btn");
-  if (anchorClose) {
-    anchorClose.addEventListener("click", () => {
-      const anchor = document.getElementById("sticky-anchor-ad");
-      if (anchor) anchor.style.display = "none";
-    });
-  }
-}
-
-function trackArticleScroll(postId) {
-  const readerBody = document.querySelector(".reader-modal-body");
-  if (!readerBody) return;
-
-  const thresholds = [25, 50, 75, 100];
-  const reached = new Set();
-
-  const handleScroll = () => {
-    const total = readerBody.scrollHeight - readerBody.clientHeight;
-    if (total <= 0) return;
-    const progress = Math.min(100, Math.round((readerBody.scrollTop / total) * 100));
-
-    thresholds.forEach(pct => {
-      if (progress >= pct && !reached.has(pct)) {
-        reached.add(pct);
-        if (window.gtag) {
-          window.gtag('event', 'scroll_depth', {
-            post_id: postId,
-            depth_percent: pct
-          });
-        }
-      }
-    });
-  };
-
-  readerBody.removeEventListener("scroll", handleScroll);
-  readerBody.addEventListener("scroll", handleScroll, { passive: true });
-}
-
-function initWebVitalsObservability() {
-  if (!('PerformanceObserver' in window)) return;
-
-  function reportMetric(name, value, rating) {
-    if (window.gtag) {
-      window.gtag('event', 'web_vitals', {
-        metric_name: name,
-        metric_value: Math.round(value),
-        metric_rating: rating,
-        non_interaction: true
-      });
-    }
-  }
-
-  try {
-    new PerformanceObserver((entryList) => {
-      const entries = entryList.getEntries();
-      const lastEntry = entries[entries.length - 1];
-      if (lastEntry) {
-        const lcp = lastEntry.renderTime || lastEntry.loadTime;
-        const rating = lcp < 2500 ? 'good' : (lcp < 4000 ? 'needs-improvement' : 'poor');
-        reportMetric('LCP', lcp, rating);
-      }
-    }).observe({ type: 'largest-contentful-paint', buffered: true });
-
-    new PerformanceObserver((entryList) => {
-      for (const entry of entryList.getEntries()) {
-        const fid = entry.processingStart - entry.startTime;
-        const rating = fid < 100 ? 'good' : (fid < 300 ? 'needs-improvement' : 'poor');
-        reportMetric('FID', fid, rating);
-      }
-    }).observe({ type: 'first-input', buffered: true });
-
-    let clsValue = 0;
-    new PerformanceObserver((entryList) => {
-      for (const entry of entryList.getEntries()) {
-        if (!entry.hadRecentInput) {
-          clsValue += entry.value;
-          const rating = clsValue < 0.1 ? 'good' : (clsValue < 0.25 ? 'needs-improvement' : 'poor');
-          reportMetric('CLS', clsValue * 1000, rating);
-        }
-      }
-    }).observe({ type: 'layout-shift', buffered: true });
-  } catch (e) {}
 }
 
 function initTheme() {
@@ -427,8 +361,9 @@ function initTheme() {
   document.documentElement.setAttribute("data-theme", saved);
   updateThemeIcon(saved);
 
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener("click", () => {
+  const toggleBtn = document.getElementById("theme-toggle-btn");
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
       const current = document.documentElement.getAttribute("data-theme") || "light";
       const next = current === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
@@ -439,15 +374,16 @@ function initTheme() {
 }
 
 function updateThemeIcon(theme) {
-  if (!themeToggleBtn) return;
-  themeToggleBtn.innerHTML = theme === "dark" 
+  const toggleBtn = document.getElementById("theme-toggle-btn");
+  if (!toggleBtn) return;
+  toggleBtn.innerHTML = theme === "dark" 
     ? `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>`
     : `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>`;
 }
 
 window.shareStory = function(platform) {
   const url = window.location.href;
-  const title = document.getElementById("modal-title").textContent;
+  const title = document.getElementById("modal-title") ? document.getElementById("modal-title").textContent : "";
   if (platform === "twitter") {
     window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`, "_blank");
   } else if (platform === "facebook") {
@@ -459,12 +395,15 @@ window.shareStory = function(platform) {
   }
 };
 
-function escapeHtml(str) {
-  if (!str) return "";
-  return String(str)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+function initWebVitalsObservability() {
+  if (!('performance' in window) || !('getEntriesByType' in window.performance)) return;
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const navEntries = performance.getEntriesByType('navigation');
+      if (navEntries.length > 0) {
+        const nav = navEntries[0];
+        console.log(`[Performance] DOM Complete: ${Math.round(nav.domComplete)}ms | LCP Ready`);
+      }
+    }, 100);
+  });
 }
