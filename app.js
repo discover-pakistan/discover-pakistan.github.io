@@ -149,10 +149,30 @@ function renderGridSection() {
   `}).join("");
 }
 
+const CATEGORY_MAP = {
+  "اردو گائیڈ (Urdu)": ["اردو", "urdu", "سفرنامہ", "گائیڈ"],
+  "Alpine & Peaks": ["alpine", "peak", "mountain", "k2", "nanga parbat", "rakaposhi"],
+  "Valleys & Lakes": ["valley", "lake", "hunza", "skardu", "kumrat", "passu", "attabad", "shangrila"],
+  "Plains & Wilderness": ["deosai", "wilderness", "plateau", "wildlife", "plains"],
+  "Coastal & Heritage": ["coastal", "heritage", "kalash", "makran", "hingol"]
+};
+
 function getFilteredPosts() {
   return allPosts.filter(post => {
-    const matchesCat = (currentCategory === "All") || (post.category && post.category.toLowerCase() === currentCategory.toLowerCase());
-    if (!matchesCat) return false;
+    if (currentCategory !== "All") {
+      const catLower = (post.category || "").toLowerCase();
+      const badgeLower = (post.badge || "").toLowerCase();
+      const titleLower = (post.title || "").toLowerCase();
+      const isPostUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(titleLower);
+
+      if (currentCategory === "اردو گائیڈ (Urdu)") {
+        if (!isPostUrdu) return false;
+      } else {
+        const keywords = CATEGORY_MAP[currentCategory] || [];
+        const matches = catLower === currentCategory.toLowerCase() || keywords.some(kw => catLower.includes(kw) || badgeLower.includes(kw) || titleLower.includes(kw));
+        if (!matches) return false;
+      }
+    }
 
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
@@ -165,7 +185,14 @@ function getFilteredPosts() {
 
 function initCategoryFilters() {
   if (!filterPillsContainer) return;
-  const categories = ["All", "Alpine Expeditions", "Wilderness Expeditions", "Travel Itineraries", "Cultural Heritage", "Coastal & Desert"];
+  const categories = [
+    "All",
+    "اردو گائیڈ (Urdu)",
+    "Alpine & Peaks",
+    "Valleys & Lakes",
+    "Plains & Wilderness",
+    "Coastal & Heritage"
+  ];
   filterPillsContainer.innerHTML = categories.map(cat => `
     <button class="pill-btn ${cat === currentCategory ? 'active' : ''}" onclick="setCategory('${cat}')">
       ${cat}
@@ -270,13 +297,36 @@ window.openArticleModal = async function(id) {
     modalBodyProse.className = isUrdu ? "modal-article-prose urdu-prose" : "modal-article-prose";
     modalBodyProse.setAttribute("dir", isUrdu ? "rtl" : "ltr");
 
-    if (Array.isArray(post.body)) {
-      modalBodyProse.innerHTML = post.body.map(para => `<p>${escapeHtml(para)}</p>`).join("");
+    let proseHtml = "";
+    if (post.sections && Array.isArray(post.sections) && post.sections.length > 0) {
+      proseHtml = post.sections.map(sec => `
+        <h2>${escapeHtml(sec.heading || "")}</h2>
+        <p>${escapeHtml(sec.content || "")}</p>
+      `).join("");
+    } else if (Array.isArray(post.body)) {
+      proseHtml = post.body.map(para => `<p>${escapeHtml(para)}</p>`).join("");
     } else if (typeof post.body === "string") {
-      modalBodyProse.innerHTML = `<p>${escapeHtml(post.body)}</p>`;
+      proseHtml = `<p>${escapeHtml(post.body)}</p>`;
     } else {
-      modalBodyProse.innerHTML = `<p>${escapeHtml(post.subdeck || "")}</p>`;
+      proseHtml = `<p>${escapeHtml(post.subdeck || "")}</p>`;
     }
+
+    if (post.faqs && Array.isArray(post.faqs) && post.faqs.length > 0) {
+      const faqTitle = isUrdu ? "عام سوالات و جوابات (FAQs)" : "Frequently Asked Travel Questions";
+      proseHtml += `
+        <div class="modal-faqs-section">
+          <h3 class="modal-faqs-heading" ${isUrdu ? 'dir="rtl"' : ''}>❓ ${faqTitle}</h3>
+          ${post.faqs.map(faq => `
+            <div class="modal-faq-item">
+              <div class="modal-faq-question" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(faq.question || "")}</div>
+              <p class="modal-faq-answer" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(faq.answer || "")}</p>
+            </div>
+          `).join("")}
+        </div>
+      `;
+    }
+
+    modalBodyProse.innerHTML = proseHtml;
   }
 
   if (modalTakeawaysCard && modalTakeawaysList) {
