@@ -1,10 +1,10 @@
 /**
- * Discover Pakistan — Litquidity-Style Editorial Travel Engine
- * Features: High-performance rendering, SEO/GEO deep linking,
- * AdSense monetization units, GA4 telemetry & Core Web Vitals observability.
+ * Discover Pakistan — High-Performance Editorial Engine
+ * Features: Instant 0ms Hydration, Core Web Vitals Telemetry,
+ * Scroll Depth Observability & In-Article Ad Monetization.
  */
 
-let allPosts = [];
+let allPosts = window.INITIAL_POSTS || [];
 let currentCategory = "All";
 let searchQuery = "";
 let articleStartTime = null;
@@ -18,32 +18,29 @@ const themeToggleBtn = document.getElementById("theme-toggle-btn");
 const readerModal = document.getElementById("reader-modal");
 const modalCloseBtn = document.getElementById("modal-close-btn");
 
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   initTheme();
   initWebVitalsObservability();
   initAnchorAdControls();
-  await loadPosts();
-  initCategoryFilters();
   initSearch();
   initModalListeners();
   checkUrlHash();
+
+  if (!allPosts || allPosts.length === 0) {
+    loadPostsFallback();
+  }
 });
 
-async function loadPosts() {
+async function loadPostsFallback() {
   try {
-    const res = await fetch("posts.json?t=" + Date.now());
+    const res = await fetch("posts.json");
     if (res.ok) {
       allPosts = await res.json();
-    } else {
-      throw new Error("HTTP error " + res.status);
+      renderAll();
     }
   } catch (err) {
-    console.warn("Could not fetch posts.json dynamically. Using inline data:", err);
-    if (window.INITIAL_POSTS && Array.isArray(window.INITIAL_POSTS)) {
-      allPosts = window.INITIAL_POSTS;
-    }
+    console.warn("Could not fetch posts.json:", err);
   }
-  renderAll();
 }
 
 function renderAll() {
@@ -56,7 +53,7 @@ function renderHeroSection() {
 
   const filtered = getFilteredPosts();
   if (filtered.length === 0) {
-    featuredSlot.innerHTML = `<div class="p-8 text-center text-muted">No travel dossiers found matching "${escapeHtml(searchQuery)}".</div>`;
+    featuredSlot.innerHTML = `<div class="p-8 text-center text-muted" style="padding:48px; text-align:center; color:var(--text-muted);">No reports found matching "${escapeHtml(searchQuery)}".</div>`;
     stackSlot.innerHTML = "";
     return;
   }
@@ -65,19 +62,19 @@ function renderHeroSection() {
   featuredSlot.innerHTML = `
     <div class="featured-lead-card" onclick="openArticleModal('${leadPost.id}')">
       <div class="featured-media-wrapper">
-        <img class="featured-media-img" src="${leadPost.image}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" />
+        <img class="featured-media-img" src="${leadPost.image}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
         <span class="media-badge">${escapeHtml(leadPost.badge || leadPost.category)}</span>
         ${leadPost.stat_number ? `
           <div class="stat-chip">
             <span class="stat-chip-num">${escapeHtml(leadPost.stat_number)}</span>
-            <span class="stat-chip-label">${escapeHtml(leadPost.stat_label || "METRIC")}</span>
+            <span class="stat-chip-label">${escapeHtml(leadPost.stat_label || "KEY METRIC")}</span>
           </div>
         ` : ''}
       </div>
       <h2 class="featured-title">${escapeHtml(leadPost.title)}</h2>
       <p class="featured-subdeck">${escapeHtml(leadPost.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${leadPost.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(leadPost.author)}" width="24" height="24" loading="lazy" />
+        <img class="author-avatar" src="${leadPost.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(leadPost.author)}" width="24" height="24" loading="lazy" decoding="async" />
         <span class="author-name">${escapeHtml(leadPost.author || "Travel Desk")}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(leadPost.date)}</span>
@@ -91,13 +88,13 @@ function renderHeroSection() {
   stackSlot.innerHTML = stackPosts.map(post => `
     <div class="stacked-story-card" onclick="openArticleModal('${post.id}')">
       <div class="stacked-thumb-wrapper">
-        <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" />
+        <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
       </div>
       <div class="stacked-story-info">
         <h3 class="stacked-story-title">${escapeHtml(post.title)}</h3>
         <p class="stacked-story-excerpt">${escapeHtml(post.subdeck)}</p>
         <div class="author-meta-row">
-          <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author)}" width="24" height="24" loading="lazy" />
+          <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author)}" width="24" height="24" loading="lazy" decoding="async" />
           <span class="author-name">${escapeHtml(post.author || "Travel Desk")}</span>
           <span class="meta-separator">•</span>
           <span class="meta-date">${escapeHtml(post.date)}</span>
@@ -114,8 +111,8 @@ function renderGridSection() {
   if (gridPosts.length === 0) {
     editorialGrid.innerHTML = `
       <div style="grid-column: 1 / -1; padding: 48px; text-align: center; color: var(--text-muted);">
-        <p style="font-size: 1.1rem; margin-bottom: 8px;">No additional travel dossiers in this category.</p>
-        <button class="pill-btn active" onclick="setCategory('All')">View All Expeditions</button>
+        <p style="font-size: 1.1rem; margin-bottom: 8px;">No additional dossiers in this category.</p>
+        <button class="pill-btn active" onclick="setCategory('All')">View All Reports</button>
       </div>
     `;
     return;
@@ -124,14 +121,14 @@ function renderGridSection() {
   editorialGrid.innerHTML = gridPosts.map(post => `
     <div class="editorial-card" onclick="openArticleModal('${post.id}')">
       <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" />
+        <img class="editorial-card-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" decoding="async" />
         ${post.badge ? `<span class="media-badge">${escapeHtml(post.badge)}</span>` : ''}
       </div>
       <div class="card-category-tag">${escapeHtml(post.category)}</div>
       <h3 class="editorial-card-title">${escapeHtml(post.title)}</h3>
       <p class="editorial-card-excerpt">${escapeHtml(post.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author)}" width="24" height="24" loading="lazy" />
+        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author)}" width="24" height="24" loading="lazy" decoding="async" />
         <span class="author-name">${escapeHtml(post.author)}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(post.date)}</span>
@@ -152,15 +149,6 @@ function getFilteredPosts() {
     const categoryMatch = post.category && post.category.toLowerCase().includes(q);
     return titleMatch || subdeckMatch || categoryMatch;
   });
-}
-
-function initCategoryFilters() {
-  const categories = ["All", "Alpine Expeditions", "Wilderness Expeditions", "Travel Itineraries", "Cultural Heritage", "Coastal & Desert"];
-  filterPillsContainer.innerHTML = categories.map(cat => `
-    <button class="pill-btn ${cat === currentCategory ? 'active' : ''}" onclick="setCategory('${cat}')">
-      ${cat}
-    </button>
-  `).join("");
 }
 
 window.setCategory = function(cat) {
@@ -218,7 +206,7 @@ window.openArticleModal = function(id) {
     modalStatBox.style.display = "none";
   }
 
-  // Render article body with in-article AdSense unit inserted after paragraph 2
+  // High-dwell in-article AdSense unit inserted after paragraph 2
   const inArticleAdHtml = `
     <div class="ad-slot-wrapper ad-in-article" style="margin: 28px 0; border: 1px dashed var(--border-color); border-radius: 8px; padding: 12px; background: rgba(0,0,0,0.02); text-align: center;">
       <span class="ad-label" style="display:block; font-size: 0.65rem; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 8px; font-weight: 700; text-transform: uppercase;">Sponsored Recommendation</span>
@@ -245,7 +233,6 @@ window.openArticleModal = function(id) {
     modalBodyProse.innerHTML = `<p>${escapeHtml(post.subdeck)}</p>` + inArticleAdHtml;
   }
 
-  // Request adsbygoogle refresh safely
   try {
     (window.adsbygoogle = window.adsbygoogle || []).push({});
   } catch (e) {}
@@ -261,7 +248,6 @@ window.openArticleModal = function(id) {
   document.body.style.overflow = "hidden";
   window.location.hash = post.id;
 
-  // Track engagement & scroll depth
   trackArticleScroll(post.id);
 
   if (window.gtag) {
@@ -302,7 +288,7 @@ function initModalListeners() {
 function checkUrlHash() {
   const hash = window.location.hash.replace("#", "");
   if (hash) {
-    setTimeout(() => openArticleModal(hash), 300);
+    setTimeout(() => openArticleModal(hash), 100);
   }
 }
 
@@ -345,7 +331,6 @@ function trackArticleScroll(postId) {
   readerBody.addEventListener("scroll", handleScroll, { passive: true });
 }
 
-// Core Web Vitals Observability & Analytics Telemetry
 function initWebVitalsObservability() {
   if (!('PerformanceObserver' in window)) return;
 
@@ -361,7 +346,6 @@ function initWebVitalsObservability() {
   }
 
   try {
-    // LCP (Largest Contentful Paint)
     new PerformanceObserver((entryList) => {
       const entries = entryList.getEntries();
       const lastEntry = entries[entries.length - 1];
@@ -372,7 +356,6 @@ function initWebVitalsObservability() {
       }
     }).observe({ type: 'largest-contentful-paint', buffered: true });
 
-    // FID (First Input Delay)
     new PerformanceObserver((entryList) => {
       for (const entry of entryList.getEntries()) {
         const fid = entry.processingStart - entry.startTime;
@@ -381,7 +364,6 @@ function initWebVitalsObservability() {
       }
     }).observe({ type: 'first-input', buffered: true });
 
-    // CLS (Cumulative Layout Shift)
     let clsValue = 0;
     new PerformanceObserver((entryList) => {
       for (const entry of entryList.getEntries()) {
@@ -392,9 +374,7 @@ function initWebVitalsObservability() {
         }
       }
     }).observe({ type: 'layout-shift', buffered: true });
-  } catch (e) {
-    console.debug('Web Vitals observer telemetry initialized.');
-  }
+  } catch (e) {}
 }
 
 function initTheme() {

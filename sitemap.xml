@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://discover-pakistan.github.io/</loc>
     <lastmod>2026-10-04</lastmod>
@@ -10,36 +11,60 @@
     <loc>https://discover-pakistan.github.io/#hunza-valley-autumn-dossier</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/hunza.webp</image:loc>
+      <image:title>Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi &amp; The Ancient Silk Route</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/#deosai-plains-land-of-giants</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/deosai.webp</image:loc>
+      <image:title>Deosai Plains: The Land of Giants Where Himalayan Brown Bears Roam Above the Clouds</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/#skardu-shangrila-gateway-k2</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/skardu.webp</image:loc>
+      <image:title>Skardu &amp; Shangrila: The High-Altitude Oasis at the Foothills of the Eight-Thousanders</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/#passu-attabad-turquoise-wonder</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/passu.webp</image:loc>
+      <image:title>Passu Cones &amp; Attabad Lake: The Turquoise Waters Born from Mountain Collapse</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/#kalash-valleys-ancient-heritage</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/kalash.webp</image:loc>
+      <image:title>The Kalash Valleys: Ancient Animist Traditions in the Heart of the Hindu Kush</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/#makran-coastal-highway-hingol</loc>
     <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://discover-pakistan.github.io/assets/images/coastal.webp</image:loc>
+      <image:title>Makran Coastal Highway &amp; Hingol: The Mars-Like Formations of Balochistan</image:title>
+    </image:image>
   </url>
 </urlset>
