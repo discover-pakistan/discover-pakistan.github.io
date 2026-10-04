@@ -3,7 +3,7 @@ name: 🚀 Discover Pakistan Daily Publisher
 on:
   schedule:
     # Autonomous daily execution (10:00 AM PKT / 05:00 UTC)
-    - cron: '0 5 * * *'
+    #- cron: '0 5 * * *'
   workflow_dispatch:
     inputs:
       city:
