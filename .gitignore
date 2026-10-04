@@ -7,3 +7,11 @@ storage/videos/*
 !storage/videos/.gitkeep
 latest_caption.txt
 .DS_Store
+# Secrets & Private Credentials Guard
+*.json
+!posts.json
+!manifest.json
+.env*
+*.pem
+*.key
+*.log
