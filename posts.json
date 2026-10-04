@@ -1,5 +1,30 @@
 [
   {
+    "id": "discover-pakistan-tourism-heritage--278",
+    "category": "Alpine Expeditions",
+    "badge": "DISCOVER PAKISTAN 🇵🇰",
+    "title": "Discover Pakistan — Tourism & Heritage Insight",
+    "subdeck": "Latest alpine journey and cultural discovery from Pakistan.",
+    "image": "assets/posts/discover-pakistan-tourism-heritage--278.png",
+    "stat_number": "",
+    "stat_label": "METRIC",
+    "author": "Autonomous Travel Agent",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop",
+    "date": "04 Oct 2026",
+    "read_time": "4 min read",
+    "featured": true,
+    "body": [
+      "Consistency and quality drive authentic community engagement.",
+      "Timely execution separates high performers from spectators.",
+      "Focus on value-first insights that solve real everyday problems."
+    ],
+    "takeaways": [
+      "Consistency and quality drive authentic community engagement.",
+      "Timely execution separates high performers from spectators.",
+      "Focus on value-first insights that solve real everyday problems."
+    ]
+  },
+  {
     "id": "hunza-valley-autumn-urdu",
     "category": "اردو ٹریول گائیڈ",
     "badge": "سفری شاہکار 🍂",
@@ -13,7 +38,7 @@
     "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop",
     "date": "04 Oct 2026",
     "read_time": "6 منٹ مطالعہ",
-    "featured": true,
+    "featured": false,
     "lang": "ur",
     "sections": [
       {
