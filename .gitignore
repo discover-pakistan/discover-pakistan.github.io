@@ -1,17 +1,32 @@
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.env
-storage/videos/*
-!storage/videos/.gitkeep
+# Private Backend & Actions Guard (Kept strictly in private holy-quran repo)
+.github/
+agents/
+video_engine/
+themes/
+storage/
+scripts/
+*.py
+requirements.txt
+captions_log.jsonl
 latest_caption.txt
-.DS_Store
-# Secrets & Private Credentials Guard
-*.json
-!posts.json
-!manifest.json
+
+# Environment & Credentials Guard
 .env*
 *.pem
 *.key
 *.log
+credentials.json
+service_account.json
+*service_account*.json
+
+# Cache & Virtual Environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+
+# JSON files guard (allow only static website data)
+*.json
+!posts.json
+!manifest.json
