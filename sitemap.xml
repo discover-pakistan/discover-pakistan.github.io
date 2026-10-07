@@ -1,17 +1,189 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://discover-pakistan.github.io/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
-  <url><loc>https://discover-pakistan.github.io/#hunza-valley-autumn-urdu</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/hunza-valley-autumn-urdu_cover.jpg</image:loc><image:title>ہنزہ اور وادی نگر کا سنہری خزاں: راکاپوشی، التیت اور بلتت قلعے کا مکمل سفرنامہ</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#skardu-shangrila-baltistan-urdu</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/skardu-shangrila-baltistan-urdu_cover.jpg</image:loc><image:title>سکردو، شنگریلا اور خپلو محل: بلتستان کے صحرا اور برفانی جھیلوں کی دنیا</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#deosai-national-park-urdu</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/deosai-national-park-urdu_cover.jpg</image:loc><image:title>دیوسائی نیشنل پارک: دنیا کے بلند ترین میدان کی پراسرار خوبصورتی اور شیوسر جھیل</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#kumrat-valley-katora-lake-urdu</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/kumrat-valley-katora-lake-urdu_cover.jpg</image:loc><image:title>کمرات ویلی اور جہاز بانڈہ کٹورا جھیل: خیبر پختونخوا کا پوشیدہ قدرتی شاہکار</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#passu-cones-gojal-valley-urdu</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/passu-cones-gojal-valley-urdu_cover.jpg</image:loc><image:title>پاسُو کونز اور حسینی پل: شاہراہ قراقرم کا سحر انگیز ایڈونچر اور وادی گوجال</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#fairy-meadows-nanga-parbat-urdu</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/fairy-meadows-nanga-parbat-urdu_cover.jpg</image:loc><image:title>فیری میڈوز اور نانگا پربت: قاتل پہاڑ کے سائے میں کوہ پیمائی اور ایڈونچر کا خواب</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#hunza-valley-autumn-dossier</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/hunza-valley-autumn-dossier_cover.jpg</image:loc><image:title>Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi &amp; Silk Road Forts</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#skardu-shangrila-gateway-k2</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/skardu-shangrila-gateway-k2_cover.jpg</image:loc><image:title>Skardu &amp; Shangrila: Gateway to the High Karakoram &amp; Cold Desert Dunes</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#deosai-plains-land-of-giants</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/deosai-plains-land-of-giants_cover.jpg</image:loc><image:title>Deosai National Park: The 4,000m Alpine Plateau of the Himalayan Brown Bear</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#passu-attabad-turquoise-wonder</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/passu-attabad-turquoise-wonder_cover.jpg</image:loc><image:title>Passu Cones &amp; Attabad Lake: The Turquoise Marvel of Upper Hunza</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#kumrat-valley-alpine-secret</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/kumrat-valley-alpine-secret_cover.jpg</image:loc><image:title>Kumrat Valley &amp; Panjkora Cascades: Khyber Pakhtunkhwa’s Pine Wilderness</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#kalash-valleys-ancient-heritage</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/kalash-valleys-ancient-heritage_cover.jpg</image:loc><image:title>Kalash Valleys: Ancient Polytheistic Heritage in the Rugged Hindu Kush</image:title></image:image></url>
-  <url><loc>https://discover-pakistan.github.io/#makran-coastal-highway-hingol</loc><changefreq>weekly</changefreq><priority>0.85</priority><image:image><image:loc>https://discover-pakistan.github.io/assets/posts/makran-coastal-highway-hingol_cover.jpg</image:loc><image:title>Makran Coastal Highway: The Mud Volcanoes &amp; Golden Shores of Balochistan</image:title></image:image></url>
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns:ns0="http://www.google.com/schemas/sitemap-image/1.1" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://discover-pakistan.github.io/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#k2-base-camp-concordia-baltoro-trek-guide</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/k2-base-camp-concordia-baltoro-trek-guide_cover.jpg</ns0:loc>
+      <ns0:title>K2 Base Camp &amp; Concordia: The Ultimate Trekking Dossier Across the Baltoro Glacier</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#shigar-khaplu-wooden-palaces-balti-heritage</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/shigar-khaplu-wooden-palaces-balti-heritage_cover.jpg</ns0:loc>
+      <ns0:title>Shigar &amp; Khaplu: Ancient Wooden Palaces, Royal Gardens &amp; Balti Heritage Along the Indus</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#astola-island-expedition-pasni-balochistan</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/astola-island-expedition-pasni-balochistan_cover.jpg</ns0:loc>
+      <ns0:title>Astola Island Expedition: The Untamed 'Island of the Seven Hills' off the Pasni Coast</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#broghil-valley-karambar-lake-chitral-expedition</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/broghil-valley-karambar-lake-chitral-expedition_cover.jpg</ns0:loc>
+      <ns0:title>The Broghil Valley &amp; Karambar Lake: Traversing the Remote High Roof of Upper Chitral</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#phander-valley-ghizer-emerald-lake-autumn-guide</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/phander-valley-ghizer-emerald-lake-autumn-guide_cover.jpg</ns0:loc>
+      <ns0:title>Autumn in Phander Valley: The Emerald Trout Lake &amp; Golden Willow Sanctuaries of Ghizer</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#hunza-valley-autumn-urdu</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/hunza-valley-autumn-urdu_cover.jpg</ns0:loc>
+      <ns0:title>ہنزہ اور وادی نگر کا سنہری خزاں: راکاپوشی، التیت اور بلتت قلعے کا مکمل سفرنامہ</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#skardu-shangrila-baltistan-urdu</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/skardu-shangrila-baltistan-urdu_cover.jpg</ns0:loc>
+      <ns0:title>سکردو، شنگریلا اور خپلو محل: بلتستان کے صحرا اور برفانی جھیلوں کی دنیا</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#deosai-national-park-urdu</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/deosai-national-park-urdu_cover.jpg</ns0:loc>
+      <ns0:title>دیوسائی نیشنل پارک: دنیا کے بلند ترین میدان کی پراسرار خوبصورتی اور شیوسر جھیل</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#kumrat-valley-katora-lake-urdu</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/kumrat-valley-katora-lake-urdu_cover.jpg</ns0:loc>
+      <ns0:title>کمرات ویلی اور جہاز بانڈہ کٹورا جھیل: خیبر پختونخوا کا پوشیدہ قدرتی شاہکار</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#passu-cones-gojal-valley-urdu</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/passu-cones-gojal-valley-urdu_cover.jpg</ns0:loc>
+      <ns0:title>پاسُو کونز اور حسینی پل: شاہراہ قراقرم کا سحر انگیز ایڈونچر اور وادی گوجال</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#fairy-meadows-nanga-parbat-urdu</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/fairy-meadows-nanga-parbat-urdu_cover.jpg</ns0:loc>
+      <ns0:title>فیری میڈوز اور نانگا پربت: قاتل پہاڑ کے سائے میں کوہ پیمائی اور ایڈونچر کا خواب</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#hunza-valley-autumn-dossier</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/hunza-valley-autumn-dossier_cover.jpg</ns0:loc>
+      <ns0:title>Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi &amp; Silk Road Forts</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#skardu-shangrila-gateway-k2</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/skardu-shangrila-gateway-k2_cover.jpg</ns0:loc>
+      <ns0:title>Skardu &amp; Shangrila: Gateway to the High Karakoram &amp; Cold Desert Dunes</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#deosai-plains-land-of-giants</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/deosai-plains-land-of-giants_cover.jpg</ns0:loc>
+      <ns0:title>Deosai National Park: The 4,000m Alpine Plateau of the Himalayan Brown Bear</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#passu-attabad-turquoise-wonder</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/passu-attabad-turquoise-wonder_cover.jpg</ns0:loc>
+      <ns0:title>Passu Cones &amp; Attabad Lake: The Turquoise Marvel of Upper Hunza</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#kumrat-valley-alpine-secret</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/kumrat-valley-alpine-secret_cover.jpg</ns0:loc>
+      <ns0:title>Kumrat Valley &amp; Panjkora Cascades: Khyber Pakhtunkhwa’s Pine Wilderness</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#kalash-valleys-ancient-heritage</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/kalash-valleys-ancient-heritage_cover.jpg</ns0:loc>
+      <ns0:title>Kalash Valleys: Ancient Polytheistic Heritage in the Rugged Hindu Kush</ns0:title>
+    </ns0:image>
+  </url>
+  <url>
+    <loc>https://discover-pakistan.github.io/#makran-coastal-highway-hingol</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/makran-coastal-highway-hingol_cover.jpg</ns0:loc>
+      <ns0:title>Makran Coastal Highway: The Mud Volcanoes &amp; Golden Shores of Balochistan</ns0:title>
+    </ns0:image>
+  </url>
 </urlset>

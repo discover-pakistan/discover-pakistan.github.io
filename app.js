@@ -149,30 +149,10 @@ function renderGridSection() {
   `}).join("");
 }
 
-const CATEGORY_MAP = {
-  "اردو گائیڈ (Urdu)": ["اردو", "urdu", "سفرنامہ", "گائیڈ"],
-  "Alpine & Peaks": ["alpine", "peak", "mountain", "k2", "nanga parbat", "rakaposhi"],
-  "Valleys & Lakes": ["valley", "lake", "hunza", "skardu", "kumrat", "passu", "attabad", "shangrila"],
-  "Plains & Wilderness": ["deosai", "wilderness", "plateau", "wildlife", "plains"],
-  "Coastal & Heritage": ["coastal", "heritage", "kalash", "makran", "hingol"]
-};
-
 function getFilteredPosts() {
   return allPosts.filter(post => {
-    if (currentCategory !== "All") {
-      const catLower = (post.category || "").toLowerCase();
-      const badgeLower = (post.badge || "").toLowerCase();
-      const titleLower = (post.title || "").toLowerCase();
-      const isPostUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(titleLower);
-
-      if (currentCategory === "اردو گائیڈ (Urdu)") {
-        if (!isPostUrdu) return false;
-      } else {
-        const keywords = CATEGORY_MAP[currentCategory] || [];
-        const matches = catLower === currentCategory.toLowerCase() || keywords.some(kw => catLower.includes(kw) || badgeLower.includes(kw) || titleLower.includes(kw));
-        if (!matches) return false;
-      }
-    }
+    const matchesCat = (currentCategory === "All") || (post.category && post.category.toLowerCase() === currentCategory.toLowerCase());
+    if (!matchesCat) return false;
 
     if (!searchQuery) return true;
     const q = searchQuery.toLowerCase();
@@ -185,14 +165,7 @@ function getFilteredPosts() {
 
 function initCategoryFilters() {
   if (!filterPillsContainer) return;
-  const categories = [
-    "All",
-    "اردو گائیڈ (Urdu)",
-    "Alpine & Peaks",
-    "Valleys & Lakes",
-    "Plains & Wilderness",
-    "Coastal & Heritage"
-  ];
+  const categories = ["All", "Alpine Expeditions", "Wilderness Expeditions", "Travel Itineraries", "Cultural Heritage", "Coastal & Desert"];
   filterPillsContainer.innerHTML = categories.map(cat => `
     <button class="pill-btn ${cat === currentCategory ? 'active' : ''}" onclick="setCategory('${cat}')">
       ${cat}
@@ -293,75 +266,17 @@ window.openArticleModal = async function(id) {
     }
   }
 
-    if (modalBodyProse) {
+  if (modalBodyProse) {
     modalBodyProse.className = isUrdu ? "modal-article-prose urdu-prose" : "modal-article-prose";
     modalBodyProse.setAttribute("dir", isUrdu ? "rtl" : "ltr");
 
-    let proseHtml = "";
-
-    // 1. Render Intro Block (if body exists)
-    let introParagraphs = [];
     if (Array.isArray(post.body)) {
-      introParagraphs = post.body;
-    } else if (typeof post.body === "string" && post.body.trim()) {
-      introParagraphs = [post.body];
-    } else if (post.subdeck && (!post.sections || post.sections.length === 0)) {
-      introParagraphs = [post.subdeck];
+      modalBodyProse.innerHTML = post.body.map(para => `<p>${escapeHtml(para)}</p>`).join("");
+    } else if (typeof post.body === "string") {
+      modalBodyProse.innerHTML = `<p>${escapeHtml(post.body)}</p>`;
+    } else {
+      modalBodyProse.innerHTML = `<p>${escapeHtml(post.subdeck || "")}</p>`;
     }
-
-    if (introParagraphs.length > 0) {
-      proseHtml += `<div class="article-intro-block">` + 
-        introParagraphs.map(para => `<p>${escapeHtml(para)}</p>`).join("") + 
-      `</div>`;
-    }
-
-    // 2. Render Distinct Isolated Section Containers (Anti-Collision Architecture)
-    if (post.sections && Array.isArray(post.sections) && post.sections.length > 0) {
-      post.sections.forEach(sec => {
-        const secTitle = sec.title || sec.heading || "";
-        let secParas = [];
-        if (sec.paragraphs && Array.isArray(sec.paragraphs)) {
-          secParas = sec.paragraphs;
-        } else if (sec.content) {
-          if (Array.isArray(sec.content)) {
-            secParas = sec.content;
-          } else if (typeof sec.content === "string") {
-            // Split long paragraphs cleanly by newlines or sentence pauses if very long
-            const rawParts = typeof sec.content === "string" ? sec.content.split("\n\n").filter(Boolean) : [sec.content];
-            secParas = rawParts.length > 0 ? rawParts : [sec.content];
-          }
-        }
-
-        const parasHtml = secParas.map(p => `<p>${escapeHtml(p)}</p>`).join("");
-        proseHtml += `
-          <div class="article-section-block">
-            ${secTitle ? `<h2 class="section-block-heading">${escapeHtml(secTitle)}</h2>` : ''}
-            ${parasHtml}
-          </div>
-        `;
-      });
-    }
-
-    // 3. Render FAQs in isolated card container
-    if (post.faqs && Array.isArray(post.faqs) && post.faqs.length > 0) {
-      const faqTitle = isUrdu ? "اکثر پوچھے جانے والے سوالات (FAQs)" : "Frequently Asked Questions (FAQs)";
-      proseHtml += `
-        <div class="modal-faqs-section">
-          <div class="modal-faqs-heading">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-            ${faqTitle}
-          </div>
-          ${post.faqs.map(faq => `
-            <div class="modal-faq-item">
-              <div class="modal-faq-question">${escapeHtml(faq.question || "")}</div>
-              <div class="modal-faq-answer">${escapeHtml(faq.answer || "")}</div>
-            </div>
-          `).join("")}
-        </div>
-      `;
-    }
-
-    modalBodyProse.innerHTML = proseHtml;
   }
 
   if (modalTakeawaysCard && modalTakeawaysList) {
@@ -377,11 +292,6 @@ window.openArticleModal = async function(id) {
   if (modalEl) {
     modalEl.classList.add("open");
     document.body.style.overflow = "hidden";
-    setTimeout(function() {
-      if (typeof window.initAdSlotsSafe === "function") {
-        window.initAdSlotsSafe();
-      }
-    }, 350);
   }
   window.location.hash = post.id;
 
