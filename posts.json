@@ -1,5 +1,97 @@
 [
   {
+    "id": "solar-powered-boutique-hospitality-across-hun-2455",
+    "category": "Heritage & Culture",
+    "badge": "SUSTAINABLE TRAVEL 🌿",
+    "title": "Solar-Powered Boutique Hospitality Across Hunza and Gilgit: Safeguarding Pristine Mountain Eco-Sanctuaries",
+    "subdeck": "High-altitude boutique lodges adopt rooftop solar micro-grids and geothermal insulation, keeping northern hospitality open during winter cold.",
+    "image": "assets/posts/solar-powered-boutique-hospitality-across-hun-2455_cover.jpg",
+    "stat_number": "100% SOLAR",
+    "stat_label": "CLEAN MOUNTAIN ENERGY",
+    "author": "Zainab Mir",
+    "author_role": "Heritage & Cultural Historian",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop",
+    "date": "08 Oct 2026",
+    "read_time": "4 min read",
+    "featured": false,
+    "body": [
+      "Across the ancient terraced orchards of Karimabad, Gulmit, and Skardu, a quiet green revolution is redefining Pakistan's luxury alpine hospitality: the widespread migration towards 100% solar-powered boutique mountain retreats.",
+      "Faced with extreme seasonal fuel price swings and environmental concerns surrounding diesel generator emissions, pioneering resort operators have installed lithium-iron-phosphate battery arrays, rooftop bifacial solar panels, and traditional straw-bale earthen insulation.",
+      "These eco-lodges provide travelers with reliable 24/7 radiant heating, high-speed fiber internet, and warm running water entirely off the grid, proving that high-end wilderness luxury can thrive in complete harmony with Karakoram conservation."
+    ],
+    "sections": [
+      {
+        "heading": "Bifacial Solar Efficiency in High Altitudes",
+        "content": "At elevations above 2,500 meters, thinner atmospheric scattering combined with snow albedo reflection increases solar panel yield by up to 28% compared to sea-level installations."
+      },
+      {
+        "heading": "Architectural Revival of Balti and Hunza Earthen Walls",
+        "content": "Integrating thick timber-framed mud walls (Dhajjidewari) with triple-glazed south-facing windows naturally captures passive solar thermal energy, reducing winter heating loads by over 60%."
+      }
+    ],
+    "takeaways": [
+      "Boutique alpine resorts across Hunza and Baltistan transition to off-grid solar micro-grids.",
+      "High-altitude solar efficiency and snow reflection boost energy yields by 28%.",
+      "Combines traditional earthquake-resilient architecture with modern luxury sustainability."
+    ],
+    "faqs": [
+      {
+        "question": "Are solar-powered lodges open during winter months?",
+        "answer": "Yes, lodges equipped with battery storage and passive solar thermal architecture remain operational throughout sub-zero winter seasons."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "the-new-66-km-astore-to-skardu-alpine-highway-1606",
+    "category": "Alpine Expeditions",
+    "badge": "EXPEDITION ROAD 🛣️",
+    "title": "The New 66-km Astore to Skardu Alpine Highway: Revolutionizing Overland Access to Deosai Plains",
+    "subdeck": "Newly completed strategic mountain road bypasses rugged river gorges, slashing transit times and unlocking unprecedented autumn tourism circuits.",
+    "image": "assets/posts/the-new-66-km-astore-to-skardu-alpine-highway-1606_cover.jpg",
+    "stat_number": "66 KM",
+    "stat_label": "ALPINE CORRIDOR",
+    "author": "Kamran Alvi",
+    "author_role": "Senior Alpine Expedition Guide",
+    "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
+    "date": "08 Oct 2026",
+    "read_time": "4 min read",
+    "featured": true,
+    "body": [
+      "In one of the most consequential infrastructure achievements for Northern Pakistan's tourism geography, the newly paved 66-kilometer Astore-to-Skardu alpine highway has officially opened for regular light passenger traffic.",
+      "Historically, navigating between the fertile Astore Valley, the legendary Deosai National Park plateau, and the Baltistan capital of Skardu required grueling eight-hour off-road journeys across precarious unpaved tracks. The engineered highway reduces travel time to under 2.5 hours on all-weather tarmac.",
+      "Mountaineers, landscape photographers, and eco-travelers now have seamless connectivity to witness the world's second-highest alpine plateau without demanding specialist expedition vehicles, unlocking substantial economic prosperity for high-altitude mountain communities."
+    ],
+    "sections": [
+      {
+        "heading": "Engineering Through High-Altitude Glacial Permafrost",
+        "content": "Engineers deployed modern retaining walls, concrete avalanche sheds, and culverts engineered to withstand glacial melt runoff and winter sub-zero freeze-thaw cycles above 3,500 meters."
+      },
+      {
+        "heading": "A Boost for Community-Based Ecotourism",
+        "content": "Local homestays, licensed high-altitude porters, and trout hatcheries in Gorikot and Chilam are anticipating record seasonal visitor inflows while preserving Deosai's fragile brown bear habitat."
+      }
+    ],
+    "takeaways": [
+      "66-km Astore-Skardu highway slashes transit time from 8 hours to under 2.5 hours.",
+      "Provides safe, all-weather paved access connecting Astore, Deosai Plains, and Baltistan.",
+      "Spurs sustainable ecotourism revenue for isolated alpine villages while expanding Northern travel circuits."
+    ],
+    "faqs": [
+      {
+        "question": "Is the new Astore-Skardu road accessible in standard saloon cars?",
+        "answer": "Yes, during late spring through mid-autumn, the engineered asphalt allows smooth passage for conventional passenger cars and mini-vans."
+      },
+      {
+        "question": "What attractions are along this highway?",
+        "answer": "Rama Lake, Chilam Valley gateway, Deosai National Park, Sheosar Lake, and the majestic Sadpara Lake before entering Skardu."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "pakistan-bets-on-electric-vehicles-as-middle--9e6a",
     "category": "Alpine Expeditions",
     "badge": "BREAKING WIRE ⚡",
@@ -13,7 +105,7 @@
     "author_avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&h=120&fit=crop",
     "date": "08 Oct 2026",
     "read_time": "4 min read",
-    "featured": true,
+    "featured": false,
     "body": [
       "From the vibrant coral reefs of our Makran Coast to the breathtaking glaciers of the Karakoram, Pakistan's diverse landscapes are profoundly intertwined with its economic resilience. Today, a new challenge—and a monumental opportunity—emerges from global headlines. The Middle East conflict has triggered a staggering 54% hike in petrol prices, forcing Pakistan to accelerate a critical strategic shift: embracing electric vehicles and solar energy as pillars of its future.",
       "This isn't merely a reactive measure; it's a decisive leap towards energy independence and environmental stewardship. The reliance on imported fossil fuels has long been a drain on national coffers, a vulnerability now starkly exposed. By fostering an ecosystem for EVs and leveraging abundant solar resources, Pakistan aims to curb its import bill significantly, stabilize its economy, and create a cleaner air quality for its citizens, from bustling urban centers to remote alpine valleys.",
