@@ -78,8 +78,8 @@ function renderHeroSection() {
       <h2 class="${leadTitleCls}" ${isLeadUrdu ? 'dir="rtl"' : ''}>${escapeHtml(leadPost.title)}</h2>
       <p class="${leadSubdeckCls}" ${isLeadUrdu ? 'dir="rtl"' : ''}>${escapeHtml(leadPost.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${leadPost.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(leadPost.author || 'Travel Desk')}" width="28" height="28" loading="lazy" decoding="async" />
-        <span class="author-name">${escapeHtml(leadPost.author || "Travel Desk")}</span>
+        <img class="author-avatar" src="${leadPost.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(leadPost.author || 'Kamran Alvi')}" width="28" height="28" loading="lazy" decoding="async" />
+        <span class="author-name">${escapeHtml(leadPost.author || "Kamran Alvi")}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(leadPost.date)}</span>
         <span class="meta-separator">•</span>
@@ -102,8 +102,8 @@ function renderHeroSection() {
         <h3 class="${titleCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.title)}</h3>
         <p class="${subdeckCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.subdeck)}</p>
         <div class="author-meta-row">
-          <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Travel Desk')}" width="24" height="24" loading="lazy" decoding="async" />
-          <span class="author-name">${escapeHtml(post.author || "Travel Desk")}</span>
+          <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Kamran Alvi')}" width="24" height="24" loading="lazy" decoding="async" />
+          <span class="author-name">${escapeHtml(post.author || "Kamran Alvi")}</span>
           <span class="meta-separator">•</span>
           <span class="meta-date">${escapeHtml(post.date)}</span>
         </div>
@@ -140,8 +140,8 @@ function renderGridSection() {
       <h3 class="${titleCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.title)}</h3>
       <p class="${subdeckCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Travel Desk')}" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">${escapeHtml(post.author || "Travel Desk")}</span>
+        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Kamran Alvi')}" width="24" height="24" loading="lazy" decoding="async" />
+        <span class="author-name">${escapeHtml(post.author || "Kamran Alvi")}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(post.date)}</span>
       </div>
@@ -246,10 +246,10 @@ window.openArticleModal = async function(id) {
 
   if (modalAuthorAvatar) {
     modalAuthorAvatar.src = post.author_avatar || "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop";
-    modalAuthorAvatar.alt = post.author || "Travel Desk";
+    modalAuthorAvatar.alt = post.author || "Kamran Alvi";
   }
-  if (modalAuthorName) modalAuthorName.textContent = post.author || "Travel Desk";
-  if (modalAuthorRole) modalAuthorRole.textContent = post.author_role || "Field Correspondent";
+  if (modalAuthorName) modalAuthorName.textContent = post.author || "Kamran Alvi";
+  if (modalAuthorRole) modalAuthorRole.textContent = post.author_role || "Senior Alpine Expedition Guide";
 
   if (modalHeroImg) {
     modalHeroImg.src = post.image;
