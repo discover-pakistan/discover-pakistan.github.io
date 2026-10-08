@@ -46,7 +46,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400;1,6..72,700&family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
   </noscript>
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2.0" />
 
   <!-- Structured Data Schema.org (Knowledge Graph & AI Engine Index) -->
   <script type="application/ld+json">
@@ -93,11 +93,11 @@
   <!-- Site Header (Litquidity Clean Center Wordmark) -->
   <header class="site-header">
     <div class="container header-inner">
+      <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Open Navigation Menu" onclick="openMobileDrawer()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
       <nav class="nav-links" aria-label="Primary Navigation">
-        <a href="#" class="active" onclick="setCategory('All')">Articles</a>
-        <a href="#alpine-expeditions" onclick="setCategory('Alpine Expeditions')">Alpine</a>
-        <a href="#cultural-heritage" onclick="setCategory('Cultural Heritage')">Heritage</a>
-        <a href="#travel-itineraries" onclick="setCategory('Travel Itineraries')">Itineraries</a>
         <a href="#newsletter">Dispatch</a>
       </nav>
 
@@ -120,8 +120,30 @@
     </div>
   </header>
 
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-drawer" role="dialog" aria-modal="true" style="display: none; position: fixed; top: 0; left: 0; bottom: 0; width: 300px; max-width: 85vw; background-color: var(--bg-card); z-index: 10000; box-shadow: 4px 0 24px rgba(0,0,0,0.35); flex-direction: column; padding: 24px 20px; overflow-y: auto;">
+    <div class="mobile-drawer-header" style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid var(--border-light); margin-bottom: 18px; width: 100%;">
+      <span class="brand-title">discover pakistan<span class="brand-dot">.</span></span>
+      <button id="mobile-drawer-close" class="mobile-drawer-close-btn" aria-label="Close Menu" onclick="closeMobileDrawer()">✕</button>
+    </div>
+    <nav class="mobile-drawer-nav" style="display: flex; flex-direction: column; gap: 8px; flex: 1; width: 100%;">
+      <a href="#" class="active" onclick="setCategory('All'); closeMobileDrawer();" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: var(--radius-md); background: var(--bg-secondary); border: 1px solid var(--border-light); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Articles <span style="color: var(--accent-primary);">➔</span></a>
+      <a href="#alpine-expeditions" onclick="setCategory('Alpine Expeditions'); closeMobileDrawer();" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: var(--radius-md); background: var(--bg-secondary); border: 1px solid var(--border-light); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Alpine <span style="color: var(--accent-primary);">➔</span></a>
+      <a href="#cultural-heritage" onclick="setCategory('Cultural Heritage'); closeMobileDrawer();" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: var(--radius-md); background: var(--bg-secondary); border: 1px solid var(--border-light); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Heritage <span style="color: var(--accent-primary);">➔</span></a>
+      <a href="#travel-itineraries" onclick="setCategory('Travel Itineraries'); closeMobileDrawer();" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: var(--radius-md); background: var(--bg-secondary); border: 1px solid var(--border-light); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Itineraries <span style="color: var(--accent-primary);">➔</span></a>
+      <a href="#newsletter" onclick="closeMobileDrawer();" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: var(--radius-md); background: var(--bg-secondary); border: 1px solid var(--border-light); font-weight: 600; font-size: 0.95rem; color: var(--text-primary); text-decoration: none;">Dispatch <span style="color: var(--accent-primary);">➔</span></a>
+    </nav>
+    <div class="mobile-drawer-footer" style="padding-top: 18px; border-top: 1px solid var(--border-light); width: 100%; margin-top: auto;">
+      <a href="#newsletter" class="btn-primary" onclick="closeMobileDrawer()" style="width: 100%; display: flex; justify-content: center; text-align: center;">
+        <span>Subscribe to Dispatch</span>
+      </a>
+    </div>
+  </div>
+  <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop" onclick="closeMobileDrawer()" style="display: none; position: fixed; inset: 0; background-color: rgba(15, 23, 42, 0.7); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 9999;"></div>
+
+
   <!-- Top Leaderboard Ad Unit (Monetization Engine) -->
-  <div class="ad-slot-wrapper ad-leaderboard" style="max-width: var(--container-max); margin: 20px auto 0; text-align: center; min-height: 90px;">
+  <div class="ad-slot-wrapper ad-leaderboard">
     <span style="display:block; font-size: 0.65rem; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 4px; font-weight: 700; text-transform: uppercase;">Sponsored</span>
     <ins class="adsbygoogle"
          style="display:block"

@@ -43,6 +43,30 @@ async function loadPosts() {
   renderAll();
 }
 
+function openMobileDrawer() {
+  const drawer = document.getElementById("mobile-nav-drawer");
+  const backdrop = document.getElementById("mobile-drawer-backdrop");
+  if (drawer && backdrop) {
+    drawer.style.display = "flex";
+    backdrop.style.display = "block";
+    drawer.classList.add("open");
+    backdrop.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+}
+
+function closeMobileDrawer() {
+  const drawer = document.getElementById("mobile-nav-drawer");
+  const backdrop = document.getElementById("mobile-drawer-backdrop");
+  if (drawer && backdrop) {
+    drawer.style.display = "none";
+    backdrop.style.display = "none";
+    drawer.classList.remove("open");
+    backdrop.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+}
+
 function renderAll() {
   renderHeroSection();
   renderGridSection();
