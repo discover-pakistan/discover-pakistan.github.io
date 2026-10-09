@@ -1,5 +1,101 @@
 [
   {
+    "id": "autumn-hunza-nagar-golden-foliage-ultar-sar",
+    "category": "Alpine Expeditions",
+    "badge": "ALPINE EXPEDITION 🍂",
+    "title": "Autumn in Hunza and Nagar: The Golden Apricot Foliage Circuit and Ultar Sar Glacier Trek",
+    "subdeck": "A comprehensive photographic dossier through Karimabad, Altit Fort, and the golden terraced valleys beneath Rakaposhi as autumn sweeps northern Pakistan.",
+    "image": "assets/posts/autumn-hunza-nagar-golden-foliage-ultar-sar_cover.jpg",
+    "stat_number": "7,388 M",
+    "stat_label": "ULTAR SAR PEAK",
+    "author": "Kamran Alvi",
+    "author_role": "Senior Alpine Expedition Guide",
+    "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
+    "date": "09 Oct 2026",
+    "read_time": "5 min read",
+    "featured": true,
+    "body": [
+      "As mid-October descends upon the Karakoram mountain range, the twin valleys of Hunza and Nagar undergo one of the planet’s most dramatic natural metamorphoses. The terraced orchards of apricot, poplar, and walnut trees ignite in fiery hues of amber, ochre, and vermilion against a jagged backdrop of snow-dusted 7,000-meter giants.",
+      "Starting from the ancient cobblestones of Karimabad and the 900-year-old Altit Fort, high-altitude trekkers can navigate the exhilarating ridgeline trail to Ultar Meadow. Perched directly beneath the formidable hanging seracs of Ultar Sar (7,388m) and Ladyfinger Peak (Bublimotin), the trail offers panoramic vistas spanning the entire Hunza River valley below.",
+      "Local ecotourism initiatives across Gulmit and Passu have established heated boutique guesthouses and solar-powered glamping hubs, enabling travelers to experience the crisp Himalayan autumn without sacrificing sustainable luxury or environmental sensitivity."
+    ],
+    "sections": [
+      {
+        "heading": "Optimal Timing and Photography Locations",
+        "content": "Peak foliage typically runs from October 15 through November 10. Prime photography vantage points include the rooftop battlements of Baltit Fort at sunrise, the Eagle’s Nest viewpoint in Duikar at twilight, and the reflection pools along the Hunza River in Ganish."
+      },
+      {
+        "heading": "Ultar Sar Glacier Trekking Logistics",
+        "content": "The 4-to-5-hour ascent from Karimabad to Ultar Base Camp traverses narrow irrigation channels and steep moraine scree. Trekkers should carry high-traction boots, windproof outer shells, and engage certified mountain guides from the Hunza Guides Association."
+      }
+    ],
+    "takeaways": [
+      "Mid-October through early November offers peak golden foliage across Hunza and Nagar.",
+      "Ultar Meadow provides dramatic close-range views of Ladyfinger Peak and Ultar Sar glacier.",
+      "Sustainable solar-heated lodges in Karimabad and Passu offer comfortable autumn basecamps."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best way to reach Hunza during autumn?",
+        "answer": "Travelers can fly into Gilgit Airport via PIA or drive the scenic Karakoram Highway from Islamabad via Hazara Motorway and Chilas."
+      },
+      {
+        "question": "Is the Ultar Sar trek suitable for beginners?",
+        "answer": "It is a moderate day hike requiring good cardiovascular fitness and surefootedness on exposed moraine paths."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "makran-coastal-odyssey-mud-volcanoes-astola",
+    "category": "Coastal Expeditions",
+    "badge": "COASTAL ODYSSEY 🌊",
+    "title": "The Makran Coastal Odyssey: Mud Volcanoes, Princess of Hope, and Astola Island Marine Waters",
+    "subdeck": "Navigating 653 kilometers of lunar sandstone canyons, Hingol National Park wildlife reserves, and pristine turquoise waters along Pakistan southern shoreline.",
+    "image": "assets/posts/makran-coastal-odyssey-mud-volcanoes-astola_cover.jpg",
+    "stat_number": "653 KM",
+    "stat_label": "N-10 HIGHWAY",
+    "author": "Zainab Mir",
+    "author_role": "Heritage & Cultural Historian",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop",
+    "date": "09 Oct 2026",
+    "read_time": "5 min read",
+    "featured": false,
+    "body": [
+      "Stretching from Karachi to the deep-water harbor of Gwadar, the N-10 Makran Coastal Highway traverses one of the most surreal geological landscapes on Earth. Carved by millennia of tectonic collisions and maritime winds, the arid canyons of Hingol National Park feel more akin to Mars than the Arabian Sea coastline.",
+      "Key waypoints along this coastal corridor include the sacred Chandragup mud volcano—an active geological vent revered by Hindu pilgrims—and the iconic natural wind-sculpted rock formations known as the Sphinx of Balochistan and the Princess of Hope.",
+      "Further west near Pasni, expedition boats transport adventurous divers and marine enthusiasts to Astola Island (Jezira Haft Talar). As Pakistan’s first Marine Protected Area, Astola boasts crystal-clear turquoise lagoons, nesting sites for endangered green sea turtles, and vibrant coral ecosystems."
+    ],
+    "sections": [
+      {
+        "heading": "Hingol National Park Wildlife and Geological Sanctuaries",
+        "content": "Covering over 6,100 square kilometers, Hingol is home to Sindh ibex, marsh crocodiles, and rare marine birds. Travelers should explore the dramatic rock gorges during early morning hours before midday desert temperatures peak."
+      },
+      {
+        "heading": "Astola Island Camping and Maritime Conservation",
+        "content": "Astola requires self-sufficient camping equipment, desalination water, and respect for zero-trace wildlife conservation protocols. The 5-hour boat crossing from Pasni offers frequent sightings of Arabian Sea dolphins."
+      }
+    ],
+    "takeaways": [
+      "The 653-km Makran Coastal Highway connects prehistoric mud volcanoes with pristine marine reserves.",
+      "Hingol National Park showcases rare wildlife, sandstone monoliths, and sacred cultural pilgrimage sites.",
+      "Astola Island is Pakistan’s premier marine eco-reserve with untouched coral reefs and turquoise lagoons."
+    ],
+    "faqs": [
+      {
+        "question": "Is fuel readily available along the Makran Coastal Highway?",
+        "answer": "Fuel stations are located at Ormara, Pasni, and Gwadar; drivers should top up their tanks before entering Hingol National Park."
+      },
+      {
+        "question": "What is the best season to travel the coastal highway?",
+        "answer": "October through March provides mild, pleasant weather with sunny days and cool coastal evening breezes."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "solar-powered-boutique-hospitality-across-hun-2455",
     "category": "Heritage & Culture",
     "badge": "SUSTAINABLE TRAVEL 🌿",
@@ -57,7 +153,7 @@
     "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
     "date": "08 Oct 2026",
     "read_time": "4 min read",
-    "featured": true,
+    "featured": false,
     "body": [
       "In one of the most consequential infrastructure achievements for Northern Pakistan's tourism geography, the newly paved 66-kilometer Astore-to-Skardu alpine highway has officially opened for regular light passenger traffic.",
       "Historically, navigating between the fertile Astore Valley, the legendary Deosai National Park plateau, and the Baltistan capital of Skardu required grueling eight-hour off-road journeys across precarious unpaved tracks. The engineered highway reduces travel time to under 2.5 hours on all-weather tarmac.",
