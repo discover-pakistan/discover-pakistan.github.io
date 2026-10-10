@@ -88,7 +88,7 @@ function renderHeroSection() {
   const leadSubdeckCls = isLeadUrdu ? "featured-subdeck urdu-subdeck" : "featured-subdeck";
 
   featuredSlot.innerHTML = `
-    <a href="posts/${leadPost.id}/" class="featured-lead-card" onclick="openArticleModal('${leadPost.id}'); return false;">
+    <a href="posts/${leadPost.id}/" class="featured-lead-card">
       <div class="featured-media-wrapper">
         <img class="featured-media-img" src="${leadPost.image}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
         <span class="media-badge">${escapeHtml(leadPost.badge || leadPost.category)}</span>
@@ -118,7 +118,7 @@ function renderHeroSection() {
     const titleCls = isUrdu ? "stacked-story-title urdu-title" : "stacked-story-title";
     const subdeckCls = isUrdu ? "stacked-story-excerpt urdu-subdeck" : "stacked-story-excerpt";
     return `
-    <a href="posts/${post.id}/" class="stacked-story-card" onclick="openArticleModal('${post.id}'); return false;">
+    <a href="posts/${post.id}/" class="stacked-story-card">
       <div class="stacked-thumb-wrapper">
         <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
       </div>
@@ -155,7 +155,7 @@ function renderGridSection() {
     const titleCls = isUrdu ? "editorial-card-title urdu-title" : "editorial-card-title";
     const subdeckCls = isUrdu ? "editorial-card-excerpt urdu-subdeck" : "editorial-card-excerpt";
     return `
-    <a href="posts/${post.id}/" class="editorial-card" onclick="openArticleModal('${post.id}'); return false;">
+    <a href="posts/${post.id}/" class="editorial-card">
       <div class="editorial-card-thumb">
         <img class="editorial-card-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" decoding="async" />
         ${post.badge ? `<span class="media-badge">${escapeHtml(post.badge)}</span>` : ''}
@@ -164,7 +164,7 @@ function renderGridSection() {
       <h3 class="${titleCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.title)}</h3>
       <p class="${subdeckCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.subdeck)}</p>
       <div class="author-meta-row">
-        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || 'Kamran Alvi')}" width="24" height="24" loading="lazy" decoding="async" />
+        <img class="author-avatar" src="${post.author_avatar || 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop'}" alt="${escapeHtml(post.author || "Kamran Alvi")}" width="24" height="24" loading="lazy" decoding="async" />
         <span class="author-name">${escapeHtml(post.author || "Kamran Alvi")}</span>
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(post.date)}</span>
@@ -364,19 +364,17 @@ function initModalListeners() {
   });
 
   window.addEventListener("hashchange", () => {
-    const hash = window.location.hash.replace("#", "");
-    if (hash) {
-      openArticleModal(hash);
-    } else {
-      closeArticleModal();
+    const hash = window.location.hash.replace("#", "").trim();
+    if (hash && !hash.startsWith("newsletter")) {
+      window.location.replace("posts/" + hash + "/");
     }
   });
 }
 
 function checkUrlHash() {
-  const hash = window.location.hash.replace("#", "");
-  if (hash) {
-    setTimeout(() => openArticleModal(hash), 150);
+  const hash = window.location.hash.replace("#", "").trim();
+  if (hash && !hash.startsWith("newsletter")) {
+    window.location.replace("posts/" + hash + "/");
   }
 }
 
