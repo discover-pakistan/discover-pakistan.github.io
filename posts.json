@@ -1,5 +1,99 @@
 [
   {
+    "id": "karakoram-winter-tourism-infrastructure-geoth-9bb8",
+    "category": "Winter Tourism",
+    "badge": "WINTER EXPEDITIONS",
+    "title": "Karakoram Winter Tourism Infrastructure: Geothermal Heated Lodges and Skardu Alpine Ice Sports Circuits",
+    "subdeck": "Baltistan expands four-season travel economy as high-altitude boutique resorts deploy geothermal heating and Skardu prepares annual winter ice skating championships.",
+    "image": "assets/posts/karakoram-winter-tourism-infrastructure-geoth-9bb8_cover.jpg",
+    "stat_number": "4-SEASON",
+    "stat_label": "WINTER TOURISM",
+    "author": "Zainab Mir",
+    "author_role": "Heritage & Cultural Historian",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop",
+    "date": "10 Oct 2026",
+    "date_iso": "2026-10-10",
+    "read_time": "4 min read",
+    "featured": false,
+    "body": [
+      "Baltistan is rapidly shedding its reputation as an exclusively summer climbing destination, emerging as a premier winter adventure hub supported by geothermal-heated eco-resorts and daily all-weather flights into Skardu International Airport.",
+      "With boutique lodges in Shigar, Khaplu, and Kachura integrating geothermal ground-source heat pumps and triple-glazed panoramic glass, visitors can marvel at snow-covered 8,000-meter peaks from warm, radiant-heated interiors during sub-zero January cold.",
+      "The regional government and alpine clubs are expanding winter sporting facilities, hosting international ice hockey invitationals on frozen high-altitude lakes and developing backcountry ski touring routes across the Deosai rim."
+    ],
+    "sections": [
+      {
+        "heading": "Reliable Flight Connectivity into Skardu",
+        "content": "Upgraded Instrument Flight Rules (IFR) navigation and terrain-avoidance radars at Skardu Airport have reduced winter flight cancellations by over 75%, providing predictable air bridges from Islamabad and Dubai."
+      },
+      {
+        "heading": "Community Economic Continuity in Winter",
+        "content": "Four-season hospitality operations provide year-round employment for local guides, drivers, and artisans, ending the traditional winter economic paralysis that historically impacted mountain communities."
+      }
+    ],
+    "takeaways": [
+      "Skardu transforms into four-season winter tourism destination with heated eco-resorts.",
+      "All-weather flights and geothermal heating make sub-zero mountain travel comfortable.",
+      "Winter ice hockey tournaments and ski touring generate year-round local community income."
+    ],
+    "faqs": [
+      {
+        "question": "How cold does it get in Skardu during winter?",
+        "answer": "Winter temperatures typically range between -5°C and -15°C, with modern boutique hotels offering 24/7 radiant heating and thermal insulation."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "autumn-foliage-season-in-upper-chitral-and-ka-2403",
+    "category": "Alpine Expeditions",
+    "badge": "AUTUMN CORRIDOR",
+    "title": "Autumn Foliage Season in Upper Chitral and Kalash: Travel Logistics, Route Conditions, and Cultural Festival Guide",
+    "subdeck": "Comprehensive expedition handbook for navigating golden apricot valleys, newly paved Lowari tunnel highway links, and the ancient Choimus winter festivals of the Hindu Kush.",
+    "image": "assets/posts/autumn-foliage-season-in-upper-chitral-and-ka-2403_cover.jpg",
+    "stat_number": "GOLDEN PEAK",
+    "stat_label": "OCTOBER FOLIAGE",
+    "author": "Kamran Alvi",
+    "author_role": "Senior Alpine Expedition Guide",
+    "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
+    "date": "10 Oct 2026",
+    "date_iso": "2026-10-10",
+    "read_time": "5 min read",
+    "featured": true,
+    "body": [
+      "As mid-autumn transforms the Hindu Kush into a brilliant tapestry of crimson poplars, golden apricot orchards, and snow-dusted granite spires, Upper Chitral and the secluded Kalash valleys enter their most photogenic travel window.",
+      "With the Lowari Tunnel highway corridor ensuring smooth, year-round asphalt passage through Dir, travelers no longer face treacherous winter mountain passes to reach Chitral town. From there, well-maintained jeep trails wind into Bumburet, Rumbur, and Birir, where ancient indigenous cultures celebrate centuries-old autumn harvest traditions.",
+      "Further north towards Booni, Mastuj, and the Shandur pass gateway, dramatic canyon rivers mirror towering autumn trees beneath the crystalline silhouette of 7,708-meter Tirich Mir, offering serene trekking conditions free from summer tourist crowds."
+    ],
+    "sections": [
+      {
+        "heading": "Navigating the Lowari Corridor and Valley Highways",
+        "content": "The modernized N-45 highway provides reliable, all-weather connectivity from Islamabad to Chitral in under seven hours. Saloon cars can comfortably reach Chitral town and Booni, while high-clearance crossovers navigate the Kalash valleys with ease."
+      },
+      {
+        "heading": "Cultural Stewardship in the Kalash Valleys",
+        "content": "Responsible travelers are encouraged to stay in community-owned guest houses, respect traditional sanctuary protocols, and support local women's embroidery and walnut oil cooperatives."
+      }
+    ],
+    "takeaways": [
+      "Autumn foliage across Chitral and Kalash valleys offers pristine landscape photography.",
+      "Lowari Tunnel ensures smooth 7-hour highway travel from Islamabad on paved asphalt.",
+      "Community-based ecotourism supports local indigenous mountain heritage and homestays."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best time to witness autumn colors in Chitral?",
+        "answer": "Mid-October through early November offers the peak transition of golden poplars and amber walnut trees against snowy mountain backdrops."
+      },
+      {
+        "question": "Are permits required for foreign tourists visiting Kalash?",
+        "answer": "Foreign visitors register at local tourist checkposts upon entry; no separate special non-objection certificate (NOC) is required for standard valley tourism."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "autumn-hunza-nagar-golden-foliage-ultar-sar",
     "category": "Alpine Expeditions",
     "badge": "ALPINE EXPEDITION 🍂",
@@ -13,7 +107,7 @@
     "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
     "date": "09 Oct 2026",
     "read_time": "5 min read",
-    "featured": true,
+    "featured": false,
     "body": [
       "As mid-October descends upon the Karakoram mountain range, the twin valleys of Hunza and Nagar undergo one of the planet’s most dramatic natural metamorphoses. The terraced orchards of apricot, poplar, and walnut trees ignite in fiery hues of amber, ochre, and vermilion against a jagged backdrop of snow-dusted 7,000-meter giants.",
       "Starting from the ancient cobblestones of Karimabad and the 900-year-old Altit Fort, high-altitude trekkers can navigate the exhilarating ridgeline trail to Ultar Meadow. Perched directly beneath the formidable hanging seracs of Ultar Sar (7,388m) and Ladyfinger Peak (Bublimotin), the trail offers panoramic vistas spanning the entire Hunza River valley below.",
