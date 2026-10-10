@@ -88,7 +88,7 @@ function renderHeroSection() {
   const leadSubdeckCls = isLeadUrdu ? "featured-subdeck urdu-subdeck" : "featured-subdeck";
 
   featuredSlot.innerHTML = `
-    <div class="featured-lead-card" onclick="openArticleModal('${leadPost.id}')">
+    <a href="posts/${leadPost.id}/" class="featured-lead-card" onclick="openArticleModal('${leadPost.id}'); return false;">
       <div class="featured-media-wrapper">
         <img class="featured-media-img" src="${leadPost.image}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
         <span class="media-badge">${escapeHtml(leadPost.badge || leadPost.category)}</span>
@@ -109,7 +109,7 @@ function renderHeroSection() {
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(leadPost.read_time || "4 min read")}</span>
       </div>
-    </div>
+    </a>
   `;
 
   const stackPosts = filtered.slice(1, 4);
@@ -118,7 +118,7 @@ function renderHeroSection() {
     const titleCls = isUrdu ? "stacked-story-title urdu-title" : "stacked-story-title";
     const subdeckCls = isUrdu ? "stacked-story-excerpt urdu-subdeck" : "stacked-story-excerpt";
     return `
-    <div class="stacked-story-card" onclick="openArticleModal('${post.id}')">
+    <a href="posts/${post.id}/" class="stacked-story-card" onclick="openArticleModal('${post.id}'); return false;">
       <div class="stacked-thumb-wrapper">
         <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
       </div>
@@ -132,7 +132,7 @@ function renderHeroSection() {
           <span class="meta-date">${escapeHtml(post.date)}</span>
         </div>
       </div>
-    </div>
+    </a>
   `}).join("");
 }
 
@@ -155,7 +155,7 @@ function renderGridSection() {
     const titleCls = isUrdu ? "editorial-card-title urdu-title" : "editorial-card-title";
     const subdeckCls = isUrdu ? "editorial-card-excerpt urdu-subdeck" : "editorial-card-excerpt";
     return `
-    <div class="editorial-card" onclick="openArticleModal('${post.id}')">
+    <a href="posts/${post.id}/" class="editorial-card" onclick="openArticleModal('${post.id}'); return false;">
       <div class="editorial-card-thumb">
         <img class="editorial-card-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" decoding="async" />
         ${post.badge ? `<span class="media-badge">${escapeHtml(post.badge)}</span>` : ''}
@@ -169,7 +169,7 @@ function renderGridSection() {
         <span class="meta-separator">•</span>
         <span class="meta-date">${escapeHtml(post.date)}</span>
       </div>
-    </div>
+    </a>
   `}).join("");
 }
 
