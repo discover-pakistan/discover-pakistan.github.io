@@ -1,5 +1,101 @@
 [
   {
+    "id": "post_20261011_71ab5b51",
+    "category": "Cultural Expeditions & Heritage",
+    "badge": "HINDU KUSH HERITAGE",
+    "title": "Living Heritage of the Kalash Valleys: Ancient Cedar Architecture and Autumn Harvest Traditions in the Hindu Kush Mountains",
+    "subdeck": "Anthropological conservation initiatives document the centuries-old timber temple sanctuaries and indigenous animist cultural ceremonies across Bumburet, Rumbur, and Birir.",
+    "stat_number": "3,000 YRS",
+    "stat_label": "INDIGENOUS CONTINUITY",
+    "author": "Hamid Raza",
+    "author_role": "Cultural Heritage & Expedition Specialist",
+    "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop",
+    "date": "11 Oct 2026",
+    "read_time": "5 min read",
+    "image_url": "assets/posts/post_20261011_71ab5b51_cover.jpg",
+    "featured": false,
+    "body": [
+      "Tucked within three secluded valleys in the southern Hindu Kush range of Chitral, the indigenous Kalash people have preserved their distinct animist religious heritage, linguistic dialect, and timber architectural traditions for over three millennia.",
+      "During the crisp autumn harvest season, communities in Bumburet, Rumbur, and Birir gather at sacred communal sanctuaries (Jastakan) constructed from intricate interlocking deodar cedar beams, celebrating the bounty of walnut groves, grapes, and mountain wheat.",
+      "Collaborative conservation projects led by local elders and the Directorate of Archaeology are revitalizing traditional wood-carving guilds, safeguarding sacred horse-head totems and ancient hand-loomed wool textiles for future generations."
+    ],
+    "sections": [
+      {
+        "heading": "Cator Timber Engineering and Earthquake Resilience",
+        "content": "Traditional Kalash buildings employ a unique timber-laced masonry technique known locally as Cator. By alternating horizontal deodar timber beams with dry stone masonry, structures absorb seismic shocks without collapsing, standing unharmed through major tectonic events."
+      },
+      {
+        "heading": "Autumn Pulle Festival and Community Cohesion",
+        "content": "The harvest festivities blend rhythmic flute melodies, sacred drum cadences, and vibrant embroidered Kupas headdresses, reinforcing communal values of environmental harmony, mutual respect, and ecological stewardship."
+      }
+    ],
+    "takeaways": [
+      "Kalash valleys preserve over 3,000 years of unbroken animist cultural and architectural heritage.",
+      "Earthquake-resilient deodar timber engineering (Cator) withstands severe seismic activity.",
+      "Community-led conservation guilds protect sacred woodcraft and sustainable mountain agriculture."
+    ],
+    "faqs": [
+      {
+        "question": "What are the three main valleys inhabited by the Kalash community?",
+        "answer": "The three historic valleys are Bumburet, Rumbur, and Birir, located in the lower Chitral district of Khyber Pakhtunkhwa."
+      },
+      {
+        "question": "How do traditional Kalash buildings resist earthquakes?",
+        "answer": "They utilize the Cator timber-lacing technique, which embeds flexible interlocking cedar beams within the stone walls to absorb tectonic ground motion."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "post_20261011_5ae5f466",
+    "category": "High-Altitude Mountaineering",
+    "badge": "KARAKORAM TRAVERSE",
+    "title": "The Baltoro Glacier Scientific Traverse: Navigating Crevasse Fields and High-Altitude Moraine Landscapes Under Karakoram Autumn Skies",
+    "subdeck": "Glaciologists and high-altitude mountaineering teams document morphological shifts across the 63-kilometer ice highway beneath the amphitheater of eight-thousander peaks.",
+    "stat_number": "5,400M",
+    "stat_label": "CONCORDIA ELEVATION",
+    "author": "Kamran Alvi",
+    "author_role": "High-Altitude Expedition Lead",
+    "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
+    "date": "11 Oct 2026",
+    "read_time": "5 min read",
+    "image_url": "assets/posts/post_20261011_5ae5f466_cover.jpg",
+    "featured": true,
+    "body": [
+      "Extending across 63 kilometers through the heart of the Central Karakoram National Park, the Baltoro Glacier forms one of the planet's most formidable non-polar glacial highways, carving through granite spires of unparalleled grandeur.",
+      "An international glaciological expedition accompanied by seasoned Balti alpine guides completed a two-week scientific transect from Askole to Concordia, deploying ground-penetrating radar systems to measure sub-surface melt channels and moraine thickness.",
+      "Standing at Concordia—the legendary confluence of the Baltoro and Godwin-Austen glaciers—explorers are surrounded by four of the earth's fourteen peaks exceeding eight thousand meters, including K2, Broad Peak, and Gasherbrum I and II."
+    ],
+    "sections": [
+      {
+        "heading": "Traversing the Ice Labyrinth of Gore II to Concordia",
+        "content": "As autumn transitions into early winter, morning temperatures plunge below minus fifteen degrees Celsius, stabilizing treacherous crevasse bridges and revealing pristine crystal ice seracs sculpted by centuries of gravitational flow."
+      },
+      {
+        "heading": "Sustainable High-Altitude Expedition Ethics",
+        "content": "The expedition collaborated with local Baltistan porter associations to demonstrate zero-trace portable solar incinerators and bio-waste digestion containers, establishing a new sustainable protocol to preserve fragile Karakoram alpine ecosystems."
+      }
+    ],
+    "takeaways": [
+      "Scientific transect maps sub-surface glacial channels across 63-kilometer Baltoro Glacier.",
+      "Concordia offers a 360-degree panorama of four of the world's 14 eight-thousand-meter summits.",
+      "Pioneering eco-friendly expedition practices protect fragile high-altitude alpine waterways."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best season for trekking the Baltoro Glacier?",
+        "answer": "The prime trekking window extends from late June through late September, with early autumn offering exceptionally clear skies and stable snowpack."
+      },
+      {
+        "question": "Why is Concordia considered one of the greatest natural wonders on Earth?",
+        "answer": "It is the only place on the planet where you can stand surrounded simultaneously by K2, Broad Peak, Gasherbrum I, and Gasherbrum II within a single unbroken horizon."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "gandhara-civilization-revival-unesco-and-arch-3f974d66",
     "title": "Gandhara Civilization Revival: UNESCO and Archaeology Directorate Complete Conservation of Swat Valley Buddhist Monasteries",
     "subdeck": "Comprehensive restoration of Butkara I and Shingardar Stupa unveils multilingual digital audio guides and protected heritage trails for global cultural pilgrimage.",
@@ -112,7 +208,7 @@
     "author_avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop",
     "date": "10 Oct 2026",
     "read_time": "5 min read",
-    "featured": true,
+    "featured": false,
     "body": [
       "Perched at an elevation of 3,738 meters where the Hindu Kush and Gilgit-Baltistan ranges converge, the legendary Shandur Pass has finalized comprehensive conservation upgrades to safeguard the pristine alpine plateau ahead of the annual freestyle mountain polo championship.",
       "The ancient contest, contested without standard polo rules, umpires, or safety chukkers between the rival mountain districts of Chitral and Gilgit since 1936, attracts thousands of international mountaineers, equestrians, and cultural enthusiasts.",
