@@ -8,6 +8,8 @@
   <meta name="theme-color" content="#1B4332" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://discover-pakistan.github.io/" />
+  <link rel="next" href="https://discover-pakistan.github.io/page/2/" />
+
 
   <!-- Google Search Console Ownership Verification -->
   <meta name="google-site-verification" content="google-site-verification-pending-setup" />
@@ -47,6 +49,78 @@
   </noscript>
 
   <link rel="stylesheet" href="styles.css?v=2.0" />
+
+  <style>
+    /* Pagination Navigation Styles */
+    .pagination-container {
+      margin: 44px auto 56px auto;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .pagination-meta {
+      font-size: 0.9rem;
+      color: var(--text-muted, #64748b);
+      font-weight: 500;
+    }
+    .pagination-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .page-item {
+      margin: 0;
+      list-style: none;
+    }
+    .page-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 40px;
+      padding: 0 14px;
+      border-radius: var(--radius-md, 8px);
+      border: 1px solid var(--border-light, #e2e8f0);
+      background: var(--bg-card, #ffffff);
+      color: var(--text-primary, #0f172a);
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .page-link:hover:not(.disabled):not(.active) {
+      border-color: var(--accent-primary, #0F4C81);
+      color: var(--accent-primary, #0F4C81);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .page-link.active {
+      background: var(--accent-primary, #0F4C81) !important;
+      color: #ffffff !important;
+      border-color: var(--accent-primary, #0F4C81) !important;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+      cursor: default;
+    }
+    .page-link.disabled {
+      opacity: 0.4;
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+    .page-archive-header {
+      padding: 44px 0 24px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light, #e2e8f0);
+      margin-bottom: 36px;
+    }
+  </style>
 
   <!-- Structured Data Schema.org (Knowledge Graph & AI Engine Index) -->
   <script type="application/ld+json">
@@ -400,296 +474,18 @@
         <span class="meta-date">08 Oct 2026</span>
       </div>
     </a>
-
-    <a href="posts/k2-base-camp-concordia-baltoro-trek-guide/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/k2-base-camp-concordia-baltoro-trek-guide_cover.jpg" alt="K2 Base Camp &amp; Concordia: The Ultimate Trekking Dossier Across the Baltoro Glacier" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">ALPINIST ICON 🏔️</span>
-      </div>
-      <div class="card-category-tag">Alpine Expeditions</div>
-      <h3 class="editorial-card-title" >K2 Base Camp &amp; Concordia: The Ultimate Trekking Dossier Across the Baltoro Glacier</h3>
-      <p class="editorial-card-excerpt" >A definitive 14-day expedition guide across the 63km Baltoro glacier to the &#039;Throne of the Mountain Gods&#039; at Concordia, facing K2, Broad Peak, and Gasherbrum.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Kamran Alvi" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Kamran Alvi</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">07 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/shigar-khaplu-wooden-palaces-balti-heritage/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/shigar-khaplu-wooden-palaces-balti-heritage_cover.jpg" alt="Shigar &amp; Khaplu: Ancient Wooden Palaces, Royal Gardens &amp; Balti Heritage Along the Indus" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">HERITAGE DISPATCH 🏰</span>
-      </div>
-      <div class="card-category-tag">Cultural Heritage</div>
-      <h3 class="editorial-card-title" >Shigar &amp; Khaplu: Ancient Wooden Palaces, Royal Gardens &amp; Balti Heritage Along the Indus</h3>
-      <p class="editorial-card-excerpt" >Exploring the 400-year-old restored Raja palaces of Baltistan, where Tibetan Buddhist woodwork, Kashmiri lattice screens, and Persian royal gardens coalesce.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop" alt="Zainab Mir" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Zainab Mir</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">07 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/astola-island-expedition-pasni-balochistan/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/astola-island-expedition-pasni-balochistan_cover.jpg" alt="Astola Island Expedition: The Untamed &#039;Island of the Seven Hills&#039; off the Pasni Coast" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">WILD MARINE 🌊</span>
-      </div>
-      <div class="card-category-tag">Coastal &amp; Desert</div>
-      <h3 class="editorial-card-title" >Astola Island Expedition: The Untamed &#039;Island of the Seven Hills&#039; off the Pasni Coast</h3>
-      <p class="editorial-card-excerpt" >Pakistan&#039;s largest offshore island features pristine turquoise coral waters, endangered sea turtles, and dramatic limestone cliffs in the remote northern Arabian Sea.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Bilal Mengal" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Bilal Mengal</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">07 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/broghil-valley-karambar-lake-chitral-expedition/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/broghil-valley-karambar-lake-chitral-expedition_cover.jpg" alt="The Broghil Valley &amp; Karambar Lake: Traversing the Remote High Roof of Upper Chitral" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">UNTOUCHED FRONTIER 🏕️</span>
-      </div>
-      <div class="card-category-tag">Wilderness Expeditions</div>
-      <h3 class="editorial-card-title" >The Broghil Valley &amp; Karambar Lake: Traversing the Remote High Roof of Upper Chitral</h3>
-      <p class="editorial-card-excerpt" >Bordering Afghanistan&#039;s Wakhan Corridor, this high-altitude expedition crosses peat bogs, turquoise glacial lakes, and traditional Wakhi yak pastures at 4,300 meters.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Dr. Tariq Chitrali" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Dr. Tariq Chitrali</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">07 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/phander-valley-ghizer-emerald-lake-autumn-guide/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/phander-valley-ghizer-emerald-lake-autumn-guide_cover.jpg" alt="Autumn in Phander Valley: The Emerald Trout Lake &amp; Golden Willow Sanctuaries of Ghizer" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">HIDDEN GEM 🍂</span>
-      </div>
-      <div class="card-category-tag">Travel Itineraries</div>
-      <h3 class="editorial-card-title" >Autumn in Phander Valley: The Emerald Trout Lake &amp; Golden Willow Sanctuaries of Ghizer</h3>
-      <p class="editorial-card-excerpt" >Escape commercial tourist crowds in Ghizer&#039;s tranquil alpine paradise, celebrated for mirror-calm meanders, brown trout fly-fishing, and incandescent golden foliage.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop" alt="Sarmad Shigri" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Sarmad Shigri</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">07 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/hunza-valley-autumn-urdu/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/hunza-valley-autumn-urdu_cover.jpg" alt="ہنزہ اور وادی نگر کا سنہری خزاں: راکاپوشی، التیت اور بلتت قلعے کا مکمل سفرنامہ" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">سفری شاہکار 🍂</span>
-      </div>
-      <div class="card-category-tag">اردو ٹریول گائیڈ</div>
-      <h3 class="editorial-card-title urdu-title" dir="rtl">ہنزہ اور وادی نگر کا سنہری خزاں: راکاپوشی، التیت اور بلتت قلعے کا مکمل سفرنامہ</h3>
-      <p class="editorial-card-excerpt urdu-subdeck" dir="rtl">اکتوبر اور نومبر میں وادی ہنزہ کے خوبانی اور چنار کے درخت سونے کی طرح چمک اٹھتے ہیں—شمالی علاقہ جات کی سب سے سحر انگیز موسمی مہم۔</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop" alt="حمید رضا" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">حمید رضا</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">04 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/skardu-shangrila-baltistan-urdu/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/skardu-shangrila-baltistan-urdu_cover.jpg" alt="سکردو، شنگریلا اور خپلو محل: بلتستان کے صحرا اور برفانی جھیلوں کی دنیا" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">قراقرم مہم 🏔️</span>
-      </div>
-      <div class="card-category-tag">اردو ٹریول گائیڈ</div>
-      <h3 class="editorial-card-title urdu-title" dir="rtl">سکردو، شنگریلا اور خپلو محل: بلتستان کے صحرا اور برفانی جھیلوں کی دنیا</h3>
-      <p class="editorial-card-excerpt urdu-subdeck" dir="rtl">کے ٹو کا گیٹ وے، کٹپانہ کا سرد صحرا اور نیلگوں جھیلیں—بلتستان کے سحر انگیز عجائبات کی تفصیلی سفری دستاویز۔</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="شیرباز علی" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">شیرباز علی</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">03 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/deosai-national-park-urdu/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/deosai-national-park-urdu_cover.jpg" alt="دیوسائی نیشنل پارک: دنیا کے بلند ترین میدان کی پراسرار خوبصورتی اور شیوسر جھیل" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">دیو مالائی خطہ 🐻</span>
-      </div>
-      <div class="card-category-tag">اردو ٹریول گائیڈ</div>
-      <h3 class="editorial-card-title urdu-title" dir="rtl">دیوسائی نیشنل پارک: دنیا کے بلند ترین میدان کی پراسرار خوبصورتی اور شیوسر جھیل</h3>
-      <p class="editorial-card-excerpt urdu-subdeck" dir="rtl">سطح سمندر سے 4000 میٹر بلند دنیا کی چھت پر نایاب ہمالیائی بھورے ریچھ، نیلگوں جھیلیں اور جنگلی پھولوں کا سمندر۔</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop" alt="تیمور ملک" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">تیمور ملک</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">02 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/kumrat-valley-katora-lake-urdu/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/kumrat-valley-katora-lake-urdu_cover.jpg" alt="کمرات ویلی اور جہاز بانڈہ کٹورا جھیل: خیبر پختونخوا کا پوشیدہ قدرتی شاہکار" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">خیبر پختونخوا 🌲</span>
-      </div>
-      <div class="card-category-tag">اردو ٹریول گائیڈ</div>
-      <h3 class="editorial-card-title urdu-title" dir="rtl">کمرات ویلی اور جہاز بانڈہ کٹورا جھیل: خیبر پختونخوا کا پوشیدہ قدرتی شاہکار</h3>
-      <p class="editorial-card-excerpt urdu-subdeck" dir="rtl">دریائے پنجکوڑہ کا شفاف پانی، دیودار کے صدیوں پرانے گھنے جنگلات اور 11,500 فٹ پر واقع کٹورا جھیل کا ٹریک۔</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop" alt="فاطمہ رحمان" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">فاطمہ رحمان</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">01 Oct 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/passu-cones-gojal-valley-urdu/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/passu-cones-gojal-valley-urdu_cover.jpg" alt="پاسُو کونز اور حسینی پل: شاہراہ قراقرم کا سحر انگیز ایڈونچر اور وادی گوجال" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">قراقرم ہائی وے 🌉</span>
-      </div>
-      <div class="card-category-tag">اردو ٹریول گائیڈ</div>
-      <h3 class="editorial-card-title urdu-title" dir="rtl">پاسُو کونز اور حسینی پل: شاہراہ قراقرم کا سحر انگیز ایڈونچر اور وادی گوجال</h3>
-      <p class="editorial-card-excerpt urdu-subdeck" dir="rtl">کیٹھیڈرل کی طرح ایستادہ نوکیلی چوٹیاں، لکڑی کا لٹکتا ہوا خطرناک حسینی پل اور بورتھ جھیل کے دلفریب مناظر۔</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="شیرباز علی" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">شیرباز علی</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">30 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/fairy-meadows-nanga-parbat-urdu/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/fairy-meadows-nanga-parbat-urdu_cover.jpg" alt="فیری میڈوز اور نانگا پربت: قاتل پہاڑ کے سائے میں کوہ پیمائی اور ایڈونچر کا خواب" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">الپائن ٹریک 🏔️</span>
-      </div>
-      <div class="card-category-tag">اردو ٹریول گائیڈ</div>
-      <h3 class="editorial-card-title urdu-title" dir="rtl">فیری میڈوز اور نانگا پربت: قاتل پہاڑ کے سائے میں کوہ پیمائی اور ایڈونچر کا خواب</h3>
-      <p class="editorial-card-excerpt urdu-subdeck" dir="rtl">رائے کوٹ پل کی اعصاب شکن جیپ رائیڈ، صنوبر کے جنگلات اور نانگا پربت (8,126 میٹر) کی دیو ہیکل شمالی دیوار کا سحر۔</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=120&h=120&fit=crop" alt="حمید رضا" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">حمید رضا</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">29 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/hunza-valley-autumn-dossier/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/hunza-valley-autumn-dossier_cover.jpg" alt="Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi &amp; Silk Road Forts" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">EXPEDITION DOSSIER</span>
-      </div>
-      <div class="card-category-tag">Alpine Expeditions</div>
-      <h3 class="editorial-card-title" >Hunza Valley Autumn Dossier: Golden Poplars, Rakaposhi &amp; Silk Road Forts</h3>
-      <p class="editorial-card-excerpt" >When October arrives, the terraced orchards of Upper and Central Hunza erupt into fiery shades of amber, gold, and crimson against snow-capped giants.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop" alt="Ayesha Khan" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Ayesha Khan</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">28 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/skardu-shangrila-gateway-k2/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/skardu-shangrila-gateway-k2_cover.jpg" alt="Skardu &amp; Shangrila: Gateway to the High Karakoram &amp; Cold Desert Dunes" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">K2 GATEWAY</span>
-      </div>
-      <div class="card-category-tag">High Karakoram</div>
-      <h3 class="editorial-card-title" >Skardu &amp; Shangrila: Gateway to the High Karakoram &amp; Cold Desert Dunes</h3>
-      <p class="editorial-card-excerpt" >From the turquoise mirror of Lower Kachura Lake to the snow-dusted dunes of Katpana, Skardu bridges alpine wilderness and high-altitude desert.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Sherbaz Ali" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Sherbaz Ali</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">27 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/deosai-plains-land-of-giants/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/deosai-plains-land-of-giants_cover.jpg" alt="Deosai National Park: The 4,000m Alpine Plateau of the Himalayan Brown Bear" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">ALPINE PLATEAU</span>
-      </div>
-      <div class="card-category-tag">Wilderness Reserves</div>
-      <h3 class="editorial-card-title" >Deosai National Park: The 4,000m Alpine Plateau of the Himalayan Brown Bear</h3>
-      <p class="editorial-card-excerpt" >A rolling expanse of glacial streams, wild alpine flora, and the crystalline mirror of Sheosar Lake set across Asia’s highest wildlife plateau.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop" alt="Taimur Malik" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Taimur Malik</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">26 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/passu-attabad-turquoise-wonder/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/passu-attabad-turquoise-wonder_cover.jpg" alt="Passu Cones &amp; Attabad Lake: The Turquoise Marvel of Upper Hunza" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">GLACIAL LAKES</span>
-      </div>
-      <div class="card-category-tag">Gojal &amp; Karakoram</div>
-      <h3 class="editorial-card-title" >Passu Cones &amp; Attabad Lake: The Turquoise Marvel of Upper Hunza</h3>
-      <p class="editorial-card-excerpt" >Carved by ancient glaciers and seismic shifts, Upper Hunza reveals the Cathedral Peaks of Passu and the turquoise waters of Attabad.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop" alt="Sherbaz Ali" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Sherbaz Ali</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">25 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/kumrat-valley-alpine-secret/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/kumrat-valley-alpine-secret_cover.jpg" alt="Kumrat Valley &amp; Panjkora Cascades: Khyber Pakhtunkhwa’s Pine Wilderness" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">VALLEY EXPLORATION</span>
-      </div>
-      <div class="card-category-tag">Khyber Pakhtunkhwa</div>
-      <h3 class="editorial-card-title" >Kumrat Valley &amp; Panjkora Cascades: Khyber Pakhtunkhwa’s Pine Wilderness</h3>
-      <p class="editorial-card-excerpt" >Towering Deodar canopies, roaring crystal streams, and remote shepherd trails make Kumrat the ultimate wilderness escape.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop" alt="Taimur Malik" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Taimur Malik</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">24 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/kalash-valleys-ancient-heritage/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/kalash-valleys-ancient-heritage_cover.jpg" alt="Kalash Valleys: Ancient Polytheistic Heritage in the Rugged Hindu Kush" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">LIVING HERITAGE</span>
-      </div>
-      <div class="card-category-tag">Cultural Heritage</div>
-      <h3 class="editorial-card-title" >Kalash Valleys: Ancient Polytheistic Heritage in the Rugged Hindu Kush</h3>
-      <p class="editorial-card-excerpt" >Surrounded by the cedar slopes of Chitral, the indigenous Kalash people preserve centuries of animist rituals, music, and embroidery.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop" alt="Ayesha Khan" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Ayesha Khan</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">23 Sep 2026</span>
-      </div>
-    </a>
-
-    <a href="posts/makran-coastal-highway-hingol/" class="editorial-card">
-      <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="assets/posts/makran-coastal-highway-hingol_cover.jpg" alt="Makran Coastal Highway: The Mud Volcanoes &amp; Golden Shores of Balochistan" width="600" height="338" loading="lazy" decoding="async" />
-        <span class="media-badge">COASTAL HIGHWAY</span>
-      </div>
-      <div class="card-category-tag">Coastal Expeditions</div>
-      <h3 class="editorial-card-title" >Makran Coastal Highway: The Mud Volcanoes &amp; Golden Shores of Balochistan</h3>
-      <p class="editorial-card-excerpt" >Winding 653 kilometers along the Arabian Sea, N-10 reveals the Princess of Hope, the Sphinx of Balochistan, and secluded beaches.</p>
-      <div class="author-meta-row">
-        <img class="author-avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop" alt="Taimur Malik" width="24" height="24" loading="lazy" decoding="async" />
-        <span class="author-name">Taimur Malik</span>
-        <span class="meta-separator">•</span>
-        <span class="meta-date">22 Sep 2026</span>
-      </div>
-    </a>
       </div>
     </section>
+
+    <!-- Pagination Navigation -->
+    <nav id="pagination-container" class="pagination-container" aria-label="Stories pagination">
+
+    <div class="pagination-meta">Showing stories 1–12 of 30</div>
+    <ul class="pagination-list">
+      <li class="page-item"><span class="page-link disabled">« Prev</span></li> <li class="page-item"><span class="page-link active" aria-current="page">1</span></li> <li class="page-item"><a class="page-link" href="page/2/">2</a></li> <li class="page-item"><a class="page-link" href="page/3/">3</a></li> <li class="page-item"><a class="page-link" href="page/2/" aria-label="Next page">Next »</a></li>
+    </ul>
+    
+    </nav>
 
     <!-- Newsletter Callout Banner -->
     <section id="newsletter" class="newsletter-banner">

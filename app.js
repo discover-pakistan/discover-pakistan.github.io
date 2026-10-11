@@ -7,6 +7,12 @@ let currentCategory = "All";
 let searchQuery = "";
 let articleStartTime = null;
 
+const pageMatch = window.location.pathname.match(/\/page\/(\d+)\/?/);
+let currentPage = pageMatch ? parseInt(pageMatch[1], 10) : 1;
+const PAGE_SIZE = 12;
+const isArchivePage = !!pageMatch;
+const postUrlPrefix = isArchivePage ? "../../" : "";
+
 const featuredSlot = document.getElementById("featured-story-slot");
 const stackSlot = document.getElementById("stacked-stories-slot");
 const editorialGrid = document.getElementById("editorial-grid");
@@ -30,7 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function loadPosts() {
   try {
-    const res = await fetch("posts.json?t=" + Date.now());
+    const res = await fetch(postUrlPrefix + "posts.json?t=" + Date.now());
     if (res.ok) {
       const freshPosts = await res.json();
       if (Array.isArray(freshPosts) && freshPosts.length > 0) {
@@ -40,7 +46,9 @@ async function loadPosts() {
   } catch (err) {
     console.warn("Could not fetch posts.json dynamically. Using inline data:", err);
   }
-  renderAll();
+  if (currentCategory !== "All" || searchQuery) {
+    renderAll();
+  }
 }
 
 function openMobileDrawer() {
@@ -73,6 +81,7 @@ function renderAll() {
 }
 
 function renderHeroSection() {
+  if (!featuredSlot || !stackSlot) return;
   if (!allPosts || allPosts.length === 0) return;
 
   const filtered = getFilteredPosts();
@@ -88,7 +97,7 @@ function renderHeroSection() {
   const leadSubdeckCls = isLeadUrdu ? "featured-subdeck urdu-subdeck" : "featured-subdeck";
 
   featuredSlot.innerHTML = `
-    <a href="posts/${leadPost.id}/" class="featured-lead-card">
+    <a href="${postUrlPrefix}posts/${leadPost.id}/" class="featured-lead-card">
       <div class="featured-media-wrapper">
         <img class="featured-media-img" src="${leadPost.image}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
         <span class="media-badge">${escapeHtml(leadPost.badge || leadPost.category)}</span>
@@ -118,7 +127,7 @@ function renderHeroSection() {
     const titleCls = isUrdu ? "stacked-story-title urdu-title" : "stacked-story-title";
     const subdeckCls = isUrdu ? "stacked-story-excerpt urdu-subdeck" : "stacked-story-excerpt";
     return `
-    <a href="posts/${post.id}/" class="stacked-story-card">
+    <a href="${postUrlPrefix}posts/${post.id}/" class="stacked-story-card">
       <div class="stacked-thumb-wrapper">
         <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
       </div>
@@ -138,12 +147,24 @@ function renderHeroSection() {
 
 function renderGridSection() {
   const filtered = getFilteredPosts();
-  const gridPosts = (currentCategory === "All" && !searchQuery) ? filtered.slice(4) : filtered;
+  let gridPosts = [];
+
+  if (currentCategory === "All" && !searchQuery) {
+    if (currentPage === 1) {
+      gridPosts = filtered.slice(4, 12);
+    } else {
+      const startIdx = 12 + (currentPage - 2) * PAGE_SIZE;
+      gridPosts = filtered.slice(startIdx, startIdx + PAGE_SIZE);
+    }
+  } else {
+    const startIdx = (currentPage - 1) * PAGE_SIZE;
+    gridPosts = filtered.slice(startIdx, startIdx + PAGE_SIZE);
+  }
 
   if (gridPosts.length === 0) {
     editorialGrid.innerHTML = `
       <div style="grid-column: 1 / -1; padding: 48px; text-align: center; color: var(--text-muted);">
-        <p style="font-size: 1.1rem; margin-bottom: 8px;">No additional stories in this category.</p>
+        <p style="font-size: 1.1rem; margin-bottom: 8px;">No stories found matching your filter.</p>
         <button class="pill-btn active" onclick="setCategory('All')">View All Stories</button>
       </div>
     `;
@@ -154,10 +175,14 @@ function renderGridSection() {
     const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title || "");
     const titleCls = isUrdu ? "editorial-card-title urdu-title" : "editorial-card-title";
     const subdeckCls = isUrdu ? "editorial-card-excerpt urdu-subdeck" : "editorial-card-excerpt";
+    let cardImg = post.image || post.cover_image || "";
+    if (cardImg && !cardImg.startsWith("http") && !cardImg.startsWith("/")) {
+      cardImg = postUrlPrefix + cardImg;
+    }
     return `
-    <a href="posts/${post.id}/" class="editorial-card">
+    <a href="${postUrlPrefix}posts/${post.id}/" class="editorial-card">
       <div class="editorial-card-thumb">
-        <img class="editorial-card-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" decoding="async" />
+        <img class="editorial-card-img" src="${cardImg}" alt="${escapeHtml(post.title)}" width="600" height="338" loading="lazy" decoding="async" />
         ${post.badge ? `<span class="media-badge">${escapeHtml(post.badge)}</span>` : ''}
       </div>
       <div class="card-category-tag">${escapeHtml(post.category)}</div>
@@ -199,6 +224,7 @@ function initCategoryFilters() {
 
 window.setCategory = function(cat) {
   currentCategory = cat;
+  currentPage = 1;
   document.querySelectorAll(".pill-btn").forEach(btn => {
     btn.classList.toggle("active", btn.textContent.trim() === cat);
   });
@@ -209,6 +235,7 @@ function initSearch() {
   if (!searchInput) return;
   searchInput.addEventListener("input", (e) => {
     searchQuery = e.target.value.trim();
+    currentPage = 1;
     renderAll();
   });
 }
@@ -217,7 +244,7 @@ window.openArticleModal = async function(id) {
   let post = allPosts.find(p => p.id === id);
   if (!post) {
     try {
-      const res = await fetch("posts.json?t=" + Date.now());
+      const res = await fetch(postUrlPrefix + "posts.json?t=" + Date.now());
       if (res.ok) {
         allPosts = await res.json();
         post = allPosts.find(p => p.id === id);
@@ -366,7 +393,7 @@ function initModalListeners() {
   window.addEventListener("hashchange", () => {
     const hash = window.location.hash.replace("#", "").trim();
     if (hash && !hash.startsWith("newsletter")) {
-      window.location.replace("posts/" + hash + "/");
+      window.location.replace(postUrlPrefix + "posts/" + hash + "/");
     }
   });
 }
@@ -374,7 +401,7 @@ function initModalListeners() {
 function checkUrlHash() {
   const hash = window.location.hash.replace("#", "").trim();
   if (hash && !hash.startsWith("newsletter")) {
-    window.location.replace("posts/" + hash + "/");
+    window.location.replace(postUrlPrefix + "posts/" + hash + "/");
   }
 }
 
