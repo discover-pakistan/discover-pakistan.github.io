@@ -1,5 +1,101 @@
 [
   {
+    "id": "ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions",
+    "category": "Heritage & Archaeological Wonders",
+    "badge": "HISTORIC CITADEL 🏰",
+    "title": "Ranikot: The Great Wall of Sindh and the 32-Kilometer Stone Bastion Guarding the Kirthar Range",
+    "subdeck": "Investigating the architectural grandeur, mysterious origins, and massive defensive ramparts of the world's largest stone fortress rising above the arid hills of Jamshoro.",
+    "stat_number": "32 KM",
+    "stat_label": "STONE PERIMETER",
+    "author": "Hamid Raza",
+    "author_role": "Senior Cultural Heritage Correspondent",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop",
+    "date": "12 Oct 2026",
+    "read_time": "5 min read",
+    "image_url": "assets/posts/ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions_cover.jpg",
+    "featured": false,
+    "body": [
+      "Rising majestically out of the desolate, sun-baked ridges of the Kirthar mountain range in Sindh, Ranikot Fort—often called the Great Wall of Sindh—is one of the most enigmatic fortifications on earth.",
+      "Spanning an astonishing perimeter of approximately 32 kilometers, its massive dressed-sandstone ramparts, punctuated by semi-circular watchtowers and arrow slits, connect rugged natural mountain peaks to form an impenetrable desert enclave.",
+      "While archaeological consensus links its current stone reinforcement to the 18th-century Talpur Mirs, foundational pottery and buried lime-mortar footings indicate defensive bastions dating back over two millennia along historic Silk Road trade corridors."
+    ],
+    "sections": [
+      {
+        "heading": "The Inner Citadels of Miri and Shergarh",
+        "content": "Within the expansive outer fortifications sit two distinct strategic redoubts: Miri Fort, which served as the fortified residential palace of the commanding governor, and Shergarh Fort, perched atop a sheer ridge at 1,485 feet, offering panoramic 360-degree vistas across the Indus plains."
+      },
+      {
+        "heading": "Hydrological Engineering in the Arid Wilderness",
+        "content": "A marvel of ancient civil engineering, the Sann Gate at Ranikot incorporates an arched subterranean stone sluice system that permitted seasonal river currents to pass safely beneath the fortified perimeter wall without undermining defensive security."
+      }
+    ],
+    "takeaways": [
+      "Ranikot Fort spans a monumental 32-kilometer perimeter across the Kirthar Range in Sindh.",
+      "Features multi-layered defensive bastions, including the inner citadels of Miri and high-altitude Shergarh.",
+      "Showcases sophisticated ancient hydrological sluices and stone ramparts along historic trade routes."
+    ],
+    "faqs": [
+      {
+        "question": "How far is Ranikot Fort from Karachi?",
+        "answer": "Ranikot Fort is located approximately 260 kilometers north of Karachi, accessible via the Indus Highway through Jamshoro and Sann."
+      },
+      {
+        "question": "Who constructed the fortifications at Ranikot?",
+        "answer": "While the current standing walls were restored by the Talpur Mirs in the early 19th century, archaeological excavations reveal foundation layers dating to Scythian, Parthian, and Sassanid antiquity."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism",
+    "category": "Northern Peaks & Valleys",
+    "badge": "ALPINE SANCTUARY 🌲",
+    "title": "The Living Pine Forests of Kumrat Valley: Alpine Ecology, Glacial Streams, and Sustainable Eco-Tourism Corridors",
+    "subdeck": "Journey into Upper Dir's pristine sub-alpine wilderness where centuries-old Himalayan deodar stands, turquoise Panjkora riverbeds, and community conservancies redefine sustainable mountain travel.",
+    "stat_number": "2,800M",
+    "stat_label": "VALLEY ELEVATION",
+    "author": "Kamran Alvi",
+    "author_role": "Conservation & Mountain Guide Editor",
+    "author_avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop",
+    "date": "12 Oct 2026",
+    "read_time": "5 min read",
+    "image_url": "assets/posts/kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism_cover.jpg",
+    "featured": true,
+    "body": [
+      "Hidden beneath the dramatic crests of Khyber Pakhtunkhwa's Upper Dir district lies Kumrat Valley, one of South Asia's most ecologically intact alpine river basins.",
+      "Carved by the crystal headwaters of the Panjkora River, Kumrat is characterized by towering virgin Himalayan deodar (Cedrus deodara) canopy forests that stretch uninterrupted across emerald riverbanks and cascading glacial meltwater pools.",
+      "As sustainable travel initiatives replace unregulated tourism camps, Kumrat has emerged as a showcase model for community-managed forest corridors that protect rare biodiversity while empowering indigenous Kohistani pastoral families."
+    ],
+    "sections": [
+      {
+        "heading": "Himalayan Forest Flora and Glacial Lakes",
+        "content": "Beyond the forested valley floor, high-altitude trekking routes ascend toward the snow-fed Katora Lake (3,500m), an azure glacial tarn framed by jagged granite amphitheaters. The surrounding slopes provide critical habitat for the endangered Himalayan musk deer and migratory raptors."
+      },
+      {
+        "heading": "Community-Led Forest Protection Guilds",
+        "content": "Local village conservation committees work in partnership with regional wildlife departments to enforce strict bans on illegal logging, manage zero-waste camping zones, and channel park conservation levies directly into village schools and clean micro-hydro power stations."
+      }
+    ],
+    "takeaways": [
+      "Kumrat Valley preserves primeval Himalayan deodar forests along the Panjkora River in Upper Dir.",
+      "Trekking trails lead to the spectacular high-altitude glacial Katora Lake at 3,500 meters.",
+      "Community conservation guilds protect alpine wildlife and enforce sustainable eco-tourism standards."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best season to explore Kumrat Valley?",
+        "answer": "The optimal trekking season spans from late May through early October, when mountain roads are accessible and alpine meadows are in full bloom."
+      },
+      {
+        "question": "How do travelers reach Katora Lake from Kumrat?",
+        "answer": "From the Jahaz Banda meadows, travelers undertake a rigorous 3 to 4-hour alpine hike traversing glacial streams and boulder fields to reach Katora Lake."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "kalash-valleys-ancient-cedar-architecture-harvest-traditions",
     "category": "Cultural Expeditions & Heritage",
     "badge": "HINDU KUSH HERITAGE",
@@ -61,7 +157,7 @@
     "date": "11 Oct 2026",
     "read_time": "5 min read",
     "image_url": "assets/posts/baltoro-glacier-scientific-traverse-karakoram-mountains_cover.jpg",
-    "featured": true,
+    "featured": false,
     "body": [
       "Extending across 63 kilometers through the heart of the Central Karakoram National Park, the Baltoro Glacier forms one of the planet's most formidable non-polar glacial highways, carving through granite spires of unparalleled grandeur.",
       "An international glaciological expedition accompanied by seasoned Balti alpine guides completed a two-week scientific transect from Askole to Concordia, deploying ground-penetrating radar systems to measure sub-surface melt channels and moraine thickness.",
