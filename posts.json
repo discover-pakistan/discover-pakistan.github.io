@@ -1,5 +1,109 @@
 [
   {
+    "id": "rohtas-fort-sher-shah-suri-jhelum-unesco-heritage",
+    "category": "Cultural Heritage",
+    "badge": "UNESCO HERITAGE",
+    "title": "Rohtas Fort: Sher Shah Suri's Stone Fortress Near Jhelum and Why UNESCO Protects It",
+    "subdeck": "Built in the 1540s to hold the Grand Trunk route against the returning Mughals, Rohtas remains one of the finest examples of early Muslim military architecture in South Asia.",
+    "stat_number": "1997",
+    "stat_label": "UNESCO LISTING",
+    "author": "Hamid Raza",
+    "author_role": "Senior Cultural Heritage Correspondent",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop",
+    "date": "13 Oct 2026",
+    "read_time": "5 min read",
+    "image_url": "assets/posts/rohtas-fort-sher-shah-suri-jhelum-unesco-heritage_cover.jpg",
+    "featured": false,
+    "body": [
+      "Rohtas Fort rises from rugged hills a short drive from Jhelum in Punjab. Sher Shah Suri began building it in 1541 after defeating the Mughal emperor Humayun, intending to block any Mughal return from the north-west and to subdue the local Gakhar tribes who supported them.",
+      "The fortifications run for roughly four kilometres, with massive bastions and twelve gateways built from dressed sandstone. The scale is remarkable for a fort that was never really tested in a major siege.",
+      "UNESCO inscribed Rohtas on the World Heritage List in 1997, describing it as an exceptional example of Muslim military architecture that blends influences from Central Asia, Persia and the subcontinent."
+    ],
+    "sections": [
+      {
+        "heading": "The Gates of Rohtas",
+        "content": "Sohail Gate is the best known and best preserved, with its tall arch and decorative balconies. Kabuli Gate faces west toward Kabul, while Shah Chandwali Gate is linked to a local saint said to have worked on the fort without pay."
+      },
+      {
+        "heading": "Inside the Walls",
+        "content": "The fort enclosed a small town, step wells known as baolis, and the Shahi Mosque near Kabuli Gate. Haveli Man Singh, built later during the Mughal period, sits on the highest point and offers wide views over the Kahan river valley."
+      },
+      {
+        "heading": "Visiting Today",
+        "content": "Rohtas is an easy day trip from Islamabad or Lahore via the GT Road and the town of Dina. Wear comfortable shoes for the steep ramparts, visit in the cooler months between October and March, and start early to avoid midday heat."
+      }
+    ],
+    "takeaways": [
+      "Sher Shah Suri began Rohtas Fort in 1541 to block the Mughals and control the Gakhars.",
+      "Its walls run about four kilometres with twelve monumental gates.",
+      "UNESCO listed Rohtas as a World Heritage Site in 1997."
+    ],
+    "faqs": [
+      {
+        "question": "How far is Rohtas Fort from Islamabad?",
+        "answer": "It is roughly a two to three hour drive south along the GT Road, near Dina and Jhelum."
+      },
+      {
+        "question": "Was Rohtas Fort ever conquered in battle?",
+        "answer": "It was never taken by a major siege. Humayun regained power after Sher Shah's dynasty weakened, and the fort lost its strategic role."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "deosai-national-park-travel-guide-land-of-giants",
+    "category": "Alpine Expeditions",
+    "badge": "DEOSAI GUIDE",
+    "title": "Deosai National Park: A Traveller's Guide to the Land of Giants",
+    "subdeck": "One of the highest alpine plateaus on Earth, home to the Himalayan brown bear and open to visitors for only a few summer months.",
+    "stat_number": "4,114 M",
+    "stat_label": "AVERAGE ELEVATION",
+    "author": "Kamran Alvi",
+    "author_role": "Conservation & Mountain Guide Editor",
+    "author_avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop",
+    "date": "13 Oct 2026",
+    "read_time": "6 min read",
+    "image_url": "assets/posts/deosai-national-park-travel-guide-land-of-giants_cover.jpg",
+    "featured": true,
+    "body": [
+      "Deosai sits between Skardu and Astore in Gilgit-Baltistan, a vast rolling plateau with an average elevation of about 4,114 metres. Local legend calls it the Land of Giants, and standing on its open grassland ringed by distant peaks, the name feels earned.",
+      "The area was declared a national park in 1993, mainly to protect the Himalayan brown bear, whose population had fallen sharply. Conservation work since then has helped the bears recover, and the plateau also supports golden marmots, red foxes, the Tibetan wolf and many birds of prey.",
+      "Snow covers Deosai for much of the year. The road is usually open only from around June to September, and in mid-summer the plateau bursts into wildflowers."
+    ],
+    "sections": [
+      {
+        "heading": "Getting There",
+        "content": "Most travellers enter from Skardu via Sadpara Lake, a drive of a few hours on a rough jeep track. The other approach comes from Astore through Chilum. A four-wheel-drive vehicle with a local driver is strongly recommended, and an entry fee is charged at the park checkpoints."
+      },
+      {
+        "heading": "Sheosar Lake and Bara Pani",
+        "content": "Sheosar Lake, near the Chilum side, is one of the highest lakes in the region and reflects the surrounding mountains on calm mornings. Bara Pani, a river crossing in the middle of the plateau, is a popular camping spot and a good place to watch for marmots."
+      },
+      {
+        "heading": "Travel Responsibly",
+        "content": "There are no shops or fuel stations on the plateau. Carry warm layers even in July, because temperatures drop sharply at night. Keep a respectful distance from wildlife, never feed bears or marmots, and carry all rubbish back out."
+      }
+    ],
+    "takeaways": [
+      "Deosai is one of the highest plateaus in the world, averaging about 4,114 metres.",
+      "It became a national park in 1993 to protect the Himalayan brown bear.",
+      "The plateau is normally accessible only from about June to September."
+    ],
+    "faqs": [
+      {
+        "question": "Can you camp overnight in Deosai?",
+        "answer": "Yes, camping is common at Bara Pani and near Sheosar Lake, but nights are very cold and you must carry all supplies."
+      },
+      {
+        "question": "Is Deosai suitable for a normal car?",
+        "answer": "Not recommended. The tracks are rough and include river crossings, so hire a 4x4 with an experienced local driver."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions",
     "category": "Heritage & Archaeological Wonders",
     "badge": "HISTORIC CITADEL 🏰",
@@ -61,7 +165,7 @@
     "date": "12 Oct 2026",
     "read_time": "5 min read",
     "image_url": "assets/posts/kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism_cover.jpg",
-    "featured": true,
+    "featured": false,
     "body": [
       "Hidden beneath the dramatic crests of Khyber Pakhtunkhwa's Upper Dir district lies Kumrat Valley, one of South Asia's most ecologically intact alpine river basins.",
       "Carved by the crystal headwaters of the Panjkora River, Kumrat is characterized by towering virgin Himalayan deodar (Cedrus deodara) canopy forests that stretch uninterrupted across emerald riverbanks and cascading glacial meltwater pools.",
