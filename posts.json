@@ -1,5 +1,109 @@
 [
   {
+    "id": "taxila-gandhara-archaeological-heritage-unesco-guide",
+    "category": "Cultural Heritage",
+    "badge": "UNESCO SITE",
+    "title": "Taxila: The Ancient Gandhara Heartland of Buddhist Philosophy, Sculpture, and World-Renowned Learning",
+    "subdeck": "A traveler and historian's guide to the legendary ruins of Taxila—from Dharmarajika Stupa to Jaulian Monastery—where Ashoka, Alexander, and Kanishka shaped Asian civilization.",
+    "stat_number": "1980",
+    "stat_label": "UNESCO INSCRIPTION",
+    "author": "Hamid Raza",
+    "author_role": "Senior Cultural Heritage Correspondent",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop",
+    "date": "14 Oct 2026",
+    "read_time": "6 min read",
+    "image_url": "assets/posts/taxila-gandhara-archaeological-heritage-unesco-guide_cover.jpg",
+    "featured": false,
+    "body": [
+      "Situated roughly thirty kilometers northwest of Islamabad, the archaeological complex of Taxila preserves one of the most intellectually vibrant crossroads of the ancient world.",
+      "For over a thousand years—from the 6th century BCE to the 5th century CE—Taxila flourished as a preeminent center of Vedic scholarship, Greco-Buddhist sculpture, and Mahayana Buddhist philosophy, attracting scholars and pilgrims across Central Asia, China, and the Mediterranean.",
+      "Inscribed onto the UNESCO World Heritage List in 1980, Taxila's sprawling remains encompass three distinct ancient cities and dozens of secluded monastic complexes nestled among the Margalla foothills."
+    ],
+    "sections": [
+      {
+        "heading": "The Evolution of Three Ancient Cities",
+        "content": "Unlike sites restricted to a single archaeological stratum, Taxila features three successive urban centers: Bhir Mound (the earliest 6th century BCE Persian and Mauryan settlement), Sirkap (a fortified 2nd century BCE Indo-Greek city with gridiron streets), and Sirsukh (a Kushan-era fortress built in the 1st century CE)."
+      },
+      {
+        "heading": "Dharmarajika and Jaulian Monasteries",
+        "content": "Dharmarajika Stupa, founded under the Mauryan Emperor Ashoka, served as the primary repository for sacred Buddhist relics in Gandhara. Further into the hills, the monastery of Jaulian preserves exceptional stucco sculptures of the Buddha, ancient meditation cells, and a stone relic stupa embedded with semiprecious stones."
+      },
+      {
+        "heading": "The Taxila Archaeological Museum",
+        "content": "The central Taxila Museum houses an extraordinary collection of Gandhara art. Here, Greek sculptors' classical Hellenistic drapery and facial realism merge seamlessly with Indian spiritual iconography, producing the earliest human representations of the Buddha."
+      }
+    ],
+    "takeaways": [
+      "Taxila was an international seat of learning and Greco-Buddhist art for more than a millennium.",
+      "The site includes three distinct historical cities: Bhir Mound, Sirkap, and Sirsukh.",
+      "Inscribed by UNESCO in 1980 as a World Heritage Site of universal cultural significance."
+    ],
+    "faqs": [
+      {
+        "question": "How long does a proper tour of Taxila take?",
+        "answer": "A comprehensive visit covering the Taxila Museum, Sirkap ruins, Dharmarajika, and Jaulian Monastery takes approximately four to six hours."
+      },
+      {
+        "question": "Did Alexander the Great visit Taxila?",
+        "answer": "Yes. Alexander of Macedonia entered Taxila peacefully in 326 BCE, forming an alliance with King Ambhi before advancing toward the Jhelum River."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "attabad-lake-hunza-valley-turquoise-marvel-travel-guide",
+    "category": "Alpine Expeditions",
+    "badge": "HUNZA MARVEL",
+    "title": "Attabad Lake: The Turquoise Wonder of Hunza Valley Formed by Mountain Disaster",
+    "subdeck": "How a massive 2010 landslide dammed the Hunza River, submerged the ancient Karakoram Highway, and created one of the world's most breathtaking alpine bodies of water.",
+    "stat_number": "21 KM",
+    "stat_label": "LAKE LENGTH",
+    "author": "Kamran Alvi",
+    "author_role": "Conservation & Mountain Guide Editor",
+    "author_avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop",
+    "date": "14 Oct 2026",
+    "read_time": "5 min read",
+    "image_url": "assets/posts/attabad-lake-hunza-valley-turquoise-marvel-travel-guide_cover.jpg",
+    "featured": true,
+    "body": [
+      "Stretching over twenty-one kilometers amidst the sheer granite towers of the Karakoram range, Attabad Lake presents a luminous turquoise surface so vibrant it appears artificial to first-time visitors.",
+      "Yet this scenic jewel of Hunza was born out of tragedy. In January 2010, an enormous landslide sheared off the mountainside at Attabad village, burying houses, blocking the rushing Hunza River, and submerging a nineteen-kilometer stretch of the original Karakoram Highway.",
+      "Over time, the flooded barrier settled into a stable lake, prompting engineering marvels including five kilometers of rock-hewn bypass tunnels, and creating a vital hub for northern ecotourism."
+    ],
+    "sections": [
+      {
+        "heading": "The Science Behind the Radiant Turquoise Hue",
+        "content": "The striking cobalt and turquoise color of Attabad Lake is produced by glacial rock flour—ultra-fine silt suspended in glacier meltwaters flowing from the surrounding Batura and Passu glaciers. The suspended particles scatter shorter blue and green wavelengths of sunlight while absorbing longer red spectrums."
+      },
+      {
+        "heading": "From Wooden Boat Shuttles to the Pak-China Friendship Tunnels",
+        "content": "For over five years following the disaster, vehicles and goods moving between Gilgit and the Khunjerab Pass had to be loaded onto precarious wooden transport barges to cross the water. In 2015, the Pakistan-China Friendship Tunnels opened, reconnecting the highway through solid rock."
+      },
+      {
+        "heading": "Travel Logistics and Seasonal Visiting Times",
+        "content": "The optimal window for visiting Attabad Lake runs from May through October, when summer warmth thaws the waters and reveals the stark contrast between snow-dusted peaks and the turquoise water. Motorboat cruises, kayaking, and lakeside dining in Shishkat offer peaceful immersion."
+      }
+    ],
+    "takeaways": [
+      "Attabad Lake was created in January 2010 by a massive landslide damming the Hunza River.",
+      "The radiant turquoise water is caused by light scattering off suspended glacial rock flour.",
+      "Five kilometers of mountain tunnels now allow seamless travel along the Karakoram Highway."
+    ],
+    "faqs": [
+      {
+        "question": "How deep is Attabad Lake?",
+        "answer": "At its deepest points, Attabad Lake reaches depths of over 100 meters (330 feet)."
+      },
+      {
+        "question": "Is Attabad Lake frozen in winter?",
+        "answer": "Yes. During peak winter months between December and February, parts of the lake surface freeze over under sub-zero temperatures."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "rohtas-fort-sher-shah-suri-jhelum-unesco-heritage",
     "category": "Cultural Heritage",
     "badge": "UNESCO HERITAGE",
@@ -65,7 +169,7 @@
     "date": "13 Oct 2026",
     "read_time": "6 min read",
     "image_url": "assets/posts/deosai-national-park-travel-guide-land-of-giants_cover.jpg",
-    "featured": true,
+    "featured": false,
     "body": [
       "Deosai sits between Skardu and Astore in Gilgit-Baltistan, a vast rolling plateau with an average elevation of about 4,114 metres. Local legend calls it the Land of Giants, and standing on its open grassland ringed by distant peaks, the name feels earned.",
       "The area was declared a national park in 1993, mainly to protect the Himalayan brown bear, whose population had fallen sharply. Conservation work since then has helped the bears recover, and the plateau also supports golden marmots, red foxes, the Tibetan wolf and many birds of prey.",
