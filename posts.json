@@ -49,7 +49,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/taxila-gandhara-archaeological-heritage-unesco-guide_cover.jpg",
+    "cover_image": "assets/posts/taxila-gandhara-archaeological-heritage-unesco-guide_cover.jpg"
   },
   {
     "id": "attabad-lake-hunza-valley-turquoise-marvel-travel-guide",
@@ -101,7 +103,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/attabad-lake-hunza-valley-turquoise-marvel-travel-guide_cover.jpg",
+    "cover_image": "assets/posts/attabad-lake-hunza-valley-turquoise-marvel-travel-guide_cover.jpg"
   },
   {
     "id": "rohtas-fort-sher-shah-suri-jhelum-unesco-heritage",
@@ -153,7 +157,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/rohtas-fort-sher-shah-suri-jhelum-unesco-heritage_cover.jpg",
+    "cover_image": "assets/posts/rohtas-fort-sher-shah-suri-jhelum-unesco-heritage_cover.jpg"
   },
   {
     "id": "deosai-national-park-travel-guide-land-of-giants",
@@ -205,7 +211,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/deosai-national-park-travel-guide-land-of-giants_cover.jpg",
+    "cover_image": "assets/posts/deosai-national-park-travel-guide-land-of-giants_cover.jpg"
   },
   {
     "id": "ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions",
@@ -253,7 +261,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions_cover.jpg",
+    "cover_image": "assets/posts/ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions_cover.jpg"
   },
   {
     "id": "kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism",
@@ -301,7 +311,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism_cover.jpg",
+    "cover_image": "assets/posts/kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism_cover.jpg"
   },
   {
     "id": "kalash-valleys-ancient-cedar-architecture-harvest-traditions",
@@ -349,7 +361,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/kalash-valleys-ancient-cedar-architecture-harvest-traditions_cover.jpg",
+    "cover_image": "assets/posts/kalash-valleys-ancient-cedar-architecture-harvest-traditions_cover.jpg"
   },
   {
     "id": "baltoro-glacier-scientific-traverse-karakoram-mountains",
@@ -397,7 +411,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image": "assets/posts/baltoro-glacier-scientific-traverse-karakoram-mountains_cover.jpg",
+    "cover_image": "assets/posts/baltoro-glacier-scientific-traverse-karakoram-mountains_cover.jpg"
   },
   {
     "id": "gandhara-civilization-revival-unesco-and-arch-3f974d66",
@@ -446,7 +462,8 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image_url": "assets/posts/gandhara-civilization-revival-unesco-and-arch-3f974d66_cover.jpg"
   },
   {
     "id": "skardu-cold-desert-dark-sky-reserve-pakistans-753bccce",
@@ -495,7 +512,8 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image_url": "assets/posts/skardu-cold-desert-dark-sky-reserve-pakistans-753bccce_cover.jpg"
   },
   {
     "id": "shandur-pass-heritage-initiative-worlds-highe-03aba33a",
@@ -544,7 +562,8 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "image_url": "assets/posts/shandur-pass-heritage-initiative-worlds-highe-03aba33a_cover.jpg"
   },
   {
     "id": "karakoram-winter-tourism-infrastructure-geoth-9bb8",
@@ -589,7 +608,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/karakoram-winter-tourism-infrastructure-geoth-9bb8_cover.jpg",
+    "image_url": "assets/posts/karakoram-winter-tourism-infrastructure-geoth-9bb8_cover.jpg"
   },
   {
     "id": "autumn-foliage-season-in-upper-chitral-and-ka-2403",
@@ -638,7 +659,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/autumn-foliage-season-in-upper-chitral-and-ka-2403_cover.jpg",
+    "image_url": "assets/posts/autumn-foliage-season-in-upper-chitral-and-ka-2403_cover.jpg"
   },
   {
     "id": "autumn-hunza-nagar-golden-foliage-ultar-sar",
@@ -686,7 +709,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/autumn-hunza-nagar-golden-foliage-ultar-sar_cover.jpg",
+    "image_url": "assets/posts/autumn-hunza-nagar-golden-foliage-ultar-sar_cover.jpg"
   },
   {
     "id": "makran-coastal-odyssey-mud-volcanoes-astola",
@@ -734,7 +759,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/makran-coastal-odyssey-mud-volcanoes-astola_cover.jpg",
+    "image_url": "assets/posts/makran-coastal-odyssey-mud-volcanoes-astola_cover.jpg"
   },
   {
     "id": "solar-powered-boutique-hospitality-across-hun-2455",
@@ -778,7 +805,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/solar-powered-boutique-hospitality-across-hun-2455_cover.jpg",
+    "image_url": "assets/posts/solar-powered-boutique-hospitality-across-hun-2455_cover.jpg"
   },
   {
     "id": "the-new-66-km-astore-to-skardu-alpine-highway-1606",
@@ -826,7 +855,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/the-new-66-km-astore-to-skardu-alpine-highway-1606_cover.jpg",
+    "image_url": "assets/posts/the-new-66-km-astore-to-skardu-alpine-highway-1606_cover.jpg"
   },
   {
     "id": "pakistan-bets-on-electric-vehicles-as-middle--9e6a",
@@ -878,7 +909,9 @@
       }
     ],
     "social_format": "card",
-    "lang": "en"
+    "lang": "en",
+    "cover_image": "assets/posts/pakistan-bets-on-electric-vehicles-as-middle--9e6a_cover.jpg",
+    "image_url": "assets/posts/pakistan-bets-on-electric-vehicles-as-middle--9e6a_cover.jpg"
   },
   {
     "id": "k2-base-camp-concordia-baltoro-trek-guide",
@@ -945,7 +978,9 @@
     ],
     "social_format": "card",
     "lang": "en",
-    "image": "assets/posts/k2-base-camp-concordia-baltoro-trek-guide_cover.jpg"
+    "image": "assets/posts/k2-base-camp-concordia-baltoro-trek-guide_cover.jpg",
+    "cover_image": "assets/posts/k2-base-camp-concordia-baltoro-trek-guide_cover.jpg",
+    "image_url": "assets/posts/k2-base-camp-concordia-baltoro-trek-guide_cover.jpg"
   },
   {
     "id": "shigar-khaplu-wooden-palaces-balti-heritage",
@@ -1012,7 +1047,9 @@
     ],
     "social_format": "card",
     "lang": "en",
-    "image": "assets/posts/shigar-khaplu-wooden-palaces-balti-heritage_cover.jpg"
+    "image": "assets/posts/shigar-khaplu-wooden-palaces-balti-heritage_cover.jpg",
+    "cover_image": "assets/posts/shigar-khaplu-wooden-palaces-balti-heritage_cover.jpg",
+    "image_url": "assets/posts/shigar-khaplu-wooden-palaces-balti-heritage_cover.jpg"
   },
   {
     "id": "astola-island-expedition-pasni-balochistan",
@@ -1079,7 +1116,9 @@
     ],
     "social_format": "card",
     "lang": "en",
-    "image": "assets/posts/astola-island-expedition-pasni-balochistan_cover.jpg"
+    "image": "assets/posts/astola-island-expedition-pasni-balochistan_cover.jpg",
+    "cover_image": "assets/posts/astola-island-expedition-pasni-balochistan_cover.jpg",
+    "image_url": "assets/posts/astola-island-expedition-pasni-balochistan_cover.jpg"
   },
   {
     "id": "broghil-valley-karambar-lake-chitral-expedition",
@@ -1146,7 +1185,9 @@
     ],
     "social_format": "card",
     "lang": "en",
-    "image": "assets/posts/broghil-valley-karambar-lake-chitral-expedition_cover.jpg"
+    "image": "assets/posts/broghil-valley-karambar-lake-chitral-expedition_cover.jpg",
+    "cover_image": "assets/posts/broghil-valley-karambar-lake-chitral-expedition_cover.jpg",
+    "image_url": "assets/posts/broghil-valley-karambar-lake-chitral-expedition_cover.jpg"
   },
   {
     "id": "phander-valley-ghizer-emerald-lake-autumn-guide",
@@ -1213,7 +1254,9 @@
     ],
     "social_format": "card",
     "lang": "en",
-    "image": "assets/posts/phander-valley-ghizer-emerald-lake-autumn-guide_cover.jpg"
+    "image": "assets/posts/phander-valley-ghizer-emerald-lake-autumn-guide_cover.jpg",
+    "cover_image": "assets/posts/phander-valley-ghizer-emerald-lake-autumn-guide_cover.jpg",
+    "image_url": "assets/posts/phander-valley-ghizer-emerald-lake-autumn-guide_cover.jpg"
   },
   {
     "id": "hunza-valley-autumn-urdu",
@@ -1278,7 +1321,9 @@
     "body": [
       "پاکستان کے شمالی علاقہ جات قدرتی حسن، فلک بوس چوٹیوں اور صدیوں پرانی ثقافت کا انوکھا سنگم ہیں۔ اکتوبر اور نومبر میں وادی ہنزہ کے خوبانی اور چنار کے درخت سونے کی طرح چمک اٹھتے ہیں—شمالی علاقہ جات کی سب سے سحر انگیز موسمی مہم۔",
       "ہر سال دنیا بھر سے لاکھوں سیاح، کوہ پیما اور فوٹوگرافرز ان دلکش وادیوں کا رخ کرتے ہیں تاکہ قدرت کے ان شاہکاروں کو اپنی آنکھوں سے دیکھ سکیں۔"
-    ]
+    ],
+    "cover_image": "assets/posts/hunza-valley-autumn-urdu_cover.jpg",
+    "image_url": "assets/posts/hunza-valley-autumn-urdu_cover.jpg"
   },
   {
     "id": "skardu-shangrila-baltistan-urdu",
@@ -1334,7 +1379,9 @@
     "body": [
       "پاکستان کے شمالی علاقہ جات قدرتی حسن، فلک بوس چوٹیوں اور صدیوں پرانی ثقافت کا انوکھا سنگم ہیں۔ کے ٹو کا گیٹ وے، کٹپانہ کا سرد صحرا اور نیلگوں جھیلیں—بلتستان کے سحر انگیز عجائبات کی تفصیلی سفری دستاویز۔",
       "ہر سال دنیا بھر سے لاکھوں سیاح، کوہ پیما اور فوٹوگرافرز ان دلکش وادیوں کا رخ کرتے ہیں تاکہ قدرت کے ان شاہکاروں کو اپنی آنکھوں سے دیکھ سکیں۔"
-    ]
+    ],
+    "cover_image": "assets/posts/skardu-shangrila-baltistan-urdu_cover.jpg",
+    "image_url": "assets/posts/skardu-shangrila-baltistan-urdu_cover.jpg"
   },
   {
     "id": "deosai-national-park-urdu",
@@ -1390,7 +1437,9 @@
     "body": [
       "پاکستان کے شمالی علاقہ جات قدرتی حسن، فلک بوس چوٹیوں اور صدیوں پرانی ثقافت کا انوکھا سنگم ہیں۔ سطح سمندر سے 4000 میٹر بلند دنیا کی چھت پر نایاب ہمالیائی بھورے ریچھ، نیلگوں جھیلیں اور جنگلی پھولوں کا سمندر۔",
       "ہر سال دنیا بھر سے لاکھوں سیاح، کوہ پیما اور فوٹوگرافرز ان دلکش وادیوں کا رخ کرتے ہیں تاکہ قدرت کے ان شاہکاروں کو اپنی آنکھوں سے دیکھ سکیں۔"
-    ]
+    ],
+    "cover_image": "assets/posts/deosai-national-park-urdu_cover.jpg",
+    "image_url": "assets/posts/deosai-national-park-urdu_cover.jpg"
   },
   {
     "id": "kumrat-valley-katora-lake-urdu",
@@ -1446,7 +1495,9 @@
     "body": [
       "پاکستان کے شمالی علاقہ جات قدرتی حسن، فلک بوس چوٹیوں اور صدیوں پرانی ثقافت کا انوکھا سنگم ہیں۔ دریائے پنجکوڑہ کا شفاف پانی، دیودار کے صدیوں پرانے گھنے جنگلات اور 11,500 فٹ پر واقع کٹورا جھیل کا ٹریک۔",
       "ہر سال دنیا بھر سے لاکھوں سیاح، کوہ پیما اور فوٹوگرافرز ان دلکش وادیوں کا رخ کرتے ہیں تاکہ قدرت کے ان شاہکاروں کو اپنی آنکھوں سے دیکھ سکیں۔"
-    ]
+    ],
+    "cover_image": "assets/posts/kumrat-valley-katora-lake-urdu_cover.jpg",
+    "image_url": "assets/posts/kumrat-valley-katora-lake-urdu_cover.jpg"
   },
   {
     "id": "passu-cones-gojal-valley-urdu",
@@ -1502,7 +1553,9 @@
     "body": [
       "پاکستان کے شمالی علاقہ جات قدرتی حسن، فلک بوس چوٹیوں اور صدیوں پرانی ثقافت کا انوکھا سنگم ہیں۔ کیٹھیڈرل کی طرح ایستادہ نوکیلی چوٹیاں، لکڑی کا لٹکتا ہوا خطرناک حسینی پل اور بورتھ جھیل کے دلفریب مناظر۔",
       "ہر سال دنیا بھر سے لاکھوں سیاح، کوہ پیما اور فوٹوگرافرز ان دلکش وادیوں کا رخ کرتے ہیں تاکہ قدرت کے ان شاہکاروں کو اپنی آنکھوں سے دیکھ سکیں۔"
-    ]
+    ],
+    "cover_image": "assets/posts/passu-cones-gojal-valley-urdu_cover.jpg",
+    "image_url": "assets/posts/passu-cones-gojal-valley-urdu_cover.jpg"
   },
   {
     "id": "fairy-meadows-nanga-parbat-urdu",
@@ -1558,7 +1611,9 @@
     "body": [
       "پاکستان کے شمالی علاقہ جات قدرتی حسن، فلک بوس چوٹیوں اور صدیوں پرانی ثقافت کا انوکھا سنگم ہیں۔ رائے کوٹ پل کی اعصاب شکن جیپ رائیڈ، صنوبر کے جنگلات اور نانگا پربت (8,126 میٹر) کی دیو ہیکل شمالی دیوار کا سحر۔",
       "ہر سال دنیا بھر سے لاکھوں سیاح، کوہ پیما اور فوٹوگرافرز ان دلکش وادیوں کا رخ کرتے ہیں تاکہ قدرت کے ان شاہکاروں کو اپنی آنکھوں سے دیکھ سکیں۔"
-    ]
+    ],
+    "cover_image": "assets/posts/fairy-meadows-nanga-parbat-urdu_cover.jpg",
+    "image_url": "assets/posts/fairy-meadows-nanga-parbat-urdu_cover.jpg"
   },
   {
     "id": "hunza-valley-autumn-dossier",
@@ -1600,7 +1655,9 @@
         "question": "Is heating available in local hotels during late autumn?",
         "answer": "Premium properties in Karimabad and Attabad feature electric and wood-fired heating systems."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/hunza-valley-autumn-dossier_cover.jpg",
+    "image_url": "assets/posts/hunza-valley-autumn-dossier_cover.jpg"
   },
   {
     "id": "skardu-shangrila-gateway-k2",
@@ -1642,7 +1699,9 @@
         "question": "Can standard vehicles navigate local Skardu attractions?",
         "answer": "Local town sites are accessible by car; visits to Deosai or Basho Valley require dedicated 4WD jeeps."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/skardu-shangrila-gateway-k2_cover.jpg",
+    "image_url": "assets/posts/skardu-shangrila-gateway-k2_cover.jpg"
   },
   {
     "id": "deosai-plains-land-of-giants",
@@ -1680,7 +1739,9 @@
         "question": "Are brown bears dangerous to visitors?",
         "answer": "Bears generally maintain distance from human encampments; keep food locked inside vehicles."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/deosai-plains-land-of-giants_cover.jpg",
+    "image_url": "assets/posts/deosai-plains-land-of-giants_cover.jpg"
   },
   {
     "id": "passu-attabad-turquoise-wonder",
@@ -1718,7 +1779,9 @@
         "question": "Where can one stay in Upper Hunza?",
         "answer": "Luxury overwater glamping pods and boutique cliffside hotels operate directly on Attabad Lake."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/passu-attabad-turquoise-wonder_cover.jpg",
+    "image_url": "assets/posts/passu-attabad-turquoise-wonder_cover.jpg"
   },
   {
     "id": "kumrat-valley-alpine-secret",
@@ -1756,7 +1819,9 @@
         "question": "What type of footwear is recommended?",
         "answer": "Waterproof hiking boots with ankle support are essential for muddy trails and stream crossings."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/kumrat-valley-alpine-secret_cover.jpg",
+    "image_url": "assets/posts/kumrat-valley-alpine-secret_cover.jpg"
   },
   {
     "id": "kalash-valleys-ancient-heritage",
@@ -1794,7 +1859,9 @@
         "question": "Which valley offers the most authentic cultural immersion?",
         "answer": "Rumbur offers a quieter, traditional experience compared to the larger hotels of Bumburet."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/kalash-valleys-ancient-heritage_cover.jpg",
+    "image_url": "assets/posts/kalash-valleys-ancient-heritage_cover.jpg"
   },
   {
     "id": "makran-coastal-highway-hingol",
@@ -1832,6 +1899,8 @@
         "question": "Is a special NOC required to travel on N-10?",
         "answer": "Pakistani citizens and foreign tourists with valid visas travel freely without special security permits."
       }
-    ]
+    ],
+    "cover_image": "assets/posts/makran-coastal-highway-hingol_cover.jpg",
+    "image_url": "assets/posts/makran-coastal-highway-hingol_cover.jpg"
   }
 ]

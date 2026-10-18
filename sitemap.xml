@@ -2,73 +2,105 @@
 <urlset xmlns:ns0="http://www.google.com/schemas/sitemap-image/1.1" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://discover-pakistan.github.io/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/page/2/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/page/3/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/taxila-gandhara-archaeological-heritage-unesco-guide/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/taxila-gandhara-archaeological-heritage-unesco-guide_cover.jpg</ns0:loc>
+      <ns0:title>Taxila: The Ancient Gandhara Heartland of Buddhist Philosophy, Sculpture, and World-Renowned Learning</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/attabad-lake-hunza-valley-turquoise-marvel-travel-guide/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/attabad-lake-hunza-valley-turquoise-marvel-travel-guide_cover.jpg</ns0:loc>
+      <ns0:title>Attabad Lake: The Turquoise Wonder of Hunza Valley Formed by Mountain Disaster</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/rohtas-fort-sher-shah-suri-jhelum-unesco-heritage/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/rohtas-fort-sher-shah-suri-jhelum-unesco-heritage_cover.jpg</ns0:loc>
+      <ns0:title>Rohtas Fort: Sher Shah Suri's Stone Fortress Near Jhelum and Why UNESCO Protects It</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/deosai-national-park-travel-guide-land-of-giants/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/deosai-national-park-travel-guide-land-of-giants_cover.jpg</ns0:loc>
+      <ns0:title>Deosai National Park: A Traveller's Guide to the Land of Giants</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/ranikot-fort-great-wall-sindh-kirthar-range-stone-bastions_cover.jpg</ns0:loc>
+      <ns0:title>Ranikot: The Great Wall of Sindh and the 32-Kilometer Stone Bastion Guarding the Kirthar Range</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/kumrat-valley-alpine-pine-forests-glacial-streams-eco-tourism_cover.jpg</ns0:loc>
+      <ns0:title>The Living Pine Forests of Kumrat Valley: Alpine Ecology, Glacial Streams, and Sustainable Eco-Tourism Corridors</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/kalash-valleys-ancient-cedar-architecture-harvest-traditions/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/kalash-valleys-ancient-cedar-architecture-harvest-traditions_cover.jpg</ns0:loc>
+      <ns0:title>Living Heritage of the Kalash Valleys: Ancient Cedar Architecture and Autumn Harvest Traditions in the Hindu Kush Mountains</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/baltoro-glacier-scientific-traverse-karakoram-mountains/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
+    <ns0:image>
+      <ns0:loc>https://discover-pakistan.github.io/assets/posts/baltoro-glacier-scientific-traverse-karakoram-mountains_cover.jpg</ns0:loc>
+      <ns0:title>The Baltoro Glacier Scientific Traverse: Navigating Crevasse Fields and High-Altitude Moraine Landscapes Under Karakoram Autumn Skies</ns0:title>
+    </ns0:image>
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/gandhara-civilization-revival-unesco-and-arch-3f974d66/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -78,7 +110,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/skardu-cold-desert-dark-sky-reserve-pakistans-753bccce/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -88,7 +120,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/shandur-pass-heritage-initiative-worlds-highe-03aba33a/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -98,7 +130,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/karakoram-winter-tourism-infrastructure-geoth-9bb8/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -108,7 +140,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/autumn-foliage-season-in-upper-chitral-and-ka-2403/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -118,7 +150,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/autumn-hunza-nagar-golden-foliage-ultar-sar/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -128,7 +160,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/makran-coastal-odyssey-mud-volcanoes-astola/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -138,7 +170,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/solar-powered-boutique-hospitality-across-hun-2455/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -148,7 +180,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/the-new-66-km-astore-to-skardu-alpine-highway-1606/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -158,7 +190,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/pakistan-bets-on-electric-vehicles-as-middle--9e6a/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -168,7 +200,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/k2-base-camp-concordia-baltoro-trek-guide/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -178,7 +210,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/shigar-khaplu-wooden-palaces-balti-heritage/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -188,7 +220,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/astola-island-expedition-pasni-balochistan/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -198,7 +230,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/broghil-valley-karambar-lake-chitral-expedition/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -208,7 +240,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/phander-valley-ghizer-emerald-lake-autumn-guide/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -218,7 +250,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/hunza-valley-autumn-urdu/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -228,7 +260,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/skardu-shangrila-baltistan-urdu/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -238,7 +270,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/deosai-national-park-urdu/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -248,7 +280,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/kumrat-valley-katora-lake-urdu/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -258,7 +290,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/passu-cones-gojal-valley-urdu/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -268,7 +300,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/fairy-meadows-nanga-parbat-urdu/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -278,7 +310,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/hunza-valley-autumn-dossier/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -288,7 +320,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/skardu-shangrila-gateway-k2/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -298,7 +330,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/deosai-plains-land-of-giants/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -308,7 +340,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/passu-attabad-turquoise-wonder/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -318,7 +350,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/kumrat-valley-alpine-secret/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -328,7 +360,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/kalash-valleys-ancient-heritage/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>
@@ -338,7 +370,7 @@
   </url>
   <url>
     <loc>https://discover-pakistan.github.io/posts/makran-coastal-highway-hingol/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <ns0:image>

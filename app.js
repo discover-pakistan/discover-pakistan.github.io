@@ -96,10 +96,11 @@ function renderHeroSection() {
   const leadTitleCls = isLeadUrdu ? "featured-title urdu-title" : "featured-title";
   const leadSubdeckCls = isLeadUrdu ? "featured-subdeck urdu-subdeck" : "featured-subdeck";
 
+  const leadImg = leadPost.image || leadPost.cover_image || leadPost.image_url || (leadPost.id ? `${postUrlPrefix}assets/posts/${leadPost.id}_cover.jpg` : "");
   featuredSlot.innerHTML = `
     <a href="${postUrlPrefix}posts/${leadPost.id}/" class="featured-lead-card">
       <div class="featured-media-wrapper">
-        <img class="featured-media-img" src="${leadPost.image}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
+        <img class="featured-media-img" src="${leadImg}" alt="${escapeHtml(leadPost.title)}" width="1200" height="675" loading="eager" fetchpriority="high" decoding="async" />
         <span class="media-badge">${escapeHtml(leadPost.badge || leadPost.category)}</span>
         ${leadPost.stat_number ? `
           <div class="stat-chip">
@@ -126,10 +127,11 @@ function renderHeroSection() {
     const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title || "");
     const titleCls = isUrdu ? "stacked-story-title urdu-title" : "stacked-story-title";
     const subdeckCls = isUrdu ? "stacked-story-excerpt urdu-subdeck" : "stacked-story-excerpt";
+    const stackImg = post.image || post.cover_image || post.image_url || (post.id ? `${postUrlPrefix}assets/posts/${post.id}_cover.jpg` : "");
     return `
     <a href="${postUrlPrefix}posts/${post.id}/" class="stacked-story-card">
       <div class="stacked-thumb-wrapper">
-        <img class="stacked-thumb-img" src="${post.image}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
+        <img class="stacked-thumb-img" src="${stackImg}" alt="${escapeHtml(post.title)}" width="480" height="270" loading="lazy" decoding="async" />
       </div>
       <div class="stacked-story-info">
         <h3 class="${titleCls}" ${isUrdu ? 'dir="rtl"' : ''}>${escapeHtml(post.title)}</h3>
@@ -175,7 +177,7 @@ function renderGridSection() {
     const isUrdu = post.lang === 'ur' || /[؀-ۿ]/.test(post.title || "");
     const titleCls = isUrdu ? "editorial-card-title urdu-title" : "editorial-card-title";
     const subdeckCls = isUrdu ? "editorial-card-excerpt urdu-subdeck" : "editorial-card-excerpt";
-    let cardImg = post.image || post.cover_image || "";
+    let cardImg = post.image || post.cover_image || post.image_url || (post.id ? `assets/posts/${post.id}_cover.jpg` : "");
     if (cardImg && !cardImg.startsWith("http") && !cardImg.startsWith("/")) {
       cardImg = postUrlPrefix + cardImg;
     }
@@ -303,7 +305,8 @@ window.openArticleModal = async function(id) {
   if (modalAuthorRole) modalAuthorRole.textContent = post.author_role || "Senior Alpine Expedition Guide";
 
   if (modalHeroImg) {
-    modalHeroImg.src = post.image;
+    const heroSrc = post.image || post.cover_image || post.image_url || (post.id ? `assets/posts/${post.id}_cover.jpg` : "");
+    modalHeroImg.src = heroSrc;
     modalHeroImg.alt = post.title;
   }
 
