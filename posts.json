@@ -1,5 +1,113 @@
 [
   {
+    "id": "the-ancient-silk-route-caravanserais-of-hunza-b9bb69b3",
+    "title": "The Ancient Silk Route Caravanserais of Hunza and Nagar: Architectural Legacy of Trans-Karakoram Trade",
+    "subdeck": "Exploring the stone-and-timber outposts along the historical Pamir trade routes that sheltered merchants and diplomats traversing high mountain passes for centuries.",
+    "category": "Cultural Heritage",
+    "badge": "HERITAGE TRAIL",
+    "stat_number": "12 SITES",
+    "stat_label": "DOCUMENTED OUTPOSTS",
+    "image": "assets/posts/the-ancient-silk-route-caravanserais-of-hunza-b9bb69b3_cover.jpg",
+    "cover_image": "assets/posts/the-ancient-silk-route-caravanserais-of-hunza-b9bb69b3_cover.jpg",
+    "image_url": "assets/posts/the-ancient-silk-route-caravanserais-of-hunza-b9bb69b3_cover.jpg",
+    "author": "Zainab Mir",
+    "author_role": "Heritage & Cultural Historian",
+    "author_avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=120&h=120&fit=crop",
+    "date": "18 Oct 2026",
+    "read_time": "5 min read",
+    "featured": false,
+    "body": [
+      "Long before modern asphalt cleaved the Karakoram Highway through jagged granite gorges, the valleys of Hunza and Nagar formed one of the most perilous yet lucrative branches of the ancient Silk Route network connecting Kashgar with the plains of the Indus Basin.",
+      "Perched atop steep scree cliffs and strategic river confluences, historical caravanserais—known locally as *rabats*—provided sanctuary for camel trains, Buddhist pilgrims, and merchant expeditions laden with silk, tea, medicinal herbs, and lapis lazuli.",
+      "Architecturally, these mountain outposts combined local dry-stone masonry with cator-and-cribbage timber reinforcement (known as *dhajji-dewari*), engineered specifically to absorb severe seismic shockwaves from active fault lines crisscrossing the northern collision zone of the Indian and Eurasian tectonic plates."
+    ],
+    "sections": [
+      {
+        "heading": "Strategic Outposts Guarding High Mountain Passes",
+        "content": "Key historical stops including Ganish, Baltit, and the fortified settlement of Altit guarded narrow gorge checkpoints where trade taxes were levied by local Mirs. The outposts featured internal courtyards for pack animals, fortified watchtowers with sightlines across the valley, and subterranean grain granaries capable of withstanding prolonged winter sieges."
+      },
+      {
+        "heading": "Ancient Petroglyphs and Epigraphic Inscriptions Along the Route",
+        "content": "Adjacent to the caravanserai structures along the sacred rock of Hunza in Haldeikish, travelers left behind thousands of petroglyphs and inscriptions written in Brahmi, Kharosthi, Sogdian, and Chinese characters, dating from the first millennium BCE through the golden age of Buddhist monastic transit."
+      },
+      {
+        "heading": "Community-Led Adaptive Reuse and Cultural Conservation",
+        "content": "Today, conservation partnerships led by local village heritage organizations have restored several historic caravanserais into community cultural museums, artisan workshops, and heritage guest houses, creating direct economic incentives for preservation while safeguarding vernacular architectural techniques."
+      }
+    ],
+    "takeaways": [
+      "Hunza-Nagar caravanserais served as vital fortified outposts along the northern Silk Route to Kashgar.",
+      "The traditional timber-laced stone architecture (*dhajji-dewari*) provided remarkable seismic resilience.",
+      "Adjacent rock epigraphs contain centuries of merchant inscriptions in multiple ancient scripts."
+    ],
+    "faqs": [
+      {
+        "question": "Can tourists visit and stay in restored caravanserais today?",
+        "answer": "Yes. Restored heritage quarters in Ganish and Altit offer cultural tours and heritage boutique lodging managed directly by community trusts."
+      },
+      {
+        "question": "Where are the oldest petroglyphs located along the Silk Route in Hunza?",
+        "answer": "The Sacred Rock of Hunza at Haldeikish, located just off the Karakoram Highway between Karimabad and Ganish, features extensive petroglyphs spanning over two millennia."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
+    "id": "deosai-national-park-wilderness-guide-travers-faef6bbc",
+    "title": "Deosai National Park Wilderness Guide: Traversing the World's Second-Highest Alpine Plateau and Himalayan Brown Bear Sanctuary",
+    "subdeck": "An extensive overland guide to crossing the 4,100-meter plateau between Astore and Skardu, covering ecological preservation, Sheosar Lake campsites, and seasonal road windows.",
+    "category": "Alpine Expeditions",
+    "badge": "DEOSAI PLATEAU",
+    "stat_number": "4,114 M",
+    "stat_label": "AVERAGE ELEVATION",
+    "image": "assets/posts/deosai-national-park-wilderness-guide-travers-faef6bbc_cover.jpg",
+    "cover_image": "assets/posts/deosai-national-park-wilderness-guide-travers-faef6bbc_cover.jpg",
+    "image_url": "assets/posts/deosai-national-park-wilderness-guide-travers-faef6bbc_cover.jpg",
+    "author": "Kamran Alvi",
+    "author_role": "Senior Alpine Expedition Guide",
+    "author_avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop",
+    "date": "18 Oct 2026",
+    "read_time": "6 min read",
+    "featured": true,
+    "body": [
+      "Perched at an average elevation of 4,114 meters above sea level, Deosai National Park—aptly termed the 'Land of Giants' in local Balti lore—is the second-highest alpine plateau on the planet after the Changtang in Tibet.",
+      "Spanning over 3,000 square kilometers where the western Himalayas intersect the Karakoram and Zanskar ranges, the plateau is completely treeless, blanketed in deep snow for eight months of the year, before erupting into a vibrant carpet of alpine wildflowers, crystal-clear glacial streams, and high-altitude marshes during its brief summer.",
+      "Beyond its staggering geological scale, Deosai serves as the last critical sanctuary for the critically endangered Himalayan Brown Bear (*Ursus arctos isabellinus*), alongside golden marmots, Tibetan wolves, and high-altitude raptors that thrive across its vast, undulating plains."
+    ],
+    "sections": [
+      {
+        "heading": "The Overland Route: From Astore Valley to Skardu Gateway",
+        "content": "The traverse across Deosai connects Chilam Chowki in the Astore district with the Sadpara valley leading into Skardu. Requiring high-clearance four-wheel-drive vehicles with low-range transfer cases, the rocky trail navigates unbridged glacial torrents at Bara Pani and Kala Pani that swell dramatically during afternoon snowmelt."
+      },
+      {
+        "heading": "Sheosar Lake: The Turquoise Jewel of the Western Plateau",
+        "content": "Located near the southern periphery of the park, Sheosar Lake sits like a pristine turquoise tear reflecting the snow-draped peak of Nanga Parbat in the far horizon. The crystalline waters, fed solely by surrounding permafrost melt, support rare macro-invertebrates and serve as a vital staging post for migratory waterfowl traversing the Central Asian Flyway."
+      },
+      {
+        "heading": "Conservation Protocols and Ethical Wilderness Camping",
+        "content": "Due to fragile alpine tundra soils that take decades to recover from tire rutting, park authorities strictly confine vehicular traffic to established stone tracks. Wilderness camping is permitted only at designated community-managed zones, with mandatory zero-trace waste disposal protocols enforced to prevent wildlife habituation."
+      }
+    ],
+    "takeaways": [
+      "Deosai is the second-highest alpine plateau in the world with an average elevation exceeding 4,100 meters.",
+      "The plateau is the principal natural sanctuary for the critically endangered Himalayan Brown Bear.",
+      "Travel is accessible only between late June and early October, requiring capable 4x4 vehicles and warm sub-zero gear."
+    ],
+    "faqs": [
+      {
+        "question": "What is the best time of year to visit Deosai?",
+        "answer": "The peak season spans from mid-July to late August, when wild alpine flora is in full bloom and water crossings are manageable."
+      },
+      {
+        "question": "Is acute mountain sickness (AMS) a concern in Deosai?",
+        "answer": "Yes. Sleeping at over 4,000 meters carries AMS risks. Travelers are strongly advised to spend at least two nights acclimatizing in Skardu or Astore before camping on the plateau."
+      }
+    ],
+    "social_format": "card",
+    "lang": "en"
+  },
+  {
     "id": "taxila-gandhara-archaeological-heritage-unesco-guide",
     "category": "Cultural Heritage",
     "badge": "UNESCO SITE",
@@ -67,7 +175,7 @@
     "date": "14 Oct 2026",
     "read_time": "5 min read",
     "image_url": "assets/posts/attabad-lake-hunza-valley-turquoise-marvel-travel-guide_cover.jpg",
-    "featured": true,
+    "featured": false,
     "body": [
       "Stretching over twenty-one kilometers amidst the sheer granite towers of the Karakoram range, Attabad Lake presents a luminous turquoise surface so vibrant it appears artificial to first-time visitors.",
       "Yet this scenic jewel of Hunza was born out of tragedy. In January 2010, an enormous landslide sheared off the mountainside at Attabad village, burying houses, blocking the rushing Hunza River, and submerging a nineteen-kilometer stretch of the original Karakoram Highway.",
